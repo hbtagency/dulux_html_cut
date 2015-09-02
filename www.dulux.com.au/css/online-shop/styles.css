@@ -1,0 +1,96 @@
+/* Dulux Online Shop
+   Author: Tony Trinh, 11.6.13
+*/
+
+/* temp */
+.wrapper	 	{ background: #fbfbfb; margin: 0 auto; width: 972px; padding: 0; }
+.wrapper img 	{ display: block; }
+body, html		{ background: #fbfbfb url(../../images/online-shop/temp/pageBackground.jpg) no-repeat fixed 0 0; }
+body			{ height: auto; }
+
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../fonts/online-shop/25A751_0_0.eot');src: url('../../fonts/online-shop/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../fonts/online-shop/25A751_0_0.woff') format('woff'),url('../webfonts/25A751_0_0.html') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../fonts/online-shop/25A751_1_0.eot');src: url('../../fonts/online-shop/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../fonts/online-shop/25A751_1_0.woff') format('woff'),url('../webfonts/25A751_1_0.html') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../fonts/online-shop/25A751_2_0.eot');src: url('../../fonts/online-shop/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../fonts/online-shop/25A751_2_0.woff') format('woff'),url('../webfonts/25A751_2_0.html') format('truetype');}
+
+/* OS global */
+#online-shop { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; overflow: hidden; }
+#online-shop h1 { visibility: visible; }
+#online-shop h2,
+#online-shop h3 { color: #132150; letter-spacing: -1.5px; font-family: 'FuturaBT-Bold'; font-weight: normal; }
+#online-shop h2 { font-size: 30px; padding-bottom: 9px; }
+#online-shop h3 { font-size: 21px; }
+#online-shop p { font-size: 14px; color: #444444; line-height: 1.3; }
+#online-shop ul li { list-style: none; }
+#online-shop .os-section { width: 960px; margin: 0 6px; float: left; }
+#online-shop img { display: block; }
+#online-shop a { cursor: pointer; text-decoration: none; }
+#online-shop .os-col-left { float: left; }
+#online-shop .os-col-right { float: right; }
+#online-shop .os-price {font-weight:bold;color:#444444;padding-top: 10px;}
+#os-media .os-price {padding-top: 0px;}
+#online-shop .os-btn { font: 17px/1 'FuturaBT-Book'; color: #fff; height: 40px; width: 160px; background: #132150 url(../../images/online-shop/bg-btn-arrow.png) 135px center no-repeat; border-radius: 5px; line-height: 40px; text-indent: 20px; display: block; }
+@keyframes btnAnimate {
+	from { transform: scale(1.0); }
+	to { transform: scale(1.1); }
+}
+@-webkit-keyframes btnAnimate {
+	from { transform: scale(1.0); }
+	to { transform: scale(1.1); }
+}
+#online-shop .os-btn:hover,
+#os-media .os-carousel .os-prev:hover,
+#os-media .os-carousel .os-next:hover {
+	animation-name: btnAnimate;
+	animation-duration: 0.33s;
+	animation-timing-function: ease-out;
+	transform: scale(1.1);
+	/* chrome & saf */
+	-webkit-animation-name: btnAnimate;
+	-webkit-animation-duration: 0.33s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-transform: scale(1.1);
+}
+#os-media .os-carousel .os-prev:hover,
+#os-media .os-carousel .os-next:hover {
+	animation-duration: 0.15s;
+	-webkit-animation-duration: 0.15s;
+}
+#online-shop.oldie .os-btn:hover { /*opacity: 0.75; filter:alpha(opacity=75);*/ background-color: #e00026; }
+.oldie #os-media .os-carousel .os-prev:hover,
+.oldie #os-media .os-carousel .os-next:hover { opacity: 0.75; filter:alpha(opacity=75); }
+
+/* OS banner */
+#online-shop #os-banner { margin-bottom: 50px; margin-top: 10px; position: relative; }
+#os-banner h3,
+#os-banner p { position: absolute; left: 50px; width: 445px; }
+#os-banner h3 { top: 82px; /*font: bold 20px/1 Arial, "Helvetica Neue", Helvetica, sans-serif; letter-spacing: 0;*/ font-size: 20px; }
+#os-banner p { top: 139px; }
+
+/* OS links */
+#online-shop #os-links { margin-bottom: 45px; }
+#os-links .os-col-left,
+#os-links .os-col-right { position: relative; min-height: 255px; }
+#os-links .os-col-left { width: 230px;padding-right: 178px; margin-left: 40px; }
+#os-links .os-col-right { width: 278px; padding-right: 192px; margin-right: 15px; }
+#os-links .os-col-right p { width: 270px; }
+#os-links img { position: absolute; top: 0; right: 0; }
+#os-links .os-btn { position: absolute; bottom: 0; left: 0; }
+
+/* OS media */
+#online-shop #os-media { margin-bottom: 15px; }
+#os-media h2 { display: block; padding: 0; background: #ebecef; height: 48px; line-height: 48px; text-align: center; margin-bottom: 25px; }
+#os-media h3 { padding-bottom: 6px; }
+#os-media .os-video { border: 1px solid #e5e5e5; margin-bottom: 12px; }
+#os-media p { padding-bottom: 17px; }
+#os-media .os-col-left { margin-left: 40px; width: 594px; }
+#os-media .os-col-right { margin-right: 36px; width: 267px; }
+#os-media .os-col-right h3 { padding-left: 17px; }
+#os-media .os-carousel { padding-bottom: 36px; width: 267px; height: 166px; position: relative; }
+#os-media .os-carousel ul { width: 233px; height: 166px; overflow: hidden; position: absolute; top: 0; left: 17px; }
+#os-media .os-carousel .os-prev,
+#os-media .os-carousel .os-next { width: 35px; height: 35px; position: absolute; top: 66px; overflow: hidden; z-index: 100; }
+#os-media .os-carousel .os-arrow { width: 100%; height: auto; }
+#os-media .os-carousel .os-prev { left: 0; }
+#os-media .os-carousel .os-next { right: 0; }

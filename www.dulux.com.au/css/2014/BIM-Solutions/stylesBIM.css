@@ -1,0 +1,76 @@
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../../webfonts/2014/BIM-Solutions/25A751_0_0.eot');src: url('../../../webfonts/2014/BIM-Solutions/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/BIM-Solutions/25A751_0_0.woff') format('woff'),url('../../../webfonts/2014/BIM-Solutions/25A751_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../../webfonts/2014/BIM-Solutions/25A751_1_0.eot');src: url('../../../webfonts/2014/BIM-Solutions/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/BIM-Solutions/25A751_1_0.woff') format('woff'),url('../../../webfonts/2014/BIM-Solutions/25A751_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../../webfonts/2014/BIM-Solutions/25A751_2_0.eot');src: url('../../../webfonts/2014/BIM-Solutions/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/BIM-Solutions/25A751_2_0.woff') format('woff'),url('../../../webfonts/2014/BIM-Solutions/25A751_2_0.ttf') format('truetype');}
+
+/* temp */
+.wrapper	 	{ background: #fbfbfb; margin: 0 auto; width: 972px; padding: 0; }
+.wrapper img 	{ display: block; }
+#content		{ padding-top: 0px; }
+body, html		{ background: #fbfbfb; }
+body			{ height: auto; }
+
+/* Global */
+h1, h2 { font-family: 'FuturaBT-Book'; color: #08386b; }
+h2 { font-size: 30px;}
+p { font-size: 14px; color: #063367; line-height: 22px; }
+.button { position: relative; font-size: 17px; color: #fff; padding: 10px 40px 10px 10px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; }
+.button:after { content: ""; width: 9px; height: 15px; background: url(../../../images/2014/BIM-Solutions/button-arrow.png) no-repeat center; position: absolute; right: 12px; top: 12px; }
+
+.button2 { position: relative; font-size: 17px; color: #fff; padding: 10px 40px 10px 10px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; }
+.button2:after { content: ""; width: 9px; height: 15px; background: url(../../../images/2014/BIM-Solutions/button-arrow.png) no-repeat center; position: absolute; right: 12px; top: 12px; }
+
+/* Render Refresh */
+.hero { background: #a0cde8 url(../../../images/2014/BIM-Solutions/hero.png) no-repeat center; height: 680px; position: relative; }
+.hero p { color: #fff; }
+.hero .first-block { padding: 200px 535px 100px 50px; }
+.hero .first-block p { font-size: 20px; line-height: 26px; }
+.hero .second-block { padding: 0px 450px 30px 50px; letter-spacing: 1px; }
+.hero .second-block h2 { color: #f53637; margin-bottom: 15px; }
+.hero .video { position: absolute; right: 26px; top: 62px; border: 3px solid #fff; }
+.hero .video iframe { display: block; }
+.hero .video-block { position: absolute; right: 70px; top: 105px; background: url(../../../images/2014/BIM-Solutions/hero-video.jpg) no-repeat center; border: 5px solid #fff; height: 150px; width: 267px; cursor: pointer; }
+.hero .video-block .play-icon { background: url(../../../images/2014/BIM-Solutions/btn-video-white.png) no-repeat center; width: 54px; height: 38px; margin: 55px auto 62px; }
+.hero .video-block:hover .play-icon { background: url(../../../images/2014/BIM-Solutions/btn-video-red.png) no-repeat center; }
+.hero .video-block p { background: #fff; padding: 5px 0; border: 5px solid #fff; color: #08386b; text-align: center; font-size: 22px; margin: 0 -5px; }
+.banner1 { background: #a0cde8; padding: 10px 50px 50px 50px; }
+.banner1 > h2 { font-size: 36px; margin-bottom: 50px; text-align: center; }
+.banner1 > div h2 { color: #e83648; padding: 7px 155px 7px 0; margin-bottom: 20px; }
+.banner1 .left h2 { background: url(../../../images/2014/BIM-Solutions/individual-colour.png) no-repeat 170px center; }
+.banner1 .left .button { background: #437eac; }
+.banner1 .right h2 { background: url(../../../images/2014/BIM-Solutions/colour-groups.png) no-repeat 125px center; }
+.banner1 .left { float: left; width: 40%; margin: 0 10% 0 0; }
+.banner1 .right { float: left; width: 40%; margin: 0 0 0 5%; }
+.banner1 .right select { width: 180px; height: 30px; border: 1px solid #7f9db9; margin-right: 10px; padding: 5px 0; }
+.banner1 .right .button { background: #7273ae; }
+.banner2 { background: #fbfbfb url(../../../images/2014/BIM-Solutions/banner2.png) no-repeat center top ; padding: 50px 50px 90px 50px; letter-spacing: 1px; position: relative; }
+.banner2 h2 { margin-bottom: 15px; color: #e83648; width: 300px; }
+.banner2 p { color: #1c0b69; width: 525px; }
+.banner2 .button { background: #ea3645; }
+.banner2 .button + .button { margin-left: 20px; }
+.banner2 .button2 { margin-left: 20px; background: #ea3645;}
+.banner2 .software { position: absolute; right: 26px; top: 75px; }
+.banner2 .software img { width: auto; height: 185px; }
+.video-guides { background: url(../../../images/2014/BIM-Solutions/video-guides-bg.png) no-repeat left bottom; padding: 20px 50px 75px 50px; }
+.video-guides h2 { font-size: 36px; margin-bottom: 20px; text-align: center; }
+.video-guides p { text-align: center; padding: 0 100px; margin-bottom: 40px; }
+.video-guides .left, .video-guides .right { float: left; width: 46%; margin: 0 2%; }
+.video-guides .left .video-block { background: url(../../../images/2014/BIM-Solutions/video-block-left.jpg) no-repeat center; height: 329px; width: 396px; cursor: pointer; }
+.video-guides .right .video-block { background: url(../../../images/2014/BIM-Solutions/video-block-right.jpg) no-repeat center; height: 329px; width: 396px; cursor: pointer; }
+.video-guides .video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: fixed; z-index: 99999; top: 0; left: 0; bottom: 0; right: 0; }
+.video-guides .video-player .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
+.video-guides .video-player .wrap { width: 700px; height: 394px; position: absolute; left: 50%; top: 50%; margin: -192px auto auto -350px; }
+.video-guides .video-player .close { display: block; position: absolute; top: 12px; right: 10px; width: 18px; height: 18px; background: url(../../../images/2014/BIM-Solutions/close.png) no-repeat center; }
+.video-guides .video-player .close:hover { opacity: .4; filter: alpha(opacity=40); }
+.faq { background: #4680b0; padding: 30px 50px 40px 50px; }
+.faq > h2 { color: #fff; padding-bottom: 20px; font-size: 36px; border-bottom: 2px solid #fff; text-align: center; margin-bottom: 20px; }
+.faq .left { float: left; width: 64%; margin: 0 5% 0 2%; }
+.faq .right { float: left; width: 23%; margin: 10px 3%; }
+.faq .question { color: #fff; font-size: 14px; padding: 5px 5px 5px 30px; margin: 10px 0; cursor: pointer; background: url(../../../images/2014/BIM-Solutions/question.png) no-repeat left 5px; }
+.faq .question.open { background: url(../../../images/2014/BIM-Solutions/question-close.png) no-repeat left 5px; }
+.faq .answer { color: #fff; font-size: 12px; padding: 15px 35px 15px 30px; background: #3d709a; display: none; }
+.faq .info { background: #51b3d4; padding-bottom: 15px; }
+.faq .info h2 { font-size: 22px; color: #fff; text-align: center; padding: 15px 0; }
+.faq .info h2 { font-size: 22px; color: #fff; text-align: center; padding: 15px 0; }
+.faq .info .button { background: #976aa0; display: block; margin: 5px auto 15px auto; width: 85px; }

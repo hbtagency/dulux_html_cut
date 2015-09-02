@@ -1,0 +1,72 @@
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../../webfonts/2014/DWT/25A751_0_0.eot');src: url('../../../webfonts/2014/DWT/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/DWT/25A751_0_0.woff') format('woff'),url('../../../webfonts/2014/DWT/25A751_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../../webfonts/2014/DWT/25A751_1_0.eot');src: url('../../../webfonts/2014/DWT/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/DWT/25A751_1_0.woff') format('woff'),url('../../../webfonts/2014/DWT/25A751_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../../webfonts/2014/DWT/25A751_2_0.eot');src: url('../../../webfonts/2014/DWT/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/DWT/25A751_2_0.woff') format('woff'),url('../../../webfonts/2014/DWT/25A751_2_0.ttf') format('truetype');}
+
+/* temp */
+.wrapper	 	{ background: #fbfbfb; margin: 0 auto; width: 972px; padding: 0; }
+.wrapper img 	{ display: block; }
+#content		{ padding-top: 0px; }
+body, html		{ background: #fbfbfb; }
+body			{ height: auto; background: #fbfbfb url(../../../images/2014/DWT/temp/pageBackground.jpg) no-repeat 0 0 fixed; }
+
+/* Global */
+h1, h2 { font-family: 'FuturaBT-Bold'; }
+p { font-size: 15px; line-height: 22px; }
+.button { position: relative; background: #132150; font-size: 17px; color: #fff; padding: 10px 40px 10px 10px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; }
+.button:after { content: ""; width: 9px; height: 15px; background: url(../../../images/2014/DWT/button-arrow.png) no-repeat center; position: absolute; right: 12px; top: 12px; }
+
+/* DWT */
+.hero { background: url(../../../images/2014/DWT/hero.jpg) no-repeat center; height: 579px; position: relative; }
+.hero .first-block { padding: 60px 360px 45px 70px; }
+.hero .first-block h1 { font-size: 48px; visibility: visible; margin: 15px 0; color: #fff; text-shadow: 1px 1px 1px #4e4671; line-height: 48px; }
+.hero .first-block p { color: #1c3160; padding-right: 125px; }
+.hero .first-block h2 { margin: 38px 0; font-size: 20px; color: #fff; padding-right: 220px; text-shadow: 1px 1px 1px #4e4671; }
+.hero .video-block { background: url(../../../images/2014/DWT/video-block.jpg) no-repeat center; position: absolute; cursor: pointer; width: 161px; height: 96px; right: 400px; bottom: 85px; }
+.hero .video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: fixed; z-index: 99999; top: 0; left: 0; bottom: 0; right: 0; }
+.hero .video-player .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
+.hero .video-player .wrap { width: 700px; height: 394px; position: absolute; left: 50%; top: 50%; margin: -192px auto auto -350px; }
+.hero .video-player .close { display: block; position: absolute; top: 12px; right: 10px; width: 18px; height: 18px; background: url(../../../images/2014/DWT/close.png) no-repeat center; }
+.hero .video-player .close:hover { opacity: .4; filter: alpha(opacity=40); }
+.banner1 {  background: #FDD84B;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FEE879), color-stop(0.75, #FDD81D));
+			background-image: -o-linear-gradient(bottom, #FEE879 0%, #FDD81D 75%);
+			background-image: -moz-linear-gradient(bottom, #FEE879 0%, #FDD81D 75%);
+			background-image: -webkit-linear-gradient(bottom, #FEE879 0%, #FDD81D 75%);
+			background-image: -ms-linear-gradient(bottom, #FEE879 0%, #FDD81D 75%);
+			background-image: linear-gradient(to bottom, #FEE879 0%, #FDD81D 75%);
+			padding: 36px 65px 70px 360px;
+			color: #1c0b69;
+			position: relative;
+		}
+.banner1 img { position: absolute; width: 308px; height: 361px; left: 25px; top: -35px; }
+.banner1 h1 { font-size: 36px; margin-bottom: 10px; visibility: visible; }
+.banner1 h1 .small { font-family: 'FuturaBT-Light'; font-size: 18px; vertical-align: text-top; }
+.banner1 h2 { font-size: 18px; font-weight: normal; letter-spacing: -1px; margin-bottom: 8px; }
+.banner1 ul { font-family: 'Arial Black', Arial; font-weight: 900; font-size: 13px; margin: 10px 0; list-style-type: none; height: 60px; }
+.banner1 ul li { float: left; width: auto; padding-left: 20px; background: url(../../../images/2014/DWT/tick.png) no-repeat left center; margin-bottom: 5px; margin-right: 10px; white-space: nowrap; }
+.banner1 p.disclaimer { font-size: 10px; position: absolute; left: 70px; bottom: 10px; line-height: 14px; }
+.banner2 {  background: #66b44e;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #66b453), color-stop(0.75, #66b449));
+			background-image: -o-linear-gradient(bottom, #66b453 0%, #66b449 75%);
+			background-image: -moz-linear-gradient(bottom, #66b453 0%, #66b449 75%);
+			background-image: -webkit-linear-gradient(bottom, #66b453 0%, #66b449 75%);
+			background-image: -ms-linear-gradient(bottom, #66b453 0%, #66b449 75%);
+			background-image: linear-gradient(to bottom, #66b453 0%, #66b449 75%);
+			padding: 52px 340px 70px 74px;
+			color: #fff;
+			position: relative;
+		}
+.banner2 img { position: absolute; width: 308px; height: 361px; right: 25px; top: -35px; }
+.banner2 h1 { font-size: 36px; margin-bottom: 10px; visibility: visible; }
+.banner2 h1 .small { font-family: 'FuturaBT-Light'; font-size: 18px; vertical-align: text-top; }
+.banner2 h2 { font-size: 18px; font-weight: normal; letter-spacing: -1px; margin-bottom: 8px; }
+.banner2 ul { font-family: 'Arial Black', Arial; font-weight: 900; font-size: 13px; margin: 10px 0; list-style-type: none; height: 60px; }
+.banner2 ul li { float: left; width: auto; padding-left: 20px; background: url(../../../images/2014/DWT/tick-white.png) no-repeat left center; margin-bottom: 5px; margin-right: 10px; white-space: nowrap; }
+.banner2 .button { background: #fff; color: #132150; }
+.banner2 .button:after { background: url(../../../images/2014/DWT/button-arrow-blue.png) no-repeat center;  }
+.banner2 p.disclaimer { font-size: 10px; position: absolute; text-align: right; right: 50px; bottom: 15px; line-height: 14px; }
+.banner3 { padding: 105px 75px 105px 320px; background: #fff url(../../../images/2014/DWT/banner3.jpg) no-repeat 65px center; color: #1c0b69; }
+.banner3 h1 { font-size: 36px; visibility: visible; margin-bottom: 10px; }
+.banner3 p { margin-bottom: 20px; }

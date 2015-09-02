@@ -1,0 +1,9 @@
+/* Hide print button for printed document */
+/* 		Print Shop List & Scrapbook		  */
+
+@import url("print-page-styles.css");
+
+img.print {
+	display: none;
+}
+

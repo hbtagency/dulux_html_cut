@@ -1,0 +1,63 @@
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../../webfonts/2014/rapid-finish/25A751_0_0.eot');src: url('../../../webfonts/2014/rapid-finish/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/rapid-finish/25A751_0_0.woff') format('woff'),url('../../../webfonts/2014/rapid-finish/25A751_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../../webfonts/2014/rapid-finish/25A751_1_0.eot');src: url('../../../webfonts/2014/rapid-finish/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/rapid-finish/25A751_1_0.woff') format('woff'),url('../../../webfonts/2014/rapid-finish/25A751_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../../webfonts/2014/rapid-finish/25A751_2_0.eot');src: url('../../../webfonts/2014/rapid-finish/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/rapid-finish/25A751_2_0.woff') format('woff'),url('../../../webfonts/2014/rapid-finish/25A751_2_0.ttf') format('truetype');}
+
+/* Global */
+body { background: #fbfbfb url(../../../images/2014/rapid-finish/temp/pageBackground.jpg) no-repeat fixed 0 0; height: auto; }
+.body { margin: 0 auto; width: 972px; }
+h1, h2 { font-family: 'FuturaBT-Bold'; color: #0f1d41; }
+p { font-size: 16px; color: #0f1d41; line-height: 22px; }
+.button { position: relative; background: #e30613; font-size: 17px; color: #fff; padding: 10px 40px 10px 10px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; }
+.button:after { content: ""; width: 9px; height: 15px; background: url(../../../images/2014/rapid-finish/button-arrow.png) no-repeat center; position: absolute; right: 12px; top: 12px; }
+#content { padding: 6px; width: 960px; margin: 0 auto; background: #fff; }
+
+/* Rapid Finish */
+
+/* Hero */
+.hero { background: #fff url(../../../images/2014/rapid-finish/hero.jpg) no-repeat center; height: 543px; position: relative; }
+.hero h2 { font-size: 48px; color: #132150; text-transform: uppercase; padding: 60px 550px 0 45px; line-height: 46px; }
+.hero p { font-size: 15px; color: #132150; padding: 150px 590px 0 45px; line-height: 20px; }
+.hero p .copy { font-size: 75%; vertical-align: text-bottom; }
+.video-gallery { background: #191b36; padding: 17px; }
+.video-gallery > .video-block { background: url(../../../images/2014/rapid-finish/video-gallery/video.jpg) no-repeat center; width: 926px; height: 483px; cursor: pointer; }
+.video-gallery .flexslider { padding: 15px 65px; background: #fff; position: relative; }
+.video-gallery .flexslider .slides li { margin-right: 15px; cursor: pointer; }
+.video-gallery .flexslider .flex-direction-nav { list-style-type: none; margin: 0; padding: 0; }
+.video-gallery .flexslider .flex-direction-nav a { width: 24px; height: 43px; text-indent: -99999px; position: absolute; top: 50px; }
+.video-gallery .flexslider .flex-direction-nav a.flex-disabled { display: none; }
+.video-gallery .flexslider .flex-direction-nav a.flex-prev { left: 20px; background: url(../../../images/2014/rapid-finish/gallery-prev.jpg) no-repeat center; }
+.video-gallery .flexslider .flex-direction-nav a.flex-next { right: 20px; background: url(../../../images/2014/rapid-finish/gallery-next.jpg) no-repeat center; }
+.video-gallery .story { padding: 30px 0; height: 174px; }
+.video-gallery .story > img { float: left; }
+.video-gallery .story .content { float: left; padding: 0 25px; width: 700px; }
+.video-gallery .story .content h3 { font-size: 33px; color: #fff; text-transform: uppercase; }
+.video-gallery .story .content p { color: #fff; font-size: 15px; }
+.video-gallery .story .content img { margin-bottom: 15px; }
+.banner1 { background: #fff url(../../../images/2014/rapid-finish/banner1.jpg) no-repeat center bottom; height: 386px; position: relative; }
+.banner1 h2 { color: #e0ad2a; width: 375px; font-size: 44px; padding: 95px 0 10px 405px; text-transform: uppercase; }
+.banner1 p { color: #292d36; width: 380px; font-size: 14px; line-height: 20px; padding: 0px 0 10px 405px; }
+.banner1 p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner2 { background: #fff url(../../../images/2014/rapid-finish/banner2.jpg) no-repeat center bottom; height: 355px; position: relative; }
+.banner2 h2 { color: #e0ad2a; font-size: 44px; padding: 45px 0 10px 45px; width: 360px; text-transform: uppercase; }
+.banner2 p { color: #292d36; font-size: 14px; line-height: 20px; padding: 0 0 10px 45px; width: 395px; }
+.banner2 p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner3 { background: #fff url(../../../images/2014/rapid-finish/banner3.jpg) no-repeat center bottom; height: 471px; position: relative; }
+.banner3 .video-block { position: absolute; left: 45px; bottom: 0px; cursor: pointer; background: #fff url(../../../images/2014/rapid-finish/video.jpg) no-repeat center top; width: 444px; height: 430px; }
+.banner3 .video-block .play-icon { background: url(../../../images/2014/rapid-finish/btn-video.png) no-repeat center; width: 100px; height: 100px; margin: 86px auto 87px; }
+.banner3 .video-block h2 { color: #132150; width: 444px; font-size: 34px; text-transform: uppercase; text-align: center; padding: 20px 0 10px; }
+.banner3 .video-block p { padding: 5px 32px; width: 380px; line-height: 20px; color: #292d36; text-align: center; font-size: 15px; }
+.banner3 .video-block p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner3 .video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: fixed; z-index: 99999; top: 0; left: 0; bottom: 0; right: 0; }
+.banner3 .video-player .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
+.banner3 .video-player .wrap { width: 700px; height: 394px; position: absolute; left: 50%; top: 50%; margin: -192px auto auto -350px; }
+.banner3 .video-player .close { display: block; position: absolute; top: 12px; right: 10px; width: 18px; height: 18px; background: url(../../../images/2014/rapid-finish/close.png) no-repeat center; }
+.banner3 .video-player .close:hover { opacity: .4; filter: alpha(opacity=40); }
+.banner4 { background: #fff url(../../../images/2014/rapid-finish/banner4.jpg) no-repeat center bottom; height: 396px; position: relative; }
+.banner4 h2 { color: #e30613; font-size: 44px; padding: 100px 0 10px 45px; width: 400px; text-transform: uppercase; }
+.banner4 p { color: #292d36; font-size: 14px; line-height: 20px; padding: 0 0 10px 45px; width: 415px; }
+.banner4 p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner4 .button { width: 112px; margin-left: 45px; }
+.banner4 .link { display: block; padding: 30px 0 0 45px; color: #a8a8a8; font-size: 12px; }
+

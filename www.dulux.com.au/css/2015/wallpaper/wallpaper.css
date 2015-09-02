@@ -1,0 +1,103 @@
+img { width: 100%; height: auto; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@font-face { font-family: 'FuturaBT-Light'; src: url("../../../webfonts/2015/wallpaper/25A751_0_0.eot"); src: url("../../../webfonts/2015/wallpaper/25A751_0_0d41d.eot?#iefix") format("embedded-opentype"), url("../../../webfonts/2015/wallpaper/25A751_0_0.woff") format("woff"), url("../../../webfonts/2015/wallpaper/25A751_0_0.ttf") format("truetype"); }
+@font-face { font-family: 'FuturaBT-Book'; src: url("../../../webfonts/2015/wallpaper/25A751_1_0.eot"); src: url("../../../webfonts/2015/wallpaper/25A751_1_0d41d.eot?#iefix") format("embedded-opentype"), url("../../../webfonts/2015/wallpaper/25A751_1_0.woff") format("woff"), url("../../../webfonts/2015/wallpaper/25A751_1_0.ttf") format("truetype"); }
+@font-face { font-family: 'FuturaBT-Bold'; src: url("../../../webfonts/2015/wallpaper/futur_-webfont.eot"); src: url("../../../webfonts/2015/wallpaper/futur_-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../../../webfonts/2015/wallpaper/futur_-webfont.woff") format("woff"), url("../../../webfonts/2015/wallpaper/futur_-webfont.ttf") format("truetype"), url("../../../webfonts/2015/wallpaper/futur_-webfont.svg#FuturaBoldRegular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futura-mediumregular'; src: url("../../../webfonts/2015/wallpaper/ufonts.com_futura-medium-webfont.eot"); src: url("../../../webfonts/2015/wallpaper/ufonts.com_futura-medium-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-medium-webfont.html") format("woff2"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-medium-webfont.woff") format("woff"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-medium-webfont.ttf") format("truetype"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-medium-webfont.svg#futura-mediumregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'futura_hvheavy'; src: url("../../../webfonts/2015/wallpaper/ufonts.com_futura-heavy-webfont.eot"); src: url("../../../webfonts/2015/wallpaper/ufonts.com_futura-heavy-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-heavy-webfont.html") format("woff2"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-heavy-webfont.woff") format("woff"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-heavy-webfont.ttf") format("truetype"), url("../../../webfonts/2015/wallpaper/ufonts.com_futura-heavy-webfont.svg#futura_hvheavy") format("svg"); font-weight: normal; font-style: normal; }
+.icon-play { display: block; background: url(../../../images/2015/wallpaper/play-icon.png) no-repeat; height: 100px; width: 100px; }
+/*.icon-play :before { content: ""; }*/
+.media__player__controls .icon-play:before { content: ""; display: none; }
+
+.icon-arrow-right { display: inline-block; background: url(../../../images/2015/wallpaper/icon-arrow-right.html) no-repeat; height: 56px; width: 56px; }
+
+.list { list-style: none; margin-top: 40px; overflow: hidden; }
+
+.list__item { float: left; padding: 0 40px; width: 25%; }
+
+a { text-decoration: none; }
+
+.list__item__title { color: #132150; display: block; font-size: 19px; letter-spacing: -1px; margin-top: 25px; padding-left: 25px; text-align: center; text-transform: uppercase; }
+
+.list.list--vertical { margin-top: 0; }
+.list.list--vertical .list__item { margin-top: 10px; padding: 0; width: 100%; }
+.list.list--vertical .list__item:first-child { margin-top: 0; }
+.list.list--block { margin: 0 -3px; }
+.list.list--block .list__item { padding: 0 3px; float: left; width: 33.33%; }
+.list.list--alternate { padding-left: 20px; }
+.list.list--alternate .list__item { list-style: none; float: left; padding: 0 5px; margin-left: 80px; width: auto; }
+.list.list--alternate .list__item:first-child { margin-left: 0; }
+.ie8 .list.list--alternate .list__item:first-child + li { margin-left: 70px; }
+.list.list--alternate .list__item li { list-style: disc; font-family: "FuturaBT-Book", arial, helvetica; font-size: 16px; font-weight: bold; color: #132050; margin-top: 10px; white-space: nowrap; }
+
+.media { height: 244px; overflow: hidden; background-color: transparent; min-height: 0; }
+.media__head { background-color: #4d555f; float: left; height: 244px; padding: 50px 30px; width: 50%; }
+.ie8 .wallpaper .media__head { width: 466px; }
+.media__title, .media__description { color: #ffffff; }
+.media__title { font-family: "FuturaBT-Bold", arial, helvetica; font-size: 30px; }
+.media__description { font-size: 20px; font-family: "FuturaBT-Book", arial, helvetica; line-height: 1.4; margin-top: 25px; }
+.media__object { float: left; overflow: hidden; height: 100%; width: 50%; }
+.media__player { height: 100%; position: relative; }
+.media__video { display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+.media__player__controls { position: absolute; top: 72px; left: 0; right: 0; bottom: 0; margin: auto; height: auto; width: 210px; text-align: center; }
+.media__player__play { background: none; border: 0; }
+.media__player__play:hover { cursor: pointer; }
+.media__player__title { color: #ffffff; font-family: "FuturaBT-Bold", arial, helvetica; font-size: 30px; margin-top: 25px; }
+.media.media--alternate { height: auto; position: relative; }
+.media.media--alternate .media__head { background-color: transparent; position: absolute; right: 0; top: 0; padding-left: 0; height: 100%; width: 240px; }
+.media.media--alternate .media__title { color: #132150; }
+.media.media--alternate .media__description { color: #132150; font-size: 15px; margin-top: 25px; }
+.media.media--alternate .media__badge { background: url(../../../images/2015/wallpaper/badge.png) no-repeat; position: absolute; top: 90px; right: 60px; height: 206px; width: 206px; }
+.media.media--alternate .media__badge__title { display: table-cell; vertical-align: middle; color: #383839; font-family: "FuturaBT-Bold", arial, helvetica; font-size: 19px; line-height: 1.4; height: 206px; width: 206px; padding: 15px; text-align: center; }
+.media.media--alternate .media__badge__title.media__badge__title--small { font-size: 16px; }
+.media.media--alternate .media__object { width: 100%; }
+.media.media--vertical { background-color: #ececec; height: 335px; padding: 35px 50px; }
+.media.media--vertical .media__title, .media.media--vertical .media__description { color: #132150; }
+.media.media--vertical .media__title { display: table-cell; font-size: 30px; height: 108px; line-height: 1.2; vertical-align: bottom; }
+.media.media--vertical .media__description { font-size: 15px; }
+
+.media__badge.media__badge--sora-sky { background-color: #8bacd5; }
+.media__badge.media__badge--pale-daffodil { background-color: #fde59a; }
+.media__badge.media__badge--simone-weil { background-color: #7b8288; }
+.media__badge.media__badge--simone-weil .media__badge__title, .media__badge.media__badge--simone-weil .media__badge__value { color: #ffffff; }
+
+.media__player.is-active .media__video { display: block; }
+.media__player.is-active .media__video-overlay, .media__player.is-active .media__player__controls { display: none; }
+
+
+.video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: fixed; z-index: 99999; top: 0; left: 0; bottom: 0; right: 0; }
+
+.video-player .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
+
+.video-player .wrap { width: 700px; height: 394px; position: absolute; left: 50%; top: 50%; margin: -192px auto auto -350px; }
+
+.video-player .close { display: block; position: absolute; top: 12px; right: 10px; width: 18px; height: 18px; background: url(../../../images/2015/wallpaper/close.html) no-repeat center; }
+
+.video-player .close:hover { opacity: .4; filter: alpha(opacity=40); }
+
+/* Order a sample */
+.order-a-sample { background-color: #132150; height: 150px; width: 100%; text-align: center; }
+.order-a-sample a { display: inline-block; margin-top: 43px; }
+
+.order-a-sample__text { float: left; color: #ffffff; font-family: "futura-mediumregular", arial, helvetica; font-size: 22px; letter-spacing: 1px; margin: 17px 0 0 20px; }
+
+.order-a-sample i { float: left; }
+
+.section { margin-top: 6px; overflow: hidden; }
+.section:first-child { margin-top: 0; }
+
+.section__title, .section__description { color: #132150; }
+
+.section__title { font-family: "FuturaBT-Bold", arial, helvetica; font-size: 30px; padding: 0; text-align: left; line-height: 1.3; }
+
+.section__description { font-size: 15px; line-height: 1.4; margin-top: 35px; }
+
+.section.section--with-padding { padding: 35px; }
+.section.section--gray { background-color: #ececec; }
+.section.section--shopping-list { padding-bottom: 75px; }
+
+.wrapper.wallpaper { padding: 0; }
+
+.login-cart > a { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }

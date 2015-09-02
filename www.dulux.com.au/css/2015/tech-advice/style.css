@@ -1,0 +1,638 @@
+@charset "UTF-8";
+.advice-container h2,
+.form-control {
+    font-size: 20px
+}
+.sr-only,
+.tile {
+    overflow: hidden
+}
+.modal,
+.modal__overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+.advice-container *,
+.grid__item {
+    box-sizing: border-box
+}
+.modal__close,
+.spotlight-icon,
+.tile__body .cta a {
+    border: 0;
+    text-shadow: none
+}
+.advice-container .btn-load,
+.advice-container .main-content .grid__item.show,
+.advice-container .no-results.show,
+.modal {
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out
+}
+.grid {
+    list-style: none;
+    margin: 0 0 0 -20px;
+    padding: 0
+}
+.grid__item {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: top;
+    width: 100%
+}
+.grid--rev {
+    direction: rtl;
+    text-align: left
+}
+.grid--rev>.grid__item {
+    direction: ltr;
+    text-align: left
+}
+.grid--full {
+    margin-left: 0
+}
+.grid--full>.grid__item {
+    padding-left: 0
+}
+.grid--right {
+    text-align: right
+}
+.grid--right>.grid__item {
+    text-align: left
+}
+.grid--center {
+    text-align: center
+}
+.grid--center>.grid__item {
+    text-align: left
+}
+.grid--middle>.grid__item {
+    vertical-align: middle
+}
+.grid--bottom>.grid__item {
+    vertical-align: bottom
+}
+.grid--narrow {
+    margin-left: -10px
+}
+.grid--narrow>.grid__item {
+    padding-left: 10px
+}
+.grid--wide {
+    margin-left: -40px
+}
+.grid--wide>.grid__item {
+    padding-left: 40px
+}
+.one-whole {
+    width: 100%
+}
+.five-tenths,
+.four-eighths,
+.one-half,
+.six-twelfths,
+.three-sixths,
+.two-quarters {
+    width: 50%
+}
+.four-twelfths,
+.one-third,
+.two-sixths {
+    width: 33.333%
+}
+.eight-twelfths,
+.four-sixths,
+.two-thirds {
+    width: 66.666%
+}
+.one-quarter,
+.three-twelfths,
+.two-eighths {
+    width: 25%
+}
+.nine-twelfths,
+.six-eighths,
+.three-quarters {
+    width: 75%
+}
+.one-fifth,
+.two-tenths {
+    width: 20%
+}
+.four-tenths,
+.two-fifths {
+    width: 40%
+}
+.six-tenths,
+.three-fifths {
+    width: 60%
+}
+.eight-tenths,
+.four-fifths {
+    width: 80%
+}
+.one-sixth,
+.two-twelfths {
+    width: 16.666%
+}
+.five-sixths,
+.ten-twelfths {
+    width: 83.333%
+}
+.one-eighth {
+    width: 12.5%
+}
+.three-eighths {
+    width: 37.5%
+}
+.five-eighths {
+    width: 62.5%
+}
+.seven-eighths {
+    width: 87.5%
+}
+.one-tenth {
+    width: 10%
+}
+.three-tenths {
+    width: 30%
+}
+.seven-tenths {
+    width: 70%
+}
+.nine-tenths {
+    width: 90%
+}
+.one-twelfth {
+    width: 8.333%
+}
+.five-twelfths {
+    width: 41.666%
+}
+.seven-twelfths {
+    width: 58.333%
+}
+.eleven-twelfths {
+    width: 91.666%
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+@font-face{font-family:Futura;src:url(../../../webfont/2015/tech-advice/futuraextended-webfont.html);src:url(../../../webfont/2015/tech-advice/futuraextended-webfontd41d.html?#iefix) format('embedded-opentype'),
+url(../../../webfont/2015/tech-advice/futuraextended-webfont-2.html) format('truetype'),
+url(../../../webfont/2015/tech-advice/futuraextended-webfont-3.html) format('svg');
+font-weight:500;
+font-style:normal
+}
+@font-face{font-family:Futura;src:url(../../../webfont/2015/tech-advice/futura-boldregular-webfont.html);src:url(../../../webfont/2015/tech-advice/futura-boldregular-webfontd41d.html?#iefix) format('embedded-opentype'),
+url(../../../webfont/2015/tech-advice/futura-boldregular-webfont-2.html) format('truetype'),
+url(../../../webfont/2015/tech-advice/futura-boldregular-webfont-3.html) format('svg');
+font-weight:700;
+font-style:normal
+}
+.advice-container h1,
+.advice-container h2,
+.advice-container h3,
+.advice-container h4,
+.advice-container h5,
+.advice-container h6 {
+    font-weight:700;
+    line-height:1.2;
+    margin:0 0 .7em;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.advice-container p {
+    margin:0 0 1.6em
+}
+.advice-container .nm,
+.advice-container .no-margin {
+    margin:0
+}
+.form-control {
+    background:#dedede;
+    font-family:Futura,
+    sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    padding:20px 25px;
+    border:none
+}
+.form-control.full {
+    width:100%
+}
+.search-form {
+    position:relative
+}
+.search-form .form-control {
+    padding-left:65px
+}
+.search-form .search {
+    position:absolute;
+    top:20px;
+    left:25px;
+    width:24px;
+    height:24px;
+    background:url(../../../images/2015/tech-advice/icon-magnify-blue.png) no-repeat
+}
+.search-form .clear {
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    top:24px;
+    right:25px;
+    width:18px;
+    height:18px;
+    background:url(../../../images/2015/tech-advice/icon-cross-blue.png) no-repeat
+}
+.tile,
+.tile__body {
+    position:relative
+}
+.search-form .clear.show {
+    visibility:visible;
+    opacity:1
+}
+.search-form .clear:hover,
+.search-form .search:hover {
+    opacity:.4
+}
+.tile--video .tile__media .video-link:hover,
+.tile__body .cta a:hover {
+    opacity:.6
+}
+button.plain {
+    background:0 0;
+    border:none;
+    padding:0;
+    margin:0;
+    cursor:pointer
+}
+.spotlight-icon {
+    font:0/0 a;
+    color:transparent;
+    background-color:transparent;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:1em
+}
+.spotlight-icon.spotlight-icon--left {
+    margin-right:0;
+    margin-left:1em
+}
+.icon-cart {
+    width:50px;
+    height:50px;
+    background-image:url(../../../images/2015/tech-advice/icon-cart.html)
+}
+.icon-phone {
+    width:32px;
+    height:50px;
+    background-image:url(../../../images/2015/tech-advice/icon-phone.html)
+}
+.icon-roller {
+    width:39px;
+    height:48px;
+    background-image:url(../../../images/2015/tech-advice/icon-roller.html)
+}
+.icon-paint {
+    width:36px;
+    height:48px;
+    background-image:url(../../../images/2015/tech-advice/icon-paint.html)
+}
+.icon-arrow-left {
+    width:16px;
+    height:18px;
+    background-image:url(../../../images/2015/tech-advice/icon-arrow-left.html)
+}
+.icon-arrow-right {
+    width:16px;
+    height:18px;
+    background-image:url(../../../images/2015/tech-advice/icon-arrow-right.html)
+}
+.tile {
+    height:228px
+}
+.tile__body {
+    width:100%;
+    height:100%;
+    padding:15px 20px 0
+}
+.tile__body .title {
+    min-height:64px;
+    margin:0
+}
+.tile__body .excerpt {
+    min-height:108px;
+    font-size:14px;
+    margin-bottom:0
+}
+.tile__body .cta {
+    list-style:none;
+    overflow:hidden;
+    padding:0;
+    margin:0
+}
+.tile__body .cta a {
+    font:0/0 a;
+    color:transparent;
+    background-color:transparent;
+    float:left
+}
+.tile__body .cta li.pdf-link {
+    float:left
+}
+.tile__body .cta li.pdf-link a {
+    width:57px;
+    height:23px;
+    background:url(../../../images/2015/tech-advice/icon-pdf.png) no-repeat
+}
+.tile__body .cta li.video-link {
+    float:right
+}
+.tile__body .cta li.video-link a {
+    width:90px;
+    height:24px;
+    background:url(../../../images/2015/tech-advice/icon-video.png) no-repeat
+}
+.tile__media {
+    z-index:1;
+    position:absolute;
+    top:0;
+    left:0
+}
+.tile--media.tile--media-left .tile__body {
+    padding-left:268px
+}
+.tile--media.tile--media-right .tile__body {
+    padding-right:268px
+}
+.tile--media.tile--media-right .tile__media {
+    left:auto;
+    right:0
+}
+.tile--video .tile__body {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:auto;
+    background-color:#09112e;
+    background:rgba(9,
+    17,
+    46,
+    .8);
+    padding-top:12px;
+    padding-bottom:12px
+}
+.tile--video .tile__body .title {
+    min-height:0;
+    font-size:14px;
+    font-weight:500;
+    line-height:1.4
+}
+.tile--video .tile__media {
+    z-index:0;
+    width:100%;
+    height:100%
+}
+.tile--video .tile__media .video-link {
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    border:0;
+    display:block;
+    content:'';
+    position:absolute;
+    top:62px;
+    left:96px;
+    width:45px;
+    height:53px;
+    background:url(../../../images/2015/tech-advice/icon-play.png) no-repeat
+}
+.tile--grey .tile__body {
+    background:#888
+}
+.tile--green .tile__body {
+    background:#6d9556
+}
+.tile--orange .tile__body {
+    background:#d29133
+}
+.tile--red .tile__body {
+    background:#b65533
+}
+.tile--blue .tile__body {
+    background:#577da8
+}
+.modal {
+    visibility:hidden;
+    opacity:0;
+    z-index:150;
+    position:fixed
+}
+.modal.show {
+    visibility:visible;
+    opacity:1;
+    position:fixed
+}
+.modal__overlay {
+    position:absolute;
+    background-color:#000;
+    background:rgba(0,
+    0,
+    0,
+    .8)
+}
+.modal__body {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:700px;
+    height:394px;
+    margin:-192px auto auto -350px
+}
+.modal__close {
+    font:0/0 a;
+    color:transparent;
+    position:absolute;
+    top:12px;
+    right:10px;
+    width:18px;
+    height:18px;
+    background:url(../../../images/2015/tech-advice/icon-cross.png) no-repeat
+}
+.advice-container,
+.advice-container .main-nav ul a {
+    font-family:Futura,
+    sans-serif
+}
+.modal__close:hover {
+    opacity:.4
+}
+.advice-container {
+    width:972px;
+    font-size:16px;
+    color:#fff;
+    padding:15px 0 0;
+    margin:0 auto
+}
+.advice-container a {
+    color:#888
+}
+.advice-container a:focus,
+.advice-container a:hover {
+    color:#577da8
+}
+.advice-container .main-header {
+    height:330px;
+    background:url(../../../images/2015/tech-advice/bg-header.jpg) no-repeat #142150;
+    padding:50px
+}
+.advice-container .main-header .main-logo {
+    max-width:355px;
+    visibility:visible!important
+}
+.advice-container .main-header .main-logo a {
+    display:inline-block
+}
+.advice-container .main-header p {
+    max-width:355px
+}
+.advice-container .main-nav {
+    position:relative;
+    background:#142150;
+    padding-left:68px;
+    margin:0 0 20px
+}
+.advice-container .main-nav ul {
+    list-style:none;
+    padding:0;
+    margin:0
+}
+.advice-container .main-content .tile,
+.advice-container .search-form {
+    margin-bottom:20px
+}
+.advice-container .main-nav ul:after,
+.advice-container .main-nav ul:before {
+    content:" ";
+    display:table
+}
+.advice-container .main-nav ul:after {
+    clear:both
+}
+.advice-container .main-nav ul li {
+    float:left
+}
+.advice-container .main-nav ul li:after {
+    display:block;
+    content:'';
+    width:1px;
+    height:50px;
+    background:rgba(255,
+    255,
+    255,
+    .1);
+    margin-top:9px
+}
+.advice-container .main-nav ul li:first-of-type a {
+    padding-left:0
+}
+.advice-container .main-nav ul li:first-of-type:after {
+    display:none
+}
+.advice-container .main-nav ul li:last-of-type a {
+    padding-right:0
+}
+.advice-container .main-nav ul a {
+    float:left;
+    color:rgba(255,
+    255,
+    255,
+    .5);
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:25px 18px
+}
+.advice-container .main-nav ul a:hover,
+.advice-container .main-nav ul li.active a {
+    color:#fff
+}
+.advice-container .main-nav .home {
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    border:0;
+    position:absolute;
+    top:22px;
+    left:18px;
+    width:30px;
+    height:22px;
+    background:url(../../../images/2015/tech-advice/icon-home.png) no-repeat;
+    opacity:.5
+}
+.advice-container .main-nav .home.active,
+.advice-container .main-nav .home:hover {
+    opacity:1
+}
+.advice-container .main-content {
+    min-height:240px;
+    background:url(../../../images/2015/tech-advice/loader.gif) center center no-repeat
+}
+.advice-container .main-content .grid__item {
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    top:-100%;
+    left:-100%
+}
+.advice-container .main-content .grid__item.show {
+    visibility:visible;
+    opacity:1;
+    position:static
+}
+.advice-container .main-content.loaded {
+    min-height:0;
+    background:0 0
+}
+.advice-container .no-results {
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    top:-100%;
+    left:-100%;
+    color:#142150
+}
+.advice-container .no-results.show {
+    visibility:visible;
+    opacity:1;
+    position:static
+}
+.advice-container .btn-load {
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    top:-100%;
+    left:-100%;
+    margin:0
+}
+.advice-container .btn-load.show {
+    visibility:visible;
+    opacity:1;
+    position:static
+}

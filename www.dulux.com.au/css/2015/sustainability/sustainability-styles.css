@@ -1,0 +1,105 @@
+/* Dulux Sustainability Page @authors: Jetz Alipalo / Jubal Mabaquiao */
+@import url("fonts.html");
+/* Helpers */
+.clearfix { zoom: 1; }
+.clearfix:before { content: ""; display: table; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
+/* Common */
+.wrapper { background: #fff; margin: 0 auto; }
+
+#wrapper.wrapper { margin-bottom: 0; }
+
+body, html { background: #fbfbfb url(../../../images/2015/sustainability/temp/pageBackground.jpg) no-repeat fixed 0 0; }
+
+#dulux-app h1, .sIFR-active h1 { visibility: visible; }
+
+img { width: 100%; height: auto; }
+
+p a { text-decoration: none; }
+
+.secs { position: relative; }
+
+.center { text-align: center; }
+
+.container { margin: 0 16px; }
+
+.row { display: block; }
+.row > .col { float: left; }
+
+h1, p { font-family: 'FuturaBT-light'; font-weight: normal; }
+
+h1 { font-size: 56px; line-height: 68px; }
+
+p { font-size: 24px; line-height: 28px; }
+
+/* Page Styles */
+/*******************************************************************/
+/* Hero */
+#hero { background: #2396af url(../../../images/2015/sustainability/bg-hero.jpg) no-repeat center; height: 624px; margin-top: -3px; }
+#hero h1 { font: bold 58px/54px 'FuturaBT-bold'; color: #132150; margin-bottom: 8px; text-transform: uppercase; }
+#hero p { font-size: 22px; color: #fff; margin-bottom: 16px; }
+#hero .text { width: 510px; margin: 60px 0 0 50px; }
+
+.watch-vid { display: block; width: 249px; background: white url(../../../images/2015/sustainability/watch-vid.jpg) no-repeat -249px 0; border: 4px solid #FFF; padding: 145px 0 4px 0; font: normal 16px/18px 'FuturaBT-light'; color: #0A3A58; text-decoration: none; text-transform: uppercase; position: absolute; bottom: 70px; right: 70px; text-align: center; }
+.watch-vid:hover { background-position: 0 0; }
+
+/* Opening */
+#opening { font-size: 0; padding: 50px; color: #132150; }
+#opening .header { text-align: left; margin-bottom: 40px; }
+#opening .header h2 { font: bold 38px/1.4 'FuturaBT-bold'; padding-left: 20px; padding-right: 20px; }
+#opening .column { display: inline-block; vertical-align: top; width: 50%; padding: 0 20px; box-sizing: border-box; }
+#opening p { font-family: "Helvetica", Arial, sans-serif; font-size: 15px; line-height: 1.6; margin-bottom: 1em; }
+
+/* Approach */
+#approach { background-color: #132150; color: #fff; font-size: 0; }
+#approach .figure { display: inline-block; vertical-align: middle; width: 40%; }
+#approach .text { display: inline-block; vertical-align: middle; width: 60%; box-sizing: border-box; padding-right: 50px; }
+#approach h2 { font: bold 30px/1.1 'FuturaBT-bold'; text-transform: uppercase; margin-bottom: 15px; max-width: 400px; }
+#approach h3 { font-size: 20px; margin-bottom: 8px; }
+#approach p { font: normal 15px/1.4 Helvetica, Arial, sans-serif; }
+
+/* Solutions */
+#solutions { background: url("../../../images/2015/sustainability/bg-solutions-gradient.png") repeat-x 50% 0; background-size: auto 100%; height: 561px; color: #fff; position: relative; }
+#solutions > img { position: absolute; width: 100%; top: 0; }
+#solutions h2 { font: bold 30px/1.1 'FuturaBT-bold'; text-transform: uppercase; margin-bottom: 15px; }
+#solutions h2 span { font: normal 30px/1em "Helvetica", arial, sans-serif; position: relative; top: -4px; }
+#solutions .text { padding: 70px; width: 480px; box-sizing: border-box; position: relative; }
+#solutions p { font: normal 30px/1em "Helvetica", arial, sans-serif; font-size: 15px; line-height: 1.4; margin-bottom: 1em; }
+#solutions ul { list-style: none; margin-bottom: 30px; }
+#solutions li { background: url("../../../images/2015/sustainability/icon-check.png") no-repeat 0 50%; font-size: 16px; line-height: 1.4; font-weight: bold; padding-left: 32px; margin-bottom: 0.5em; }
+#solutions .button { background: #132150 url("../../../images/2015/sustainability/icon-button-arrow.png") no-repeat 92% 50%; display: inline-block; padding: 12px 48px 12px 20px; color: #FFF; text-decoration: none; border-radius: 4px; font-size: 16px; }
+
+.awards { color: #132150; }
+.awards h2 { padding: 40px 70px; font: bold 30px/1.1 'FuturaBT-bold'; text-transform: uppercase; margin-bottom: 15px; }
+
+.awards__text { line-height: 1.4; margin: 30px; }
+.awards__text p { font-family: "Helvetica", arial, sans-serif; font-size: 15px; }
+.awards__text h4 { font-size: 20px; text-transform: uppercase; }
+
+.awards__item { display: inline-block; width: 33.33%; position: relative; background: #132150; color: #fff; }
+.awards__item:nth-child(even) { background-color: #1f2c59; }
+
+.awards__list { font-size: 0; }
+
+.awards__badge { position: absolute; top: -30px; left: 20px; width: auto; }
+
+.bck-top { margin-left: 16px; }
+
+/* Donwload App */
+.dl-app { display: block; position: absolute; background: url(../../../images/2015/sustainability/dl-app.png) no-repeat; text-indent: -9999px; }
+
+#hero .dl-app { bottom: 40px; left: 315px; width: 142px; height: 41px; background-size: 142px 41px; }
+
+.oldie #hero .dl-app { bottom: 40px; left: 315px; width: 142px; height: 41px; background: url(../../../images/2015/sustainability/dl-app-ie.png) no-repeat; }
+
+#dl-now { height: 278px; background: #edecea; color: #012c5d; }
+#dl-now .dl-app { top: 94px; left: 135px; width: 202px; height: 58px; }
+#dl-now h1 { position: absolute; left: 380px; top: 88px; font-size: 65px; }
+#dl-now p { font-size: 14px; line-height: 18px; margin-top: 210px; }
+
+.video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #020102; }
+.video-player .wrap { margin: 100px auto 0; width: 700px; height: 394px; }
+
+.close { display: block; position: absolute; top: 12px; right: 10px; width: 19px; height: 19px; background: url(../../../images/2015/sustainability/icons.png) no-repeat -23px -230px; }
+.close:hover { opacity: .4; filter: alpha(opacity=40); }

@@ -1,0 +1,131 @@
+@font-face { font-family: 'Avenir Next Light'; src: url("../../webfonts/colourForecast2015/2BAEAB_0_0.eot"); src: url("../../webfonts/colourForecast2015/2BAEAB_0_0d41d.eot?#iefix") format("embedded-opentype"), url("../../webfonts/colourForecast2015/2BAEAB_0_0.woff") format("woff"), url("../../webfonts/colourForecast2015/2BAEAB_0_0.ttf") format("truetype"), url("../../webfonts/colourForecast2015/2BAEAB_0_0.html#Avenir Next Light") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Avenir Condensed Light'; src: url("../../webfonts/colourForecast2015/2BAEAB_1_0.eot"); src: url("../../webfonts/colourForecast2015/2BAEAB_1_0d41d.eot?#iefix") format("embedded-opentype"), url("../../webfonts/colourForecast2015/2BAEAB_1_0.woff") format("woff"), url("../../webfonts/colourForecast2015/2BAEAB_1_0.ttf") format("truetype"), url("../../webfonts/colourForecast2015/2BAEAB_1_0.html#Avenir Condensed Light") format("svg"); font-weight: normal; font-style: normal; }
+.dcf2015:before, .dct2015:before, .section:before, .article:before, .hero__content:before, .page-title:before, .pager:before, .suppliers:before, .dcf2015:after, .dct2015:after, .section:after, .article:after, .hero__content:after, .page-title:after, .pager:after, .suppliers:after { content: ""; display: table; clear: both; }
+
+.hidden { text-indent: -999em; height: 0; overflow: hidden; }
+
+body, html { background: #f4f4f4; }
+
+body { height: auto; color: #666666;}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: "Avenir Condensed Light", sans-serif; color: #000; text-transform: uppercase; line-height: 1; margin-top: 18px; margin-bottom: 18px; }
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 40px; }
+
+h3 { font-size: 36px; }
+
+h4 { font-size: 30px; margin-bottom: 18px; }
+
+p { font-size: 16px; margin-top: 18px; margin-bottom: 18px; }
+
+ul { list-style: none; }
+
+li { line-height: 1.5; }
+
+a { cursor: pointer; }
+
+select { font-family: inherit; }
+
+img { display: block; }
+
+.wrapper { background: #fff; }
+
+.dcf2015, .dct2015 { background: #f4f4f4; margin: 0 auto 90px auto; width: 972px; padding: 0 0 0 0; position: relative; font-family: "Avenir Next Light", Helvetica, Arial, sans-serif; font-size: 16px; }
+
+.section { width: 100%; position: relative; }
+
+.hero { background: white; position: relative; text-align: center; }
+.hero__lead { color: #A9A776; width: 730px; margin: 0 auto 1em; line-height: 22px; font-size: 18px; }
+.hero__title { font-size: 36px; text-transform: uppercase; font-family: "Avenir Condensed Light", sans-serif; margin: 170px auto 10px; letter-spacing: 9px; text-indent: 5px; color: #333; }
+.dcf--soon .hero__title { margin-top: 240px; margin-bottom: 0; }
+.hero__report { text-transform: uppercase; font-family: "Avenir Condensed Light", sans-serif; font-size: 27px; color: #E35A5A; text-align: right; width: 580px; margin: 0 auto; }
+.hero__content { position: relative; }
+.dcf--soon .hero__content { background: url("../../images/colourForecast2015/bg-hero-specifiers.png") no-repeat 50% 0; padding-bottom: 20px; min-height: 450px; }
+.dcf--home .hero__content, .dct--home .hero__content { background: url("../../images/colourForecast2015/bg-hero-specifiers.png") no-repeat 50% 0; padding-bottom: 20px; }
+.dcf .hero__content { height: 530px; }
+
+.page-title h1, .page-title h2, .page-title h3 { margin-top: 0; margin-bottom: 0; }
+
+.trends__title { text-align: center; letter-spacing: 17px; text-indent: 9px; padding: 18px 0; }
+.trends__list { font-size: 0; width: 992px; margin: 0 -10px; }
+.trends__item { display: inline-block; vertical-align: top; width: 50%; text-align: center; margin-bottom: 18px; }
+.trends__item:hover { opacity: 0.8; }
+.trends__item img { margin: 0 auto; }
+
+.video__trigger { display: block; color: #333; bottom: 20px; left: 20px; position: absolute; font-size: 15px; text-decoration: none; text-transform: uppercase; text-align: left; background: #fff no-repeat 50% 50%; padding: 14px 24px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+.video__trigger i, .video__trigger span { top: .2em; position: relative; }
+.video__trigger i { background: url("../../images/colourForecast2015/icon-play-small.png") no-repeat 50% 50%; display: block; width: 8px; height: 12px; float: right; margin-left: 0.5em; }
+.dcf--home .video__trigger i, .dct--home .video__trigger i { background: url("../../images/colourForecast2015/icon-video-play.png") no-repeat 50% 50%; float: none; width: 22px; height: 33px; margin: 30px auto 20px; }
+.dcf--home .video__trigger, .dct--home .video__trigger { margin: 10px auto 30px; position: relative; bottom: auto; left: auto; width: 235px; height: 131px; color: white; text-align: center; padding: 0; border: 1px solid #fff; }
+.dcf--home .video__trigger { background: url("../../images/colourForecast2015/thumb-video-specifiers-home.jpg") no-repeat 50% 50%; }
+.dct--home .video__trigger { background: url("../../images/colourForecast2015/thumb-video-consumers-home.jpg") no-repeat 50% 50%; }
+
+.modal { position: absolute; left: 0; top: 0; background: rgba(0, 0, 0, 0.8); width: 100%; height: 100%; overflow: hidden; visibility: hidden; opacity: 0; -moz-transition: all 600ms ease; -o-transition: all 600ms ease; -webkit-transition: all 600ms ease; transition: all 600ms ease; }
+.ie8 .modal, .ie9 .modal { background: url("../../images/colourForecast2015/bg-opaque-black-80.png") repeat; }
+.modal--on { visibility: visible; opacity: 1; }
+.modal__video { width: 800px; height: 450px; position: absolute; top: -100%; bottom: -100%; left: -100%; right: -100%; margin: auto; }
+.modal__close { position: absolute; right: 18px; top: 18px; text-indent: -99em; display: block; width: 32px; height: 32px; background: url("../../images/colourForecast2015/sprite/sprite-home-video-x.png") no-repeat 50% 50%; }
+
+.pager { background-color: white; border-top: 1px solid #f4f4f4; padding: 10px 0; }
+.pager a { color: #B49F7C; background-repeat: no-repeat; padding: 0 20px; text-decoration: none; text-transform: uppercase; font-size: 17px; font-family: "Avenir Condensed Light", sans-serif; margin: 0 20px; }
+.pager a:hover { color: #1f1a12; }
+.pager__next { background-image: url("../../images/colourForecast2015/sprite/sprite-trends-nav-arrow-right.png"); background-position: 100% 30%; float: right; }
+.pager__next:hover { background-image: url("../../images/colourForecast2015/sprite/sprite-trends-nav-arrow-right-hover.png"); }
+.pager__prev { background-image: url("../../images/colourForecast2015/sprite/sprite-trends-nav-arrow-left.png"); background-position: 0 30%; float: left; }
+.pager__prev:hover { background-image: url("../../images/colourForecast2015/sprite/sprite-trends-nav-arrow-left-hover.png"); }
+
+.article { background: #fff; font-size: 14px; }
+.article p { margin-bottom: 18px; }
+.article__entry { padding-left: 20px; padding-right: 20px; }
+.article__swatch img { margin-bottom: 18px; }
+.article__specimen { position: relative; }
+
+.designers { background: #fff; font-size: 0; }
+.designers__header { padding: 18px 18px 0; }
+
+.designer { display: inline-block; vertical-align: top; width: 33.3%; font-size: 13px; }
+.designer__avatar { width: 100%; }
+.designer__name { line-height: 1; height: 2em; }
+.designer__name--1 { color: #ac3a2c; }
+.designer__name--2 { color: #36332e; }
+.designer__name--3 { color: #252b6a; }
+.designer__entry { margin: 0 20px; }
+.designer__entry p { font-size: 13px; line-height: 1.4; }
+.designer__entry a { text-decoration: none; color: #000; font-weight: bold; border-bottom: 1px solid #666; }
+
+.suppliers { background-color: #fff; }
+.suppliers__header { padding: 18px 18px 0; }
+.suppliers__list { font-size: 0; padding: 18px; margin: 0 10px 18px; background: #fafafa; }
+.suppliers__item { width: 25%; display: inline-block; vertical-align: top; line-height: 1.2; font-size: 11px; margin-bottom: 18px; }
+.suppliers__item strong { display: block; text-transform: uppercase; }
+.suppliers__item a { text-decoration: none; color: #666; }
+.suppliers__item a:hover { background: black; color: #fff; }
+
+.select__trends { padding: 20px; text-align: right; color: #8a8a8a; }
+.select__trends label { display: inline-block; vertical-align: middle; text-transform: uppercase; font-size: 14px; }
+.select__trends select { font-size: 14px; background: transparent; width: 154px; padding: 5px; line-height: 1; border: 0; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; text-overflow: ''; text-indent: 0.1px; color: #8a8a8a; }
+.select__field { background: url("../../images/colourForecast2015/icon-select-arrow.png") no-repeat 95% 50%; display: inline-block; border: 1px solid #a4a4a4; margin-left: 8px; }
+
+.products { font-size: 0; background: #FFF; padding-top: 18px; padding-bottom: 18px; }
+.products__item { display: inline-block; vertical-align: middle; width: 50%; }
+.products__image { display: inline-block; vertical-align: middle; width: 50%; }
+.products__details { display: inline-block; vertical-align: middle; width: 50%; padding: 18px 5px 0 18px; box-sizing: border-box; }
+.products__details p { font-size: 14px; margin-top: 7px; margin-bottom: 7px; }
+.products__name { text-transform: uppercase; color: #000; }
+.products__order { background-color: #132150; background-image: url("../../images/colourForecast2015/sprite/sprite-button-arrow.png"); background-repeat: no-repeat; background-position: 90% 50%; font-size: 15px; color: #FFF; text-decoration: none; padding: 9px 43px 9px 18px; border-radius: 4px; display: block; width: 100px; }
+.products__order:hover { background-color: #223b8e; }
+
+.linked { font-size: 0; padding: 18px; background: #FFF; }
+.linked__item { display: inline-block; vertical-align: top; width: 33.3%; text-align: center; }
+.linked__item:hover { opacity: 0.8; }
+
+.imagemap__map { width: 100%; height: 100%; position: absolute; top: 0; left: 0; overflow: hidden; }
+.imagemap__marker { position: absolute; width: 16px; height: 16px; display: block; background-image: url("../../images/colourForecast2015/sprite/sprite-hot-spot.png"); background-repeat: no-repeat; background-position: 50% 50%; }
+.imagemap__tooltip { border: 1px solid #fff; box-shadow: 0 0 10px #333; }
+.imagemap__tooltip .qtip-content { background: #FFF; font-size: 13px; padding: 1em 1em; border: 1px solid #fff; }
+.imagemap__tooltip p { font-size: 13px; margin-top: 8px; margin-bottom: 8px; }
+
+.bck-top { margin-left: 18px; padding: 18px; background-position: 4px 50%; }

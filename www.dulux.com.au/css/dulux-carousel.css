@@ -1,0 +1,92 @@
+@CHARSET "ISO-8859-1";
+
+#box_carousel { width:775px; height:515px; margin-left:15px; }
+		
+	#box_carousel_content { float:left; width:675px; height:515px; }
+	#box_carousel_content ul { margin:0px; padding:0px; list-style:none; }
+	#box_carousel_content ul li { margin:0px; padding:0px; width:675px; height:515px; background:none; }
+	
+		.slide_img { position:relative; width:675px; height:415px; background-repeat:no-repeat; }
+			#australia_favourite_colours { background-image:url(imgs/slide_00.jpg); }
+			#natural_white { background-image:url(imgs/slide_01.jpg); }
+			#white_swan { background-image:url(imgs/slide_02.jpg); }
+			#toffee_fingers { background-image:url(imgs/slide_03.jpg); }
+			#antique_white { background-image:url(imgs/slide_04.jpg); }
+			#hog_bristle { background-image:url(imgs/slide_05.jpg); }
+			#white_duck { background-image:url(imgs/slide_06.jpg); }
+			
+			#link01 { position:absolute; left:26px; top:262px; width:142px; height:16px; }
+			#link01 a { display:block; width:142px; height:16px; background:url(imgs/links.gif) no-repeat; }
+			#link01 a:hover { background-position:0 -16px; }
+			
+			#link02 { position:absolute; left:26px; top:289px; width:202px; height:16px; }
+			#link02 a { display:block; width:202px; height:16px; background:url(imgs/links.gif) -298px 0 no-repeat; }
+			#link02 a:hover { background-position:-298px -16px; }
+			
+			ul#tabs { position:absolute; left:274px; top:11px; width:371px; height:375px; }
+			ul#tabs li { float:left; background:url(imgs/tabs.jpg) no-repeat; width:52px; height:375px; }
+			ul#tabs li#tab01 { background-position:0 0; }
+			ul#tabs li#tab01:hover { background-position:0 -375px; }
+			ul#tabs li#tab02 { background-position:-62px 0; margin-left:10px; }
+			ul#tabs li#tab02:hover { background-position:-62px -375px; }
+			ul#tabs li#tab03 { background-position:-127px 0; margin-left:13px; }
+			ul#tabs li#tab03:hover { background-position:-127px -375px; }
+			ul#tabs li#tab04 { background-position:-191px 0; margin-left:12px; }
+			ul#tabs li#tab04:hover { background-position:-191px -375px; }
+			ul#tabs li#tab05 { background-position:-255px 0; margin-left:12px; }
+			ul#tabs li#tab05:hover { background-position:-255px -375px; }
+			ul#tabs li#tab06 { background-position:-319px 0; margin-left:12px; }
+			ul#tabs li#tab06:hover { background-position:-319px -375px; }
+	
+		.slide_copy { float:left; width:675px; }
+		.slide_copy p { float:left; width:505px; padding-top:20px; background-position:0 5px; background-repeat:no-repeat; }
+			.slide_copy p#title01 { background-image:url(imgs/title01.gif); }
+			.slide_copy p#title02 { background-image:url(imgs/title02.gif); }
+			.slide_copy p#title03 { background-image:url(imgs/title03.gif); }
+			.slide_copy p#title04 { background-image:url(imgs/title04.gif); }
+			.slide_copy p#title05 { background-image:url(imgs/title05.gif); }
+			.slide_copy p#title06 { background-image:url(imgs/title06.gif); }
+		
+		.swatch { float:left; width:127px; height:81px; margin-right:11px; }
+			#swatch_natural_white { background-image:url(imgs/swatch01.jpg); }
+			#swatch_white_swan { background-image:url(imgs/swatch02.jpg); }
+			#swatch_toffee_fingers { background-image:url(imgs/swatch03.jpg); }
+			#swatch_antique_white { background-image:url(imgs/swatch04.jpg); }
+			#swatch_hog_bristle { background-image:url(imgs/swatch05.jpg); }
+			#swatch_white_duck { background-image:url(imgs/swatch06.jpg); }
+	
+	#carousel_controls_left { float:left; text-align:left; width:52px; height:335px; padding-top:180px; }
+	#carousel_controls_right { float:left; text-align:right; width:48px; height:335px; padding-top:180px; }
+
+.jcarousel { width:675px;}
+.jcarousel-item { background-image:none; margin-top:0; }
+.jcarousel-item .dataItem { width:675px; height:515px; }
+
+.jcarousel-control { display:inline; }
+.jcarousel-control IMG { width:52px; height:375px; overflow:hidden; cursor:pointer; }
+	
+.jcarousel-prev-horizontal {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("imgs/jcarousel-controls.gif");
+	background-position:0 0;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:48px;
+	width:27px;	
+	}	
+
+	.jcarousel-prev-horizontal:hover { background-position:0 -74px; }
+	
+.jcarousel-next-horizontal {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url("imgs/jcarousel-controls.gif");
+	background-position:-76px 0;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:48px;
+	width:27px;
+	}
+	
+	.jcarousel-next-horizontal:hover { background-position:-76px -74px; }

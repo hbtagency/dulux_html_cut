@@ -1,0 +1,221 @@
+/* Dulux Sample Pots
+   Author:Matt Coffey, 20.05.13
+*/
+
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/273c01");
+@import url("http://hello.myfonts.net/count/25a751");
+  
+@font-face { font-family: 'FuturaBT-BoldCondensed'; src: url('../../fonts/273C01_0_0.eot'); src: url('../../fonts/273C01_0_0d41d.eot?#iefix') format('embedded-opentype'), url('../../fonts/273C01_0_0.woff') format('woff'), url('../../fonts/273C01_0_0.ttf') format('truetype'); }
+@font-face { font-family: 'FuturaBT-Book'; src: url('../../fonts/25A751_1_0.eot'); src: url('../../fonts/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'), url('../../fonts/25A751_1_0.woff') format('woff'), url('../../fonts/25A751_1_0.ttf') format('truetype'); }
+@font-face { font-family: 'FuturaBT-Bold'; src: url('../../fonts/25A751_2_0.eot'); src: url('../../fonts/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'), url('../../fonts/25A751_2_0.woff') format('woff'), url('../../fonts/25A751_2_0.ttf') format('truetype'); }
+
+/* temp */
+.wrapper	 	{ background:#fbfbfb; margin:0 auto; width:972px; padding:0; }
+.wrapper img 	{ display:block; }
+
+/* GLOBAL STYLES */
+.sc-section { width:960px; margin:0 6px; position:relative; }
+.sc-section h1,
+.sc-section h2, 
+.sc-section h3,
+.sc-section h4 { text-align:center; font-family: 'FuturaBT-BoldCondensed'; color:#2e3650; }
+.sc-section h2 { font-size:47px; letter-spacing:8px; padding:35px 0 0; text-transform:uppercase; }
+	
+.section-header { width:100%; height:96px; background-color:#ebebeb; }
+a { text-decoration:none; }
+a.btn { background-color:#3d5581; color:#fff; font-family: 'FuturaBT-BoldCondensed'; }
+input.btn { background-color:#3d5581; color:#fff; font-family: 'FuturaBT-BoldCondensed'; text-transform:uppercase; float:right; border:none;padding:8px 0; font-size:22px; margin:15px 10px 0 0; cursor:pointer; padding:8px 65px 8px 15px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-position:124px -32px; background-repeat:no-repeat; }
+
+.ie-font-issue input.btn { background-position:116px -34px; }
+.ie7 input.btn { padding:3px 40px 3px 10px; text-align:left; padding:3px 18px 3px 15px; }
+
+/* INTRODUCTION SECTION */
+#introduction { width:960px; height:1050px; background-color:#fff; padding:6px 0 0; }
+#introduction .inner-wrap { height:100%; background-image:url(../../images/campaigns/surfclub-2013/bg-sc-club-details.jpg); background-color:#182b3c; background-repeat:no-repeat; background-position:0 0; }
+#introduction .inner { width:775px; margin:0 auto; padding:65px 0 0; }
+#introduction .inner h1 { width:632px; text-indent:4px; visibility:visible; border:solid #fff; border-width:4px 0; margin:0 auto 10px; font-size:53px; letter-spacing:7px; text-transform:uppercase; }
+#introduction .inner h2 { font-size:19px; letter-spacing:1px; padding:0; text-transform:uppercase; }
+#introduction .inner h1,
+#introduction .inner h2 { color:#fff; }
+
+#introduction .inner .introduction-video { width:740px; height:415px; margin:25px auto 15px; background-color:#000; }
+
+#introduction .inner .sc-navigation { overflow:hidden; width:740px; margin:0 auto; }
+#introduction .inner .sc-navigation a { float:left; width:243px; font-size:18px; padding:8px 0; height:125px; }
+#introduction .inner .sc-navigation a.middle { margin:0 5px; }
+#introduction .inner .sc-navigation a span { display:block; }
+#introduction .inner .sc-navigation a span.main { text-indent:15px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-position:207px 1px; background-repeat:no-repeat; font-size:22px; text-transform:uppercase; letter-spacing:1px; }
+#introduction .inner .sc-navigation a span.sub { background-image:none; margin:11px 0 0 15px; font-family:Arial, Sans-serif; font-size:12px; font-size:15px; line-height:20px; padding:0 35px 0 0; }
+
+#introduction .inner .product-placement { width:350px; min-height:186px; margin:20px auto 0; padding:0 0 0 186px; background-image:url(../../images/campaigns/surfclub-2013/img-dulux-weathershield.png); background-repeat:no-repeat; background-position:15px 0; }
+#introduction .inner .product-placement p { font-size:16px; float:left; margin:30px 0 0; }
+#introduction .inner .product-placement h3 { font-size:33px; font-family: 'FuturaBT-Bold'; letter-spacing:-0.5px; padding:29px 0 0; }
+#introduction .inner .product-placement h3 span { display:block; font-size:19px; font-family: 'FuturaBT-Book'; line-height:16px; }
+#introduction .inner .product-placement p,
+#introduction .inner .product-placement h3 { color:#fff; text-align:left; }
+#introduction .inner .product-placement a { font-size:22px; padding:8px 70px 8px 15px; float:left; margin:10px 0 0; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-position:175px -33px; background-repeat:no-repeat; text-transform:uppercase; }
+
+#introduction .social-links { position:absolute; right:0; top:65px; height:98px; width:46px; }
+#introduction .social-links a { width:46px; height:46px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; text-indent:-9999em; display:block; }
+#introduction .social-links a.facebook { background-position:0 -138px; margin:0 0 6px; }
+#introduction .social-links a.twitter { background-position:0 -190px; }
+
+/* FEATURED CLUB SECTION */
+#latestRepaints { height:610px; background-image:url(../../images/campaigns/surfclub-2013/bg-sc-featured-club.jpg); background-position:0 85px; background-repeat:no-repeat; }
+
+#latestRepaints .sc-carousel-wrap { width:880px; margin:0 auto; }
+#latestRepaints .sc-carousel-wrap .controls { cursor:pointer; position:absolute; width:29px; height:55px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; text-indent:-9999em; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-prev { background-position:-68px -158px; left:40px; top:300px; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-next { background-position:-119px -158px; right:40px; top:300px; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-slides { width:740px; height:460px; margin:40px auto 0; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-slides li .sc-video-placeholder { width:740px; height:414px; position:absolute; z-index:100; top:0; left:0; background-image:url(../../images/campaigns/surfclub-2013/bg-video-placeholder.gif); background-position:0 0; background-repeat:no-repeat; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-slides li .sc-video-placeholder .loader { width:100%; height:100%; background-image:url(../../images/campaigns/surfclub-2013/ajax-loader.gif); background-repeat:no-repeat; background-position:center 270px; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-slides li .sc-carousel-slide-video { width:740px; height:414px; margin:0 0 16px; background-color:#000; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-slides li img { margin:0 0 16px; float:left; }
+#latestRepaints .sc-carousel-wrap #sc-carousel-slides li a.find-out-more { color:#fff; float:left; font-family: 'FuturaBT-BoldCondensed'; text-transform:uppercase; font-size:22px; letter-spacing:1px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; background-position:303px -86px; margin:0 0 0 211px; padding:0 20px 0 0; }
+
+/* BROWSE ALL CLUBS SECTION */
+#viewAllRepaints { background-image:url(../../images/campaigns/surfclub-2013/bg-sc-club-details.jpg); background-color:#182b3c; background-repeat:no-repeat; background-position:0 0; }
+#viewAllRepaints .inner { width:775px; margin:0 auto; }
+#viewAllRepaints .inner .state-tabs { width:100%; border:solid #fff; border-width:0 0 2px; padding:42px 0 0; }
+
+#viewAllRepaints .inner .state-tabs .state-tabs-navigation { width:741px; height:32px; margin:0 auto 25px; list-style:none; padding:0; overflow:hidden; }
+#viewAllRepaints .inner .state-tabs .state-tabs-navigation li { float:left; }
+#viewAllRepaints .inner .state-tabs .state-tabs-navigation li a { width:97px; height:32px; margin:0 10px 0 0; line-height:30px; display:block; text-align:center; font-family: 'FuturaBT-BoldCondensed'; text-transform:uppercase; letter-spacing:1px; font-size:22px; background-image:url(../../images/campaigns/surfclub-2013/bg-white-opaque.png); background-repeat:repeat; background-position:0 0; }
+#viewAllRepaints .inner .state-tabs .state-tabs-navigation li.last a { margin:0; }
+#viewAllRepaints .inner .state-tabs .state-tabs-navigation li a.active { background-color:#182b3c; background-image:none; color:#fff; }
+#viewAllRepaints .inner .state-tabs .state-tabs-navigation li a:hover { background-color:#182b3c; background-image:none; color:#fff; }
+
+#viewAllRepaints .inner .state-tabs .state-information { width:741px; margin:0 auto 35px; background-image:url(../../images/campaigns/surfclub-2013/bg-white-opaque.png); background-repeat:repeat; background-position:0 0; }
+#viewAllRepaints .inner .state-tabs .state-information ul { list-style:none; padding:0; margin:0; min-height: 34px; overflow:hidden; padding:0 15px 15px; }
+#viewAllRepaints .inner .state-tabs .state-information ul.loading { background-image:url(../../images/campaigns/surfclub-2013/ajax-loader-states.gif); background-repeat:no-repeat; background-position:center center; }
+#viewAllRepaints .inner .state-tabs .state-information ul li { float:left; width:33%; padding:15px 0 0; }
+#viewAllRepaints .inner .state-tabs .state-information ul li a { text-decoration:underline; font-size:15px; }
+#viewAllRepaints .inner .state-tabs .state-information ul li a:hover { text-decoration:none; }
+
+#viewAllRepaints .inner .progress { width:741px; padding:35px 0 42px; margin:0 auto; overflow:hidden; }
+#viewAllRepaints .inner .progress h3 { float:left; color:#fff; font-size:31px; letter-spacing:1px; line-height:49px; text-transform:uppercase; }
+#viewAllRepaints .inner .progress .progress-bar { position:relative; overflow:hidden; float:left; width:517px; height:42px; background-image:url(../../images/campaigns/surfclub-2013/bg-progress-bar.jpg); background-repeat:no-repeat; background-position:0 0; border:solid #fff; border-width:4px; margin:0 0 0 10px; }
+#viewAllRepaints .inner .progress .progress-bar .current-progress { width:100%; color:#182b3c; float:left; text-align:center; font-family: 'FuturaBT-BoldCondensed'; text-transform:uppercase; font-size:21px; line-height:42px; letter-spacing:3px; position:relative; z-index:80; }
+#viewAllRepaints .inner .progress .progress-bar .progress-handle { width:581px; height:42px; left:-517px; background-image:url(../../images/campaigns/surfclub-2013/bg-progress-bar-handle.png); background-repeat:no-repeat; background-position:0 0; position:absolute; z-index:20; }
+
+/* REGISTER YOUR CLUB SECTION */
+#registerYourClub .section-header .toggle-closed { margin:0 auto; width:808px; overflow:hidden; }
+#registerYourClub .section-header .toggle-closed h2 { float:left; }
+#registerYourClub .section-header .toggle-closed a.register-your-club { text-transform:uppercase; float:left; margin:42px 0 0 10px; font-size:22px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; background-position:196px 10px; padding:8px 50px 8px 15px; }
+#registerYourClub .section-header .toggle-open { display:none; }
+
+#registerYourClub .inner-toggle { width:100%; height:1331px; background-image:url(../../images/campaigns/surfclub-2013/bg-sc-club-details.jpg); background-color:#182b3c; background-repeat:no-repeat; background-position:0 0; display:none; }
+#registerYourClub .inner { width:437px; margin:0 auto; }
+#registerYourClub .inner p { border:solid #fff; border-width:0 0 2px; padding:42px 10px 10px; color:#fff; font-size:14px; line-height:20px; }
+#registerYourClub .inner p span { display:block; margin:10px 0 0; }
+#registerYourClub .inner .register-form { margin:13px 0 0; }
+#registerYourClub .inner .register-form label { display:block; color:#fff; font-size:14px; margin:0 0 0 10px; clear:both; }
+#registerYourClub .inner .register-form label.error { color:#f00; background-color:#fcdddd; width:416px; padding:5px 0; text-indent:10px; margin:0 0 10px 10px; font-size:13px; }
+#registerYourClub .inner .register-form input[type="text"] { width:394px; height:38px; border:solid 1px #e1e1e1; margin:7px 0 10px 10px; padding:0 10px; }
+#registerYourClub .inner .register-form textarea { width:394px; height:100px; margin:7px 0 10px 10px; resize:none; padding:10px; }
+#registerYourClub .inner .register-form .region-options .region-state { float:left; }
+#registerYourClub .inner .register-form .region-options .region-postcode { float:left; }
+#registerYourClub .inner .register-form .region-options input { width:186px; }
+#registerYourClub .inner .register-form .region-options select { width:198px; height:40px; border:solid 1px #e1e1e1; margin:7px 0 10px 10px; padding:7px 7px 7px 7px; font-size:18px; }
+#registerYourClub .inner .register-form .region-options .region-state label.error { width:198px; }
+#registerYourClub .inner .register-form .region-options .region-postcode label.error { width:208px; }
+#registerYourClub .inner .confirmation-text { border: 2px solid #fff; padding: 20px; color:#fff; font-size:18px; font-weight: bold; line-height:20px; max-height: 295px; width: 170%; margin-left: -40%; }
+#registerYourClub .confirmation-text-container { padding-top: 42px; height: 400px; }
+#registerYourClub .loading-screen { background:#00629e url('../../images/campaigns/surfclub-2013/ajax-loader.gif') no-repeat center center; display:none; height: 100%; width: 100%; line-height: 100%; text-align: center; left: 0; top: 0; position: absolute; filter: alpha(opacity=50); opacity: 0.5; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; z-index: 100; }
+
+
+	/* IE7/IE8 layout fix */
+	.ie7 #registerYourClub .inner .register-form input[type="text"],
+	.ie8 #registerYourClub .inner .register-form input[type="text"] { line-height:38px; }
+	.ie7 #registerYourClub .inner .register-form .region-options .region-postcode input { height:24px; line-height:24px; }
+	.ie7 #registerYourClub .inner .register-form .region-options .region-state select { height:28px; }
+
+/* CLUB DETAILS SECTION */
+#clubDetails { background-color:#fff; width:960px; padding:6px 0 0; overflow:hidden; }
+#clubDetails .inner-wrap { width:100%; height:100%; background-color:#182b3c; float:left; }
+#clubDetails .inner-wrap .inner-bg { width:960px; height:100%; background-image:url(../../images/campaigns/surfclub-2013/bg-sc-club-details.jpg); background-repeat:no-repeat; background-position:0 0; float:left; }
+#clubDetails .inner-wrap .inner-bg .inner { width:740px; margin:0 auto; }
+#clubDetails .inner-wrap .inner-bg .inner a.back-to-home { font-family: 'FuturaBT-BoldCondensed'; text-transform:uppercase; color:#fff; font-size:24px; width:155px; text-align:right; padding:0 0 0 30px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; background-position:-136px -40px; margin:40px auto; display:block; }
+#clubDetails .inner-wrap .inner-bg .inner h1 { width:632px; text-indent:4px; visibility:visible; border:solid #fff; border-width:4px 0; margin:0 auto 10px; font-size:53px; letter-spacing:7px; text-transform:uppercase; }
+#clubDetails .inner-wrap .inner-bg .inner h2 { font-size:19px; letter-spacing:1px; padding:0; text-transform:uppercase; }
+#clubDetails .inner-wrap .inner-bg .inner h1,
+#clubDetails .inner-wrap .inner-bg .inner h2 { color:#fff; }
+
+#clubDetails .inner-wrap .inner-bg .inner .project-media { width:740px; height:336px; margin:60px 0 0; position:relative; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .media-panel { width:556px; height:336px; float:left; overflow: hidden; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .before-content,
+#clubDetails .inner-wrap .inner-bg .inner .project-media .after-content,
+#clubDetails .inner-wrap .inner-bg .inner .project-media .video-content { width:556px; height:336px; float:left; overflow:hidden; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .before-content,
+#clubDetails .inner-wrap .inner-bg .inner .project-media .after-content { display:none; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .sc-gallery-prev,
+#clubDetails .inner-wrap .inner-bg .inner .project-media .sc-gallery-next { background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); cursor: pointer; display: block; height: 55px; width: 29px; position: absolute; top: 140px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .sc-gallery-prev { background-position:-68px -158px; left: 10px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .sc-gallery-next { background-position:-119px -158px; left: 515px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .sc-gallery-title { background: transparent; color: #fff; font-size: 1.9em; font-weight: normal; letter-spacing: 2px; left: 0; top: 0; text-transform: capitalize; padding: 10px; position: absolute; }
+
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation { position:absolute; width:206px; right:0; top:0; z-index:500; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul { list-style:none; padding:0; margin:0; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul li .nav-wrap { padding:0 0 0 22px; background-color:transparent; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul li .nav-wrap a { cursor:pointer; width:184px; background-color:#a6afb6; letter-spacing:3px; display:block; font-family: 'FuturaBT-BoldCondensed'; text-transform:uppercase; font-size:28px; text-align:center; color:#47536b; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul li .nav-wrap a span { width:167px; margin:0 10px; display:block; border:solid #778191; border-width:0 0 2px; padding:2px 0; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul li .nav-wrap a.last span { border-width:0; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul li.active .nav-wrap { background-image:url(../../images/campaigns/surfclub-2013/bg-sc-project-navigation.png); background-repeat:no-repeat; background-position:2px -1px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul li.active .nav-wrap a { background-color:#364259; color:#fff; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .project-navigation ul li.active .nav-wrap a span { border-width:0; }
+
+#clubDetails .inner-wrap .inner-bg .inner .project-media .dulux-palette { float:right; margin:132px 0 0; width:183px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .dulux-palette h3 { color:#fff; font-size:22px; text-transform:uppercase; letter-spacing:1px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .dulux-palette ul { width:157px; list-style:none; margin:5px auto 0; padding:5px 0 0; border:solid #fff; border-width:2px 0 0; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .dulux-palette ul li { width:149px; height:40px; margin:7px 0 0; border:solid 4px #fff; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .dulux-palette ul li p.code { color:#66645c; margin:6px 0 0 6px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-media .dulux-palette ul li p.name { color:#66645c; margin:0 0 0 6px; }
+
+#clubDetails .inner-wrap .inner-bg .inner .project-details { clear:both; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left { width:556px; float:left; min-height: 405px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-right { width:157px; height:337px; float:right; position:relative; margin:47px 13px 0 0; }
+
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left h3 { text-align:left; color:#fff; font-size:31px; letter-spacing:3px; padding:10px 0; border:solid #fff; border-width:0 0 2px; margin:0 0 13px; text-transform:uppercase; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left p { margin:0 0 13px; color:#fff; font-size:15px; line-height:20px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .social-links { width:100%; padding:5px 0 22px; border:solid #fff; border-width:0 0 2px; margin:0 0 25px; overflow:hidden; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .social-links a { float:left; background-repeat:no-repeat; background-position:0 0; display:block; text-indent:-9999em; margin:0 10px 0 0; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .social-links a.facebook { width:57px; height:18px; background-image:url(../../images/campaigns/surfclub-2013/btn-fb-share.jpg); }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .social-links a.twitter { width:59px; height:20px; background-image:url(../../images/campaigns/surfclub-2013/btn-twitter-share.jpg); }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .social-links a.email { width:57px; height:20px; background-image:url(../../images/campaigns/surfclub-2013/btn-email-share.jpg); }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .club-navigation { overflow:hidden; padding:0 0 40px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .club-navigation a { font-family: 'FuturaBT-BoldCondensed'; text-transform:uppercase; color:#fff; font-size:18px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .club-navigation a.prev { float:left; padding:0 0 0 20px; background-position:-140px -89px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-left .club-navigation a.next { float:right; padding:0 20px 0 0; background-position:70px -89px; }
+
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .product-placement { width:117px; height:120px; left:27px; position:absolute; top:0; z-index:20; background-image:url(../../images/campaigns/surfclub-2013/img-dulux-weathershield-sml.png); background-repeat:no-repeat; background-position:0 0; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .content-right-inner { background-color:#fff; height:100%; width:100%; margin:10px 0 0; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .content-right-inner h4 { padding:116px 0 0; font-size:21px; letter-spacing:1px; text-transform:uppercase; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .content-right-inner p { margin:5px 5px 0; padding:7px 7px 0; border:solid #2e3650; border-width:1px 0 0; color:#2e3650; line-height:16px; }
+#clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .content-right-inner a { text-transform:uppercase; position:absolute; bottom:0; padding:7px 27px 7px 10px; font-size:17px; margin:2px 10px 0; display:block; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; background-position:112px -83px; }
+
+	/* IE7 layout fix */
+	.ie7 #clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .content-right-inner { float:left; position:relative; }
+	.ie7 #clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .content-right-inner a { bottom:9px; }
+	.ie7 #clubDetails .inner-wrap .inner-bg .inner .project-details .content-right .content-right-inner h4 { padding:126px 0 0; }
+	.ie7 #clubDetails .inner-wrap .inner-bg .inner .project-media .dulux-palette ul { padding:11px 0 0; }
+
+/* FOOTER SECTION */
+#scFooter { height:110px; padding:65px 0 0; background-color:#fff; }
+#scFooter .inner { width:924px; margin:0 auto; overflow:hidden; }
+
+#scFooter .inner .branding { float:left; width:45%; overflow:hidden; }
+#scFooter .inner .branding .dulux-logo { float:left; width:147px; height:67px; margin:0 25px 0 0; text-indent:-9999em; background-image:url(../../images/campaigns/surfclub-2013/img-sc-dulux-footer-logo.jpg); background-repeat:no-repeat; background-position:0 0; }
+#scFooter .inner .branding .afl-logo { float:left; width:158px; height:67px; text-indent:-9999em; background-image:url(../../images/campaigns/surfclub-2013/SLS_RGB.png); background-repeat:no-repeat; background-position:0 0; }
+/*Path to old AFL logo: /images/campaigns/surfclub-2013/img-sc-afl-footer-logo.jpg*/
+
+#scFooter .inner p { clear:both; padding:15px 0 0; }
+
+#scFooter .inner .social-links { float:right; width:106px; overflow:hidden; margin:15px 0 0; }
+#scFooter .inner .social-links a { float:left; width:46px; height:46px; text-indent:-9999em; margin:0 0 0 7px; background-image:url(../../images/campaigns/surfclub-2013/ico-sprite.png); background-repeat:no-repeat; }
+#scFooter .inner .social-links a.facebook { background-position:0 -138px; }
+#scFooter .inner .social-links a.youtube { background-position:0 -242px; }
+
+.invisible-button { background: #fff; border: none; color: #fff; height: 10px; width: 10px; cursor: pointer; }
+.invisible-button:hover { background: #eee; }

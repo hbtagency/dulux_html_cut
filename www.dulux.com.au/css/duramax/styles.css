@@ -1,0 +1,296 @@
+#wrapper .body.landing,
+#wrapper .body.landing #content { width: 100%; overflow: visible; }
+#wrapper .body.landing #homepage.container { min-width: 970px; min-height: 300px; background: url(../../images/duramax/refresh/loader.gif) 50% 50% no-repeat; }
+#wrapper .body.landing #homepage.container.loaded { background: transparent; }
+.ie8 #wrapper .body.landing #homepage.container { max-width: 970px; }
+
+.container { max-width: 1460px; padding: 0; }
+h1, h2, h3, h4 { font-family: "FuturaBoldRegular", arial, helvetica; }
+p { font-family: 'FuturaBT-Book', arial, helvetica; }
+p .copy { font-size: 75%; vertical-align: text-bottom; }
+
+.hero { max-width: 1420px; margin: 0 auto; padding: 0 1% 0 1.5%; }
+
+.landing .hero .flexslider { border: 0; margin: 0; }
+.landing .hero .flexslider .slides > .isVideo.isPlaying .btn-close { display: block; }
+.landing .hero .flex-control-nav { bottom: 20px; right: 20px; width: auto; z-index: 100; }
+.landing .hero .flex-control-nav { height: 16px; padding: 5px; border-radius: 30px; background: rgba(255, 255, 255, 0.5); display: inline-block; }
+.landing .hero .flex-control-nav li a { width: 16px; height: 16px; -webkit-box-radius: 8px; -moz-box-radius: 8px; box-shadow: none; }
+.landing .hero .flex-control-nav li a.flex-active { background: #FFF; }
+.landing .hero .flex-direction-nav a { top: auto; bottom: -10%; opacity: 1; text-indent: -999em; width: 44px; height: 44px; }
+.landing .hero .flex-direction-nav .flex-disabled { display: none; }
+.landing .hero .flex-direction-nav a.flex-prev:before { content : ""; background: url(../../images/duramax/icons-flex-direction.png) 0px 0px; width: 44px; height: 44px; display: block; }
+.landing .hero .flex-direction-nav a.flex-next:before { content : ""; background: url(../../images/duramax/icons-flex-direction.png) -219px 0px; width: 44px; height: 44px; display: block; }
+.landing .hero .flexslider .flex-direction-nav a.flex-next,
+.landing .hero .flexslider:hover .flex-direction-nav a.flex-next { right: 1%; opacity: 1; }
+.landing .hero .flexslider .flex-direction-nav a.flex-prev,
+.landing .hero .flexslider:hover .flex-direction-nav a.flex-prev { left: 26%; opacity: 1; }
+
+.landing .hero .flexslider .slides > li { position: relative; }
+.landing .hero .flexslider .slide-content { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.landing .hero .flexslider .slide-content h2 { font-size: 77px; line-height: 77px; color: #ffdd00; text-transform: uppercase; margin: 11% 0 0 5%; width: 40%; }
+.landing .hero .flexslider .slide-content p { font-family: 'FuturaBT-Light', arial, helvetica; font-size: 24px; color: #fff; margin: 2% 0 0 5%; width: 33%; line-height: 32px; }
+.landing .hero .flexslider .slide-content p.disclaimer { font-size: 16px; width: 50%; position: absolute; margin-top: 0; left: 0; bottom: 0; }
+.landing .hero .flexslider .slide-content ul { list-style-type: none; margin: 2% 0 0 5%; padding: 0; }
+.landing .hero .flexslider .slide-content ul li { padding: 15px 50px 10px; background: url(../../images/duramax/icons.png) no-repeat 0px -180px; font-size: 24px; line-height: 22px; font-family: "FuturaBoldRegular", arial, helvetica; text-transform: uppercase; color: #fff; }
+.landing .hero .flexslider .slide-content ul li span { font-family: 'FuturaBT-Light', arial, helvetica; font-size: 18px; }
+.landing .hero .flexslider .slide-content .triggers { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.landing .hero .flexslider .slide-content .triggers a { width: 27px; height: 27px; background: url(../../images/duramax/icons.png) no-repeat 0px -388px; position: absolute; display: block; }
+.landing .hero .flexslider .slide-content .triggers a[href="#mirror"] { left: 48%; top: 12.5%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#table"] { left: 44%; top: 61.75%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#vase"] { left: 60.5%; top: 47.5%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#coffee"] { left: 71%; top: 72.5%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#chair"] { left: 81%; top: 37.5%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#lamp"] { left: 56%; top: 19.5%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#frame"] { left: 48%; top: 44%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#trolley"] { left: 68.5%; top: 67.5%; }
+.landing .hero .flexslider .slide-content .triggers a[href="#seat"] { left: 86.5%; top: 56.5%; }
+
+.landing .transforms { padding-top: 8.45%; background: #e8e8e0; position: relative; }
+.landing .transforms .text { width: 27.5%; position: absolute; left: 0; top: 0; }
+.landing .transforms .text h3 { font-size: 28px; color: #606870; text-transform: uppercase; padding: 6.5% 0 0 13%; }
+.landing .transforms .text p { font-size: 17px; color: #606870; line-height: 22px; padding: 0 35px 0 13%; }
+.landing .transforms .transform-nav { position: absolute; top:0; right: 5.5%; height: 100%; overflow: hidden; width: 63.5%; }
+.landing .transforms .transform-nav ul.items { opacity: 0; transition: all .3s ease; list-style-type: none; padding: 0; margin: 0 auto; position: absolute; top: 0; right: 0; width: 100%; }
+.landing .transforms .transform-nav ul.items.active { opacity: 1; z-index: 999; }
+.landing .transforms .transform-nav ul.items li { float: left; width: 20%; cursor: pointer; }
+.landing .transforms .transform-nav ul.items li img { width: 100%; height: auto; }
+
+.landing .transforms-expanded { position: relative; padding-top: 28.6%; background: #f9f9f9; display: none; }
+.landing .transforms-expanded.active { display: block; }
+.landing .transforms-expanded .close { position: absolute; width: 30px; height: 30px; right: 5px; top: 5px; cursor: pointer; background: url(../../images/duramax/icons.png) 0px -703px }
+.landing .transforms-expanded .objects { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; }
+.landing .transforms-expanded .objects.active { display: block; }
+.landing .transforms-expanded .objects .left { float: left; width: 50%; height: 100%; position: relative; }
+.landing .transforms-expanded .objects .right { float: left; width: 50%; height: 100%; }
+.landing .transforms-expanded .objects .left h3 { font-size: 32px; color: #606870; padding: 2.5% 7%; }
+.landing .transforms-expanded .objects .left img { padding: 0; width: 100%; position: absolute; bottom: 0; }
+.landing .transforms-expanded .objects .right h3 { font-size: 24px; color: #606870; padding: 2.5% 7%; }
+.landing .transforms-expanded .objects .right p { font-size: 17px; color: #606870; padding: 1% 7%; }
+.landing .transforms-expanded .objects .right > h4 { font-size: 16px; color: #606870; text-transform: uppercase; padding: 2.5% 7%; }
+.landing .transforms-expanded .objects .right .product-grid ul.products { list-style-type: none; margin: 0 7%; padding: 0; }
+.landing .transforms-expanded .objects .right .product-grid ul.products li { position: relative; float: left; width: 30%; margin: 0 3% 2% 0; }
+.landing .transforms-expanded .objects .right .product-grid ul.products li img { width: 35.5%; float: left; }
+.landing .transforms-expanded .objects .right .product-grid ul.products li h4 { position: absolute; left: 39%; bottom: 0; font-size: 14px; color: #6d6d6d; }
+.landing .transforms-expanded .objects .right .product-grid ul.products li h4 span { display: block; font-family: 'FuturaExtendedRegular', arial, helvetica; padding-top: 2%; }
+.landing .transforms-expanded .objects .right .product-grid ul.products li.special { padding-left: 2%; margin-right: 0; border-left: 1px solid #e8e8e0; }
+.landing .transforms-expanded .objects .right .product-grid ul.products li.special h3 { position: absolute; left: 0; width: 125%; font-size: 16px; color: #606870; text-transform: uppercase; top: -20%; padding: 0; }
+.landing .transforms-expanded .objects .right .product-grid ul.products li.special h4 { left: 41%; }
+
+.landing #grid { margin-top: 1.5%; }
+.landing #grid .item { position: relative; width: 31.5%; padding-top: 26.45%; margin-bottom: 1.37%; margin-left: 1.5%; }
+.landing #grid .item.w2 { width: 64.5%; }
+.landing #grid .item.w3 { width: 97.5%; }
+.landing #grid .item.h2 { padding-top: 54.25% }
+.landing #grid .item.left { float: left; }
+.landing #grid .item.right { float: right; margin-right: 1%; }
+.landing #grid .item .item-content { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #f9f9f9; overflow: hidden; }
+.landing #grid .item .item-content img { width: 100%; }
+.landing #grid .item .item-content h2 { font-size: 44px; text-transform: uppercase; position: absolute; width: 60%; line-height: 42px; }
+.landing #grid .item .item-content h2 span { font-family: 'FuturaExtendedRegular', arial, helvetica; }
+.landing #grid .item .item-content h3 { font-size: 28px; color: #606870; padding: 7% 8% 2.5% 8%; }
+.landing #grid .item .item-content p { font-size: 17px; line-height: 22px; color: #606870; padding: 1% 8% 2.5% 8%; }
+.landing #grid .item .item-content p a { color: #606870; text-decoration: none; }
+.landing #grid .item .item-content ul { list-style-type: none; margin: 0; padding: 1% 8% 2.5% 8%; }
+.landing #grid .item .item-content ul li p.question { padding: 4px 0 10px 35px; background: url(../../images/duramax/icons.png) no-repeat -123px top; cursor: pointer; }
+.landing #grid .item .item-content ul li p.question.active { background: url(../../images/duramax/icons.png) no-repeat -123px -114px; }
+.landing #grid .item .item-content ul li p.answer { display: none; font-size: 12px; line-height: 16px; }
+.landing #grid .item .item-content ul li p.answer.active { display: block; }
+.landing #grid .item .item-content .video-wrap { position: relative; padding: 0 0 44% 0; height: 0; margin: 1% 8%; }
+.landing #grid .item .item-content .video-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.landing #grid .item .item-content.content-blue h2 { color: #0088a0; }
+.landing #grid .item .item-content.content-pink h2 { color: #b04870; }
+.landing #grid .item .item-content.content-right h2 { left: 38.75%; top: 15.55%; }
+.landing #grid .item .item-content.content-left h2 { left: 6.5%; top: 15.55%; }
+.landing #grid .item .item-content.content-range p { position: absolute; top: 42.5%; width: 50%; padding: 0; }
+.landing #grid .item .item-content.content-range.content-right p { left: 38.75%; }
+.landing #grid .item .item-content.content-range.content-left p { left: 6.5%; }
+.landing #grid .item .item-content.content-range a.button { position: absolute; width: 14%; padding: 1% 3.5% 1% 1.5%; color: #fff; font-size: 17px; top: 70%; text-decoration: none; border-radius: 4px;}
+.landing #grid .item .item-content.content-range.content-right a.button { left: 38.75%; }
+.landing #grid .item .item-content.content-range.content-left a.button { left: 6.5%; }
+.landing #grid .item .item-content.content-range.content-blue a.button { background: #0088a0 url(../../images/duramax/icons.png) no-repeat 150px -557px; }
+.landing #grid .item .item-content.content-range.content-pink a.button { background: #b04870 url(../../images/duramax/icons.png) no-repeat 150px -557px; }
+.landing #grid .item.faqs.expanded { padding-top: 35%; }
+.landing #grid .item.faqs.expanded .item-content { overflow: auto; }
+.landing #grid .item.range-expanded { display: none; padding-top: 110%; }
+.landing #grid .item.range-expanded.active { display: block; padding-top: 110%; }
+.landing #grid .item.range-expanded .tabs .tab { position: relative; float: left; font-size: 24px; line-height: 28px; color: #fff; cursor: pointer; background: #98a0a0; padding: 2% 4%; width: 38.5%; }
+.landing #grid .item.range-expanded .tabs .tab.close { width: 7%; height: 28px; padding: 2% 0; background: #606870 url(../../images/duramax/icons.png) no-repeat 12px 12px; }
+.landing #grid .item.range-expanded .tabs .tab.active { font-family: "FuturaBoldRegular", arial, helvetica; }
+.landing #grid .item.range-expanded .tabs .tab.active.decorative { background: #0088a0; }
+.landing #grid .item.range-expanded .tabs .tab.active.speciality { background: #b04870; }
+.landing #grid .item.range-expanded .tabs .tab.active .triangle { position: absolute; bottom: -15px; left: 50%; margin-left: -15px; width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-top: 30px solid; }
+.landing #grid .item.range-expanded .tabs .tab.active.decorative .triangle { border-top-color: #0088a0; }
+.landing #grid .item.range-expanded .tabs .tab.active.speciality .triangle { border-top-color: #b04870; }
+.landing #grid .item.range-expanded .item-content-range > div { display: none; }
+.landing #grid .item.range-expanded .item-content-range > div.active { display: block; padding-top: 4%; }
+.landing #grid .item.range-expanded .item-content-range h3 { font-size: 28px; color: #0088a0; padding: 1% 0 0 3.7%; }
+.landing #grid .item.range-expanded .item-content-range p { width: 60%; padding: 1% 0 1% 3.7%; }
+.landing #grid .item.range-expanded .item-content-range a.button { background: #0088a0 url(../../images/duramax/icons.png) no-repeat 145px -557px; position: absolute; width: 115px; padding: 1% 3.5% 1% 1.5%; color: #fff; font-size: 17px; top: 11%; right: 10%; text-decoration: none; border-radius: 4px;}
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours { list-style-type: none; margin: 2% 3.7%; padding: 0; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li { float: left; width: 23%; margin: 0 2.5% 2% 0; padding: 10% 0 2% 0; text-indent: 1em; font-size: 14px; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.last { margin-right: 0; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li:nth-child(4n+4) { margin-right: 0; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.white1 { background: #f0f8f0; color: #7a7f7a; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.white2 { background: #e8e8e0; color: #777771; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.grey1 { background: #c0c0c0; color: #fffefe; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.grey2 { background: #98a0a0; color: #dce3e3; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.grey3 { background: #606870; color: #a2adb9; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.black1 { background: #403838; color: #938383; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.black2 { background: #202020; color: #d0cfcf; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.brown1 { background: #502828; color: #c36262; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.brown2 { background: #504030; color: #bca187; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.brown3 { background: #d8d0b8; color: #878170; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.orange1 { background: #c07858; color: #f9cebb; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.orange2 { background: #c85020; color: #fea682; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.yellow1 { background: #f8a828; color: #a9731c; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.yellow2 { background: #f8d038; color: #9d8424; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.green1 { background: #c8c040; color: #f6ef7d; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.green2 { background: #088840; color: #2ce87e; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.green3 { background: #284038; color: #79baa4; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.blue1 { background: #203060; color: #7f9fff; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.blue2 { background: #184880; color: #77aceb; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.blue3 { background: #0088a0; color: #69d8ec; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.blue4 { background: #88c8e8; color: #547d91; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.purple1 { background: #403048; color: #b789ce; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.purple2 { background: #684870; color: #cc8fdb; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.red1 { background: #b04870; color: #efa3c0; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.red2 { background: #783050; color: #dc7da7; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li.red3 { background: #c82828; color: #fba8a8; }
+.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li a { color: inherit; text-decoration: none; }
+.landing #grid .item.range-expanded .item-content-range .product-grid { padding: 2% 0; margin: 0 3.7%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid.with-palette { border-bottom: 1px solid #98a0a0; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products { list-style-type: none; margin: 0; padding: 0; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li { position: relative; float: left; width: 23.5%; margin: 0 2.5% 2% 0; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.last { margin-right: 0; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li:nth-child(3n+3) { margin-right: 0; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li img { width: 35.5%; float: left; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li h4 { position: absolute; left: 39%; bottom: 0; font-size: 14px; color: #6d6d6d; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li h4 span { display: block; font-family: 'FuturaExtendedRegular', arial, helvetica; padding-top: 2%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette { float: left; position: relative; width: 100%; margin-top: 5%; padding-top: 50%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette > div { position: absolute; top: 0; left: 0; width: 50%; height: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette > div.second { left: 50%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .pink1 { background: #b51d4a; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .pink2 { background: #e33a86; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .grey1 { background: #c9c9c8; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .grey2 { background: #e4e5dc; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .green1 { background: #68b185; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .orange1 { background: #ee8e1c; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .black1 { background: #282726; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .bright-gold { background: url(../../images/duramax/products/bright-gold.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .bright-grey { background: url(../../images/duramax/products/bright-grey.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .metallic-blue { background: url(../../images/duramax/products/metallic-blue.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .metallic-purple { background: url(../../images/duramax/products/metallic-purple.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .metallic-red { background: url(../../images/duramax/products/metallic-red.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .metallic-gold { background: url(../../images/duramax/products/metallic-gold.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .metallic-silver { background: url(../../images/duramax/products/metallic-silver.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .metallic-green { background: url(../../images/duramax/products/metallic-green.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .stainless-grey { background: url(../../images/duramax/products/stainless-grey.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .diamond-blue { background: url(../../images/duramax/products/diamond-blue.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .diamond-silver { background: url(../../images/duramax/products/diamond-silver.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .granite-grey { background: url(../../images/duramax/products/granite-grey.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li .palette .granite-lgrey { background: url(../../images/duramax/products/granite-lgrey.jpg) no-repeat center; background-size: 100%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid.with-palette ul.products li h4 { bottom: 36.33%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 { width: 35%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 img { width: 24%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 h4 { left: 28%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 .palette { margin-top: 3%; padding-top: 33.33%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 .palette > div { width: 33.33%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 .palette > div.second { left: 33.33%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 .palette > div.second { left: 33.33%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2 .palette > div.third { left: 66.66%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2.h2 .palette { padding-top: 66.66%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2.h2 .palette > div { height: 50% }
+.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li.w2.h2 .palette > div.row2 { top: 50%; }
+.landing #grid .item.range-expanded .item-content-range .product-grid.with-palette ul.products li.h2 h4 { bottom: 52%; }
+
+.landing #grid .video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: fixed; z-index: 99999; top: 0; left: 0; bottom: 0; right: 0; }
+.landing #grid .video-player .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
+.landing #grid .video-player .wrap { width: 700px; height: 394px; position: absolute; left: 50%; top: 50%; margin: -192px auto auto -350px; }
+.landing #grid .video-player .close { display: block; position: absolute; top: 12px; right: 10px; width: 18px; height: 18px; background: url(../../images/duramax/close.png) no-repeat center; }
+.landing #grid .video-player .close:hover { opacity: .4; filter: alpha(opacity=40); }
+
+.landing .gallery  { max-width: 1420px; margin: 0 auto; padding: 0 1% 0 1.5%; }
+.landing .gallery  .gallery-content { background: #f9f9f9; }
+.landing .gallery .flexslider { width: 90%; height: 69%; margin: 2% 5% 2% 5%; border: 0; display: none; }
+.landing .gallery .flexslider.active { display: block; }
+.landing .gallery .flexslider .flex-viewport { height: 100%; }
+.landing .gallery .flexslider ul { padding: 0; }
+.landing .gallery .flexslider ul li { margin-right: 18px; }
+.landing .gallery .flexslider img { margin-right: 18px; }
+.landing .gallery .flex-direction-nav a { width: 44px; height: 44px; opacity: 1; }
+.landing .gallery .flexslider:hover .flex-next { right: -50px; }
+.landing .gallery .flexslider:hover .flex-prev { left: -50px; }
+.landing .gallery .flex-direction-nav a.flex-prev:before { content : ""; background: url(../../images/duramax/icons-flex-direction.png) 0px 0px; width: 44px; height: 44px; display: block; }
+.landing .gallery .flex-direction-nav a.flex-next:before { content : ""; background: url(../../images/duramax/icons-flex-direction.png) -219px 0px; width: 44px; height: 44px; display: block; }
+.landing .gallery .tabs .tab { position: relative; float: left; font-size: 24px; font-family: 'FuturaExtendedRegular', arial, helvetica; line-height: 28px; color: #fff; cursor: pointer; background: #98a0a0; padding: 15px 4%; width: 42%; }
+.landing .gallery .tabs .tab.active { font-family: 'FuturaBoldRegular', arial, helvetica; background: #f8d038; color: #606870; }
+.landing .gallery .tabs .tab.active .triangle { position: absolute; bottom: -15px; left: 50%; margin-left: -15px; width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-top: 30px solid #f8d038; }
+#sb-nav-previous { background: url(../../images/duramax/icons-flex-direction.png) 0px 0px; width: 44px; height: 44px; top: 50%; bottom: auto; margin-top: -22px; left: -55px; }
+#sb-nav-next { background: url(../../images/duramax/icons-flex-direction.png) -219px 0px; width: 44px; height: 44px; top: 50%; bottom: auto; margin-top: -22px; right: -55px; }
+#sb-nav #sb-nav-close { background: url(../../images/duramax/icons.png) 0px -703px; width: 30px; height: 30px; margin-right: -20px; }
+
+.ie8 .container#grid { max-width: 1460px; }
+
+@media only screen and (max-width: 1460px) {
+	.landing .hero .flexslider .slide-content p { font-size: 22px; line-height: 28px; }
+	.landing .transforms .text p { font-size: 16px; }
+	.landing #grid .item .item-content h2 { font-size: 42px; }
+	.landing #grid .item .item-content.content-range.content-blue a.button { background-position: 140px -557px; }
+	.landing #grid .item .item-content.content-range.content-pink a.button { background-position: 140px -557px; }
+	.landing #grid .item .item-content p { font-size: 15px; }
+	.landing #grid .item .item-content ul li p.question { padding-bottom: 6px; }
+}
+
+@media only screen and (max-width: 1280px) {
+	.landing .hero .flexslider .slide-content h2 { font-size: 58px; line-height: 58px; }
+	.landing .hero .flexslider .slide-content ul li { font-size: 20px; line-height: 18px; }
+	.landing #grid .item.range-expanded .tabs .tab { font-size: 20px; line-height: 26px; }
+	.landing .hero .flexslider .slide-content p,
+	.landing .transforms-expanded .objects .right h3 { font-size: 20px; line-height: 24px; }
+	.landing .hero .flexslider .slide-content p.disclaimer { font-size: 14px; }
+	.landing .transforms .text h3,
+	.landing #grid .item.range-expanded .item-content-range h3,
+	.landing #grid .item .item-content h3 { font-size: 24px; }
+	.landing #grid .item.range-expanded .tabs .tab.close { height: 26px; background-position: 4px 8px; }
+	.landing #grid .item .item-content.content-range a.button { width: 17%; }
+	.landing .transforms .text p { font-size: 13px; line-height: 20px; }
+	.landing .transforms-expanded .objects .right p { font-size: 13px; }
+	.landing #grid .item .item-content h2 { font-size: 36px; line-height: 36px; }
+	.landing #grid .item .item-content p { font-size: 13px; line-height: 17px; }
+	.landing #grid .item.range-expanded .item-content-range p { width: 68%; }
+	.landing #grid .item.range-expanded .item-content-range a.button { top: 12%; right: 4%; background-position: 129px -557px; }
+	.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li,
+	.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li h4,
+	.landing .transforms-expanded .objects .right .product-grid ul.products li h4 { font-size: 11px; }
+	.landing .transforms-expanded .objects .right .product-grid ul.products li.special h3 { top: -25%; }
+	.landing #grid .item .item-content ul li p.question { padding-bottom: 8px; }
+	.landing #grid .item .item-content ul li p.answer { font-size: 11px; padding-right: 3%; }
+	.landing .transforms-expanded .objects .left h3 { font-size: 26px; }
+}
+
+@media only screen and (max-width: 1074px) {
+	.landing .hero .flexslider .slide-content h2 { font-size: 50px; line-height: 50px; }
+	.landing .hero .flexslider .slide-content ul { margin-top: 1%; }
+	.landing .hero .flexslider .slide-content ul li { font-size: 18px; line-height: 18px; }
+	.landing #grid .item.range-expanded .tabs .tab { font-size: 18px; line-height: 26px; }
+	.landing .hero .flexslider .slide-content p,
+	.landing .transforms-expanded .objects .right h3 { font-size: 18px; line-height: 22px; }
+	.landing .hero .flexslider .slide-content p.disclaimer { font-size: 12px; }
+	.landing .transforms .text h3,
+	.landing #grid .item.range-expanded .item-content-range h3,
+	.landing #grid .item .item-content h3 { font-size: 20px; }
+	.landing .transforms .text p { font-size: 12px; line-height: 18px; }
+	.landing .transforms-expanded .objects .right p { font-size: 12px; }
+	.landing #grid .item .item-content h2 { font-size: 33px; line-height: 33px; }
+	.landing #grid .item .item-content.content-range a.button { width: 19%; background-position: 140px -560px; }
+	.landing .transforms .text h3,
+	.landing #grid .item.range-expanded .item-content-range h3,
+	.landing #grid .item .item-content h3 { font-size: 18px; }
+	.landing #grid .item .item-content p { font-size: 12px; line-height: 15px; }
+	.landing #grid .item .item-content ul li p.question { padding-bottom: 9px; }
+	.landing #grid .item.range-expanded .item-content-range .colour-grid ul.colours li,
+	.landing #grid .item.range-expanded .item-content-range .product-grid ul.products li h4,
+	.landing .transforms-expanded .objects .right .product-grid ul.products li h4 { font-size: 10px; }
+	.landing #grid .item.range-expanded .tabs .tab.close { height: 26px; background-position: 4px 4px; }
+}

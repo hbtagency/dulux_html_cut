@@ -1,0 +1,718 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/08/2015, 5:24:47 PM
+    Author     : Nathan Zhang yfzhang.phonn@gmail.com
+*/
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('../font-hbt/ufonts.com_gotham-light-webfont.eot');
+    src: url('../font-hbt/ufonts.com_gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-hbt/ufonts.com_gotham-light-webfont.woff2') format('woff2'),
+         url('../font-hbt/ufonts.com_gotham-light-webfont.woff') format('woff'),
+         url('../font-hbt/ufonts.com_gotham-light-webfont.ttf') format('truetype'),
+         url('../font-hbt/ufonts.com_gotham-light-webfont.svg#gotham_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('../font-hbt/ufonts.com_gotham-book-webfont.eot');
+    src: url('../font-hbt/ufonts.com_gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-hbt/ufonts.com_gotham-book-webfont.woff2') format('woff2'),
+         url('../font-hbt/ufonts.com_gotham-book-webfont.woff') format('woff'),
+         url('../font-hbt/ufonts.com_gotham-book-webfont.ttf') format('truetype'),
+         url('../font-hbt/ufonts.com_gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Shared CSS */
+.freeze {
+   pointer-events:none;
+}
+.hbt-title-area{
+    padding-top:15px;
+    padding-bottom: 45px;
+    text-align:center;
+}
+.hbt-title-area h2{
+    font-family:"gotham_bookregular","arial"; 
+    font-size:27px;
+    color:#132150;
+    font-weight:lighter;
+}
+
+.hbt-button{
+    display: inline-block;
+    padding:12px 30px 12px 30px;
+    font-weight: bold;
+    font-family: "FuturaBT-Book","arial","helvetica";
+    font-size:18px;
+    text-decoration: none;
+    border:2px solid #d0d0d0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.hbt-button:hover{
+    box-shadow: inset 0 0 0 2px #d0d0d0;
+}
+.hbt-uppercase{
+    text-transform: uppercase;
+}
+.hbt-responsive-img{
+    width:100%
+}
+/* End of shared CSS */
+
+
+/* Full height area */
+.hbt-full-screen-area{
+    background-size:cover;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat;
+    display: block;
+    height:850px;
+    width:100%;
+    background-color:#219ace;
+    margin-top:-20px;
+    position:relative;
+    overflow:hidden;
+}
+.hbt-full-screen-area .hbt-full-screen-area-leftcolumn{
+    padding-left:15px;
+    padding-top:60px;
+    float:left;
+
+}
+
+.hbt-full-screen-area .hbt-full-screen-area-leftcolumn h1.hbt-full-screen-area-leftcolumn-description{
+    font-family: "gotham_lightregular","arial";
+    font-size:46px;
+    font-weight:lighter;
+    color:#132150;
+    width:500px;
+    margin-top:15px;
+}
+.hbt-full-screen-area .hbt-full-screen-area-leftcolumn a.hbt-full-screen-area-leftcolumn-button{
+    border:2px solid #132150;
+    margin-top: 100px;
+    width:100px;
+    text-align: center;
+    font-size:25px;
+
+}
+.hbt-full-screen-area .hbt-full-screen-area-leftcolumn a.hbt-full-screen-area-leftcolumn-button:hover{
+    box-shadow: inset 0 0 0 3px #132150;
+}
+
+.hbt-full-screen-area-rightcolumn{
+    padding-top: 140px;
+    float:right;
+    color:white;
+    background-color:#0099d2;
+    padding-left:50px;
+    padding-right:50px;
+    height:800px;
+}
+.hbt-full-screen-area-rightcolumn ul.hbt-full-screen-area-rightcolumn-list{
+    list-style-image: url("../img-hbt/check_bullet.png");
+    margin-bottom: 120px;
+}
+.hbt-full-screen-area-rightcolumn .hbt-full-screen-area-rightcolumn-heading{
+    font-family: "gotham_bookregular","arial";
+    font-size:26px;
+    margin-bottom: 50px;
+}
+.hbt-full-screen-area-rightcolumn ul.hbt-full-screen-area-rightcolumn-list li{
+    color:#fff;
+    font-family: "gotham_lightregular","arial";
+    font-size:21px;
+    margin-bottom: 15px;
+    margin-left:25px;
+}
+    
+.hbt-full-screen-area-rightcolumn .hbt-full-screen-area-rightcolumn-button{
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: #1d8ebf;
+    width:200px;
+    padding:15px 40px 15px 40px;
+    text-align: center;
+    color:#fff;
+    font-family:"gotham_bookregular","arial"; 
+    font-size:25px;
+    text-transform:uppercase;
+    text-decoration:none;
+}
+.hbt-full-screen-area-rightcolumn .hbt-full-screen-area-rightcolumn-button:hover{
+    background-color:#127ba8;
+}
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu{
+    height:80px;
+    display:block;
+    background-color:rgba(255,255,255,0.5);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    overflow:hidden;
+}
+
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-full-screen-area-floating-menu-item{
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    padding-top:32px;
+    text-align: center;
+    display:inline-block;
+    height:50px;
+    width:20%;
+    font-size:16px;
+    font-weight: bold;
+    font-family: "FuturaBoldRegular","arial","helvetica";
+    position:relative;
+}
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-white-block{
+    float:left;
+    color:#36aadb;
+}
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-white-block:hover{
+    color:#127ba8;
+}
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-red-block{
+    float:right;
+    color:#fff;
+    background-color:#cb0226;
+    z-index:10;
+}
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-red-block .hbt-on-top{
+    position:absolute;
+    z-index:10;
+    left:35%;
+}
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-red-block:hover{
+    color: #c68d97;
+}
+.hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-red-edge{
+    background-color:#cb0226;
+    height:80px;
+    width:1000px;
+    position:absolute;
+    left:0;
+    margin-top:-32px;
+}
+
+.hbt-full-screen-area .hbt-sticky-menu{
+    position:fixed !important;
+    top:0 !important;
+    z-index:20;
+    background-color:#f9f9f9;
+}
+/* End of full height area */
+
+/* Two column area*/
+.hbt-two-column-area{
+    display:block;
+    padding-top:80px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid #f9f9f9;
+    margin-bottom: 30px;
+}
+.hbt-two-column-area .hbt-half-width{
+    width:50%;
+    display:inline-block;
+}
+.hbt-two-column-area .hbt-two-colum-left{
+    float:left;
+}
+.hbt-two-column-area .hbt-two-colum-right{
+    float:right;
+}
+.hbt-two-column-area .hbt-two-colum-right h2{
+    font-family:"gotham_bookregular","arial"; 
+    font-size:32px;
+    color:#132150;
+    margin-bottom: 30px;
+    font-weight:lighter;
+}
+.hbt-two-column-area .hbt-two-colum-right p{
+    width:80%;
+    font-family: "FuturaBT-Book","arial","helvetica";
+    font-size:17px;
+}
+/* End Two column area */
+
+/* Carousel area */
+.hbt-carousel-outter{
+    overflow:hidden;
+    width:100%;
+    height:434px;
+    display:block;
+    position:relative;
+}
+.hbt-carousel-outter .hbt-carousel-inner{
+    display:block;
+    width:5000px;
+    height:434px;
+    position:relative;
+}
+
+.hbt-carousel-transition{
+    -o-transition:1000ms cubic-bezier(1,0,0,1) 0s;
+    -moz-transition:1000ms cubic-bezier(1,0,0,1) 0s;
+    -webkit-transition: 1000ms cubic-bezier(1,0,0,1) 0s; /* Safari */
+    transition: 1000ms cubic-bezier(1,0,0,1) 0s;
+}
+.hbt-carousel-outter .hbt-carousel-inner .hbt-carousel-item{
+    display:inline-block;
+    width:700px;
+    float:left;
+    position:relative;
+    
+}
+.hbt-carousel-outter .hbt-carousel-mask{
+    position:absolute;
+    height:434px;
+    color:#fff;
+    background:url('../img-hbt/carousel/maskbg.png');
+    opacity:0.5;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -o-opacity:0.5;
+    display:block;
+    z-index:1;
+}
+.hbt-carousel-outter .hbt-carousel-mask-left{
+    left:0;
+}
+.hbt-carousel-outter .hbt-carousel-mask-right{
+    right:0;
+}
+
+.hbt-carousel-leftButton{
+    background:url('../img-hbt/carousel/carousel_arrow_left.png') no-repeat;
+    width:28px;
+    height:47px;
+    display:block;
+    position:absolute;
+    left:15px; 
+    top: 190px;
+    z-index:2;
+}
+.hbt-carousel-rightButton{
+    background:url('../img-hbt/carousel/carousel_arrow_right.png') no-repeat;
+    width:28px;
+    height:47px;
+    display:block;
+    position:absolute;
+    right:15px; 
+    top: 190px;
+    z-index:2;
+}
+.hbt-carousel-item-capcontainer{
+    width:60px;
+    display:block;
+    background:url('../img-hbt/carousel/carousel-cap-bg.png') repeat;
+    position:absolute;
+    top:0;
+    color:#fff;
+    font-family:"gotham_bookregular","arial"; 
+    font-size:26px;
+}
+.hbt-carousel-item-capcontainer span.hbt-vertical-text{
+    position:absolute;
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    bottom:110px;
+    left:-71px;
+}
+/* End of Carousel area */
+
+/* Workmanship */
+.hbt-workmanship{
+    background-color:#f9f9f9;
+    margin-top:60px;
+    padding-left:340px !important;
+    padding-right:300px !important;
+}
+.hbt-workmanship-cell{
+    float:left;
+    background-color:#f9f9f9;
+    position:relative;
+    display:block;
+    box-sizing:border-box;
+}
+.hbt-workmanship .hbt-workmanship-thumb{
+    width:340px;
+    margin-left:-340px;
+    box-sizing:border-box;
+}
+.hbt-workmanship .hbt-workmanship-thumb img{
+    width:340px;
+}
+.hbt-workmanship .hbt-workmanship-desc{
+    font-family: "FuturaBT-Book","arial","helvetica";
+    width:100%;
+    box-sizing:border-box;
+    padding:50px 60px;
+}
+
+.hbt-workmanship .hbt-workmanship-warranty{
+    width:300px;
+    margin-right:-300px;
+    padding-top:40px;
+    box-sizing:border-box;
+}
+.hbt-workmanship .hbt-workmanship-warranty img{
+    float:right;
+    margin-right:50px;
+}
+
+.hbt-workmanship .hbt-workmanship-desc h2{
+    font-family:"gotham_bookregular","arial"; 
+    font-size:26px;
+    color:#132150;
+    font-weight:lighter;
+    margin-bottom:30px;
+}
+.hbt-workmanship .hbt-workmanship-desc p{
+    font-size:24px;
+    color:#5c5c5c;
+    width:90%;
+    margin-bottom:30px;
+
+}
+.hbt-workmanship .hbt-workmanship-desc a.hbt-button{
+    color:#d0d0d0;
+    font-weight:lighter;
+}
+
+/* End of workmanship */
+
+/* Three column */
+.hbt-three-column{
+    padding-top:25px;
+}
+.hbt-three-column .hbt-col-3{
+    width:33%;
+    display:inline-block;
+    margin:0;
+    padding:0px 0px;
+    background-color:#f9f9f9;
+    margin-bottom:60px;
+}
+
+.hbt-three-column .hbt-col-3 .hbt-three-column-content{
+    padding:20px 30px 40px 30px;
+}
+.hbt-three-column .hbt-col-3 h2{
+    font-family:"gotham_bookregular","arial"; 
+    color:#132150;
+    font-size:26px;
+    font-weight:lighter;
+
+}
+.hbt-three-column .hbt-col-3 p{
+    font-family: "FuturaBT-Book","arial","helvetica";
+    color:#5c5c5c;
+    font-weight:lighter;
+    font-size:17px;
+    margin-top:20px;
+
+}
+.hbt-three-column .hbt-col-3 a.hbt-button{
+    font-family: "FuturaBT-Book","arial","helvetica";
+    color:#d0d0d0;
+    font-size:18px;
+    font-weight:lighter;
+    margin-top:30px;
+
+}
+/* End of three column */
+/* End of home page */
+
+/* Contact us page */
+.hbt-contact-us{
+    width:75%;
+    display:block;
+    margin:0 auto;
+    font-family: "FuturaBT-Book","arial","helvetica";
+    font-weight:lighter;
+    padding-top:50px;
+    min-height:898px;
+    position:relative;
+}
+
+.hbt-full-screen-area-caption{
+    float:right;
+    margin-top:250px;
+    margin-right:100px;
+    padding-bottom:15px;
+}
+
+.hbt-full-screen-area-caption a{
+    font-family: "gotham_lightregular","arial";
+    font-size:36px;
+    text-decoration: none;
+}
+.hbt-contact-us ::-webkit-input-placeholder {font-family: "FuturaBT-Book","arial","helvetica";font-weight:lighter;color:#c7c7c7;
+ }
+.hbt-contact-us ::-moz-placeholder {font-family: "FuturaBT-Book","arial","helvetica";font-weight:lighter;color:#c7c7c7;
+ } /* firefox 19+ */
+.hbt-contact-us ::-ms-input-placeholder {font-family: "FuturaBT-Book","arial","helvetica";font-weight:lighter;color:#c7c7c7;
+ } /* ie */
+
+
+.hbt-contact-us ul li{
+    list-style:none;
+
+}
+
+.hbt-contact-us input[type=text],.hbt-contact-us textarea{
+    padding:10px 20px;
+    font-size:24px;
+    font-weight:lighter;
+    border:1px solid #c7c7c7;
+    width:75%;
+    margin:18px 0;
+    font-family: "FuturaBT-Book","arial","helvetica";
+    color:#c7c7c7;
+}
+.hbt-contact-us textarea{
+    height:172px;
+}
+.hbt-contact-us-left{
+    padding-right:30px;
+    width:65%;
+    padding-bottom:30px;
+    display:block;
+    float:left;
+}
+.hbt-contact-us-right{
+    width:30%;
+    display:block;
+    float:left;
+    margin-top:30px;
+    background-color:#f9f9f9;
+    font-family: "FuturaBT-Book","arial","helvetica";
+    font-weight:lighter;
+    font-size:18px;
+}
+.hbt-contact-us-right .hbt-contact-details{
+    padding:30px 30px;
+} 
+.hbt-contact-us-right .hbt-contact-details h2{
+    font-size:19px;
+    color:#00235E;
+    margin-bottom:5px;
+}
+.hbt-contact-us-right .hbt-contact-details .hbt-call-us{
+    margin-bottom:50px;
+}
+.hbt-contact-us-right .hbt-contact-details .hbt-address{
+    margin-bottom:10px;
+}
+.hbt-contact-us-right ul li{
+    list-style:none;
+}
+.hbt-contact-us-left a.hbt-button{
+    color:#D0D0D0;
+    font-size:24px;
+    margin:10px 0;
+    font-family: "FuturaBT-Book","arial","helvetica";
+    font-weight:lighter;
+}
+
+.hbt-contact-us-left h1{
+    color:#00235E;
+    font-size:36px;
+    margin:30px 0;
+}
+.hbt-contact-us-left p{
+    color:#5c5c5c;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* End of contact us */
+
+/* Content Page */
+.hbt-content-area{
+    width:80%;
+    margin:0 auto;
+    padding:60px 15px 15px 15px;
+}
+.hbt-space-60{
+    height:60px;
+    display:block;
+}
+.hbt-content-area h1, .hbt-content-area h2{
+    font-family: "gotham_bookregular","arial";
+    font-weight:lighter;
+    color:#132150;
+    margin-bottom:10px;
+}
+
+.hbt-large-p p{
+    margin-top:30px;
+}
+.hbt-content-half-width{
+    width:46%;
+    display:inline-block;
+    vertical-align:top;
+    margin-top:40px;
+    padding-right:3%;
+}
+.hbt-content-half-width ul{
+    list-style-image: url("../img-hbt/dash_bullet.png");
+    padding-left:15px;
+}
+.hbt-content-half-width ul li{
+    margin-top:10px;
+}
+.hbt-large-p h1{
+    font-size:36px;
+}
+.hbt-small-p h2{
+    font-size:24px;
+    margin-bottom:15px;
+}
+.hbt-large-p,.hbt-large-p ul li,.hbt-large-p p,.hbt-large-p span{
+    font-family: "FuturaBT-Book","arial","helvetica";
+    font-weight:lighter;
+    font-size:24px;
+    color:#454545;
+}
+.hbt-small-p,.hbt-small-p ul li,.hbt-small-p p,.hbt-small-p span{
+    font-family: "FuturaBT-Book","arial","helvetica";
+    font-weight:lighter;
+    font-size:16px;
+}
+.hbt-content-half-width h2{
+    background:url('../img-hbt/check_bullet_blue.png') no-repeat;
+    background-position:2px 6px;
+    padding-left:50px;
+}
+.hbt-content-area.hbt-bordered-bottom{
+    border-bottom:5px solid #f9f9f9;
+    padding-bottom:60px;
+}
+.hbt-content-fluid-left{
+    padding-right:300px !important;
+}
+.hbt-content-area-left{
+    width:100%;
+    display:inline-block;
+    min-height:200px;
+    vertical-align:top;
+}
+.hbt-content-area-right{
+    width:260px;
+    padding-left:20px;
+    display:inline-block;
+    vertical-align:top;
+    margin-right:-290px;
+}
+/* End of content page */
+
+
+@media (max-width: 1138px) {
+    .hbt-full-screen-area .hbt-full-screen-area-leftcolumn h1.hbt-full-screen-area-leftcolumn-description{
+        font-size:30px;
+        width:400px;
+    }
+    .hbt-full-screen-area .hbt-full-screen-area-leftcolumn a.hbt-full-screen-area-leftcolumn-button{
+
+        font-size:18px;
+
+    }
+    
+    
+    .hbt-workmanship .hbt-workmanship-desc{
+        padding:30px 40px;
+    }
+    .hbt-workmanship .hbt-workmanship-desc h2{
+        font-size:18px;
+    }
+    .hbt-workmanship .hbt-workmanship-desc p{
+        font-size:16px;
+        width:100%
+    }
+    .hbt-workmanship .hbt-workmanship-desc a.hbt-button{
+        font-size:16px;
+    }
+    
+    .hbt-carousel-outter .hbt-carousel-inner .hbt-carousel-item{
+        width:600px;
+    }
+    .hbt-carousel-leftButton{
+        top:170px;
+    }
+    .hbt-carousel-rightButton{
+        top:170px
+    }
+    .hbt-two-column-area .hbt-two-colum-right h2{
+        font-size:23px;
+        margin-bottom:10px;
+    }
+    .hbt-two-column-area .hbt-two-colum-right p{
+        font-size:15px;
+    }
+    .hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-full-screen-area-floating-menu-item{
+        font-size:13px;
+        font-weight:lighter;
+        padding-top:35px;
+    }
+    .hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-red-edge{
+        margin-top:-35px;
+    }
+    .hbt-full-screen-area-rightcolumn .hbt-full-screen-area-rightcolumn-button{
+        width:170px;
+        font-size:20px;
+    }
+}
+@media (min-width: 1138px) and (max-width: 1489px ) {
+    .hbt-full-screen-area-rightcolumn .hbt-full-screen-area-rightcolumn-button{
+        width:170px;
+        font-size:20px;
+    }
+    .hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-full-screen-area-floating-menu-item{
+        font-size:13px;
+        font-weight:lighter;
+        padding-top:35px;
+    }
+    .hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-red-edge{
+        margin-top:-35px;
+    }
+    .hbt-workmanship .hbt-workmanship-desc{
+        padding:40px 40px;
+    }
+    .hbt-workmanship .hbt-workmanship-desc h2{
+        font-size:23px;
+    }
+    .hbt-workmanship .hbt-workmanship-desc p{
+        font-size:20px;
+        width:100%
+    }
+    .hbt-workmanship .hbt-workmanship-desc a.hbt-button{
+        font-size:20px;
+    }
+    .hbt-two-column-area .hbt-two-colum-right h2{
+        font-size:26px;
+        margin-bottom:20px;
+    }
+}
+

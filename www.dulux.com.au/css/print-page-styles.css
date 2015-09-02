@@ -1,0 +1,436 @@
+/*******************************************/
+/** General Styles
+/*******************************************/
+
+* {
+	border: none;
+	color: #2d2d2d;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif, Tahoma;
+	font-size: 82.5%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+#wrapper {
+	margin: 10px auto;
+	padding: 10px 0;
+	width: 680px;	
+}
+
+div.row {
+	border-top: 1px solid #bfbfb9;
+	clear: both;
+	float: left;
+	margin-top: 25px;
+	padding-top: 15px;
+	width: 100%;
+}
+/*********************************************************************************************************************************/
+/** MY PROJECT
+/*********************************************************************************************************************************/
+
+/*******************************************/
+/** Header
+/*******************************************/
+img#logo {
+
+}
+
+div#intro {
+	clear: left;
+	margin-top: 20px;
+	width: 300px;
+}
+
+div#intro p {
+	width: 250px;
+}
+
+div#retailer {
+	clear: right;
+	padding-top: 22px;
+}
+
+/*******************************************/
+/** Rows
+/*******************************************/
+div.row h2 {
+	display: block;
+
+}
+
+div.row p.intro {
+	float: right;
+	font-size: .9em;
+	width: 530px;
+}
+
+/*******************************************/
+/** My Colour Scheme
+/*******************************************/
+div#scheme .colour-block {
+	float: left;
+	margin-left: 19px;
+	width: 207px;
+}
+
+div#scheme .colour-block.first {
+	margin-left: 45px;	
+}
+
+div#scheme .colour-block img {
+	margin: 15px 0 0 0;
+}
+
+
+div#scheme .swatch {
+	border: 1px solid #d5d5cd;
+	height: 88px;
+	margin-left: 25px;
+	margin-top: 15px;
+	padding: 4px;
+	width: 141px;
+}
+
+div#scheme .swatch .colour {
+	border-top: 48px solid #e6dbce;
+	height: 0;
+	width: 141px;
+}
+
+div#scheme p.category,
+div#scheme p.name {
+	font-size: .8em;
+}
+
+
+
+div#scheme p.category {
+	width: 60%;
+}	
+
+div#scheme p.texture {
+	float: right;
+	font-size: 0.8em;
+	text-align: right;
+	width: 40%;	
+}
+
+/*******************************************/
+/** My Products
+/*******************************************/
+
+div.product {
+	clear: right;
+	float: left;
+	margin: 20px 20px 0 0;
+	overflow: hidden;
+	width: 155px;
+}
+
+div.product.last {
+	margin-right: 0;
+}
+
+div.product img {
+	float: left;
+	margin-right: 10px;
+}
+
+div.product p {
+	font-size: .8em;
+	font-weight: bold;
+	float: left;
+	margin: 5px 0 0 0;
+	width: 90px;
+}
+
+div.fact {
+	clear: right;
+	float: left;
+	margin: 20px 20px 0 0;
+	width: 212px;
+}
+
+div.fact.last {
+	margin-right: 0;	
+}
+div.fact p {
+	font-size: .8em;
+	font-weight: bold;
+	float: left;
+	margin: 5px 0 0 0;	
+}
+
+div.fact h3 {
+	color: #00235E;	
+}
+
+/*******************************************/
+/** Paint Calculation
+/*******************************************/
+div#calculation h2 {
+	float: none;
+	clear: both;
+}
+
+div#calculation p {
+	float: left;
+	margin-top: 20px;
+}
+
+div#calculation p.paint {
+	margin: 0 0 0 50px;
+}
+
+div#calculation p.paint span.litre {
+	font-weight: bold;
+	font-size: 2.6em;
+}
+
+div#calculation p.notes {
+	clear: both;
+	float: left;
+	font-size: .8em;
+	list-style: none;
+	margin-top: 10px;
+	width: 100%;
+}
+
+/*******************************************/
+/** Promo Area
+/*******************************************/
+div#promo {
+	display: none;	
+}
+
+div#promo h2 {
+	float: none;
+	margin-bottom: 15px;
+}
+
+div#promo .promo {
+	float: left;
+	padding-right: 20px;
+	width: 240px;
+}
+
+div#promo .promo p {
+	font-size: 1em;
+	float: left;
+	margin-left: 10px;
+	width: 170px;	
+}
+
+div#promo img {
+	float: left;
+}
+
+div#promo h4 {
+	float: left;
+	margin-left: 10px;
+}
+/*******************************************/
+/** Disclaimer
+/*******************************************/
+div#disclaimer p {
+	color: #777;
+	font-size: .8em;
+	margin-bottom: 20px;
+}
+
+div#disclaimer p strong {
+	color: #777;	
+}
+
+/*********************************************************************************************************************************/
+/** SCRAPBOOK
+/*********************************************************************************************************************************/
+
+#wrapper.scrapbook {
+	border: none;
+}
+
+#wrapper.scrapbook .row {
+	margin-top: 15px;
+}
+
+
+#wrapper.scrapbook .row h2 {
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+#wrapper.scrapbook p.intro {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+#wrapper.scrapbook img.header {
+	float: left;
+	clear: both;
+	margin: 20px 0 10px 0;
+}
+
+/*******************************************/
+/** Colours
+/*******************************************/
+div#colours h2 {
+
+}
+
+div#colours .colour-block {
+	float: left;
+	margin-right: 40px;
+	width: 147px;
+}
+
+div#colours .colour-block.last {
+	margin-right: 0;
+}
+
+div#colours .colour-block img {
+	margin: 13px 0 0 17px;
+}
+
+
+div#colours .swatch {
+	border: 1px solid #d5d5cd;
+	height: 88px;
+	margin-bottom: 8px;
+	padding: 4px;
+	width: 137px;
+}
+
+div#colours .swatch .colour {
+	border-top: 48px solid #e6dbce;
+	height: 0;
+	width: 137px;
+}
+
+div#colours p.category,
+div#colours p.name {
+	font-size: .8em;
+}
+
+/*******************************************/
+/** Schemes
+/*******************************************/
+div.scheme {
+	border: 1px solid #d5d5cd;
+	float: left;
+	margin: 0 28px 18px 0;
+	padding: 4px 4px 2px 4px;
+	width: 72px;
+}
+
+div.scheme.last {
+	margin-right: 0;
+}
+
+div.scheme .scheme-colour {
+	border-top: 31px solid #725875;
+	display: block;
+	margin-bottom: 2px;
+	width: 72px;
+}
+
+/*******************************************/
+/** Pictures
+/*******************************************/
+#pictures img {
+	border: 1px solid #bcbcb5;
+	float: left;
+	margin: 0 34px 19px 0;
+	padding: 4px;
+}
+
+#pictures img.last {
+	margin-right: 0;
+}
+
+/*******************************************/
+/** Products
+/*******************************************/
+#wrapper.scrapbook #products .product {
+	border: 1px solid #bcbcb5;
+	clear: none;
+	margin: 0 30px 20px 0;
+	min-height: 61px;
+	_height: 61px;
+	padding: 4px;
+	width: 155px;
+}
+
+#wrapper.scrapbook #products .product.last  {
+	margin-right: 0;
+}
+
+#wrapper.scrapbook #products .product p {
+	font-size: .8em;
+	font-weight: normal;
+	width: 80px;
+}
+
+#wrapper.scrapbook #products .product img {
+	height: 50px;
+	margin-right: 10px;
+	width: 50px;
+}
+
+/*******************************************/
+/** Generic Styles
+/*******************************************/
+.first {
+	margin: auto 0;
+}
+
+p {
+	font-size: 1em;
+}
+
+h1 {
+	color: #00235e;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h2 {
+	color: #00235e;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: .9em;
+}
+
+img.footer {
+	float: left;
+	clear: both;	
+}
+
+div.clear {
+	clear: both;
+	margin: 0;
+	height: 0;
+}

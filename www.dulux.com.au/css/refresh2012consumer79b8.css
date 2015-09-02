@@ -1,0 +1,7 @@
+﻿html, body {
+	background: #fbfbfb url(../imgs/redesign/pageBackground.jpg) no-repeat 0 0 fixed;
+}
+
+#wrapper {
+    background: #fbfbfb url(../imgs/redesign/bg_background.jpg) repeat-x 0 0;
+}

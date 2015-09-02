@@ -1,0 +1,292 @@
+/* Dulux Colour Trends 2013
+   Author: Tony Trinh, 21.9.12
+*/
+
+/* temp */
+.wrapper	 	{ background: #fbfbfb; }
+.wrapper img 	{ display: block; }
+#content 		{ width: 960px; margin: 0 6px; padding: 0; }
+body			{ background: #FBFBFB url(../../../images/2015/design-notes-2015/temp/pageBackground.jpg) no-repeat fixed 0 0; height: auto; }
+
+/* DESIGN NOTES CONTENT */
+
+.design-notes { width:100%; /*border-top:solid 1px #b0b0a9;*/ background-color:#fff; }
+.design-notes .intro { width:960px; height:497px; background-image:url(../../../images/2015/design-notes-2015/bg-design-notes-intro.jpg); background-position:0 0; background-repeat:no-repeat; }
+.design-notes .intro h2,
+.design-notes .intro h3,
+.design-notes .intro h4 { text-indent:-9999em; margin:0; padding:0; }
+.design-notes .intro .description { margin:245px 0 0; width:400px; }
+.design-notes .intro .description p { font-size:14px; color:#10000c; margin:0 0 10px 18px; line-height:20px; }
+
+.design-notes .looks-header { width:960px; height:135px; background-color:#e9e9e9; background-image:url(../../../images/2015/design-notes-2015/hd-looks-header.gif); background-position:151px center; background-repeat:no-repeat; }
+.design-notes .looks-header .issue-dropdown { float:right; width:200px; height:175px; margin:-40px 0 0; background-image:url(../../../images/2015/design-notes-2015/bg-select-issue.png); background-position:0 0; background-repeat:no-repeat; }
+.design-notes .looks-header .issue-dropdown label { width:100%; display:block; font-size:15px; color:#818181; text-align:center; text-indent:-9999em; }
+.design-notes .looks-header .issue-dropdown select { width:140px; margin:105px 0 0 37px; padding:3px 0; font-size:12px; }
+
+.design-notes .look1 { width:960px; height:594px; overflow:hidden; position:relative; background-color:#fff; }
+.design-notes .look1 .inner { width:960px; height:594px; background-image:url(../../../images/2015/design-notes-2015/bg-look1.jpg); background-position:right 0; background-repeat:no-repeat; float:left; position:relative; }
+.design-notes .look1 .inner h2 { width:279px; height:57px; background-image:url(../../../images/2015/design-notes-2015/hd-look1.gif); background-position:0 0; background-repeat:no-repeat; text-indent:-9999em; margin:42px 0 0 20px; padding:0; visibility:visible; }
+.design-notes .look1 .inner p { width:320px; margin:10px 0 0 19px; color:#6e6e6e; font-size:12px; line-height:18px; }
+.design-notes .look1 .inner .swatch1 { width:171px; height:171px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-maidenhair-fern.png); background-repeat:no-repeat; background-position:0 0; left:100px; bottom:35px; }
+.design-notes .look1 .inner .swatch1 p { color:#fff; font-size:17px; text-align:center; margin:90px 0 0; padding:0 30px; width:auto; }
+.design-notes .look1 .inner .swatch2 { width:99px; height:99px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-savannah.png); background-repeat:no-repeat; background-position:0 0; left:420px; bottom:128px; }
+.design-notes .look1 .inner .swatch2 p { color:#84765b; font-size:12px; text-align:center; margin:46px 0 0; padding:0 18px; width:auto; }
+.design-notes .look1 .inner .swatch3 { width:138px; height:138px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-spring-burst-half.png); background-repeat:no-repeat; background-position:0 0; left:385px; bottom:216px; }
+.design-notes .look1 .inner .swatch3 p { color:#447648; font-size:15px; text-align:center; margin:62px 0 0; padding:0 25px; width:auto; }
+.design-notes .look1 .inner .detail { width:226px; height:226px; background-image:url(../../../images/2015/design-notes-2015/bg-look1-detail.png); background-repeat:no-repeat; background-position:0 0; position:absolute; bottom:48px; left:-80px; }
+
+.design-notes .look2 { width:960px; height:690px; overflow:hidden; position:relative; background-color:#fff; }
+.design-notes .look2 .inner { width:960px; height:690px; background-image:url(../../../images/2015/design-notes-2015/bg-look2.jpg); background-position:left 0; background-repeat:no-repeat; float:left; position:relative; }
+.design-notes .look2 .inner h2 { width:287px; height:57px; float:right; background-image:url(../../../images/2015/design-notes-2015/hd-look2.gif); background-position:0 0; background-repeat:no-repeat; text-indent:-9999em; margin:105px 110px 0 0; padding:0; visibility:visible; }
+.design-notes .look2 .inner p { width:370px; margin:10px 26px 0 0; color:#6e6e6e; font-size:12px; line-height:18px; float:right; clear:right; }
+.design-notes .look2 .inner .swatch1 { width:130px; height:130px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-stella.png); background-repeat:no-repeat; background-position:0 0; left:68px; bottom:15px; }
+.design-notes .look2 .inner .swatch1 p { color:#fff; font-size:14px; text-align:center; margin:69px 0 0; padding:0 30px; width:auto; float:none; }
+.design-notes .look2 .inner .swatch2 { width:158px; height:158px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-hot-lips.png); background-repeat:no-repeat; background-position:0 0; right:328px; bottom:35px; }
+.design-notes .look2 .inner .swatch2 p { color:#fff; font-size:17px; text-align:center; margin:93px 0 0; padding:0 18px; width:auto; float:none; }
+.design-notes .look2 .inner .swatch3 { width:91px; height:91px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-ito.png); background-repeat:no-repeat; background-position:0 0; left:466px; bottom:168px; }
+.design-notes .look2 .inner .swatch3 p { color:#fff; font-size:14px; text-align:center; margin:48px 0 0; padding:0 25px; width:auto; float:none; }
+.design-notes .look2 .inner .detail { width:190px; height:190px; background-image:url(../../../images/2015/design-notes-2015/bg-look2-detail.png); background-repeat:no-repeat; background-position:0 0; position:absolute; bottom:75px; right:192px; }
+
+.design-notes .look3 { width:960px; height:694px; overflow:hidden; position:relative; background-color:#fff; }
+.design-notes .look3 .inner { width:960px; height:694px; background-image:url(../../../images/2015/design-notes-2015/bg-look3.jpg); background-position:right 0; background-repeat:no-repeat; float:left; position:relative; }
+.design-notes .look3 .inner h2 { width:286px; height:57px; background-image:url(../../../images/2015/design-notes-2015/hd-look3.gif); background-position:0 0; background-repeat:no-repeat; text-indent:-9999em; margin:66px 0 0 20px; padding:0; visibility:visible; }
+.design-notes .look3 .inner p { width:335px; margin:10px 0 0 19px; color:#6e6e6e; font-size:12px; line-height:18px; }
+.design-notes .look3 .inner .swatch1 { width:98px; height:98px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-oolong.png); background-repeat:no-repeat; background-position:0 0; left:375px; bottom:181px; }
+.design-notes .look3 .inner .swatch1 p { color:#a1a3a5; font-size:12px; text-align:center; margin:47px 0 0; padding:0 25px; width:auto; }
+.design-notes .look3 .inner .swatch2 { width:122px; height:122px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-mamala-bay.png); background-repeat:no-repeat; background-position:0 0; left:313px; bottom:30px; }
+.design-notes .look3 .inner .swatch2 p { color:#94b1c3; font-size:12px; text-align:center; margin:59px 0 0; padding:0 18px; width:auto; }
+.design-notes .look3 .inner .swatch3 { width:197px; height:197px; position:absolute; background-image:url(../../../images/2015/design-notes-2015/bg-swatch-gold-rush.png); background-repeat:no-repeat; background-position:0 0; left:105px; bottom:157px; }
+.design-notes .look3 .inner .swatch3 p { color:#fff; font-size:15px; text-align:center; margin:80px 0 0; padding:0 75px; width:auto; }
+.design-notes .look3 .inner .detail { width:223px; height:223px; background-image:url(../../../images/2015/design-notes-2015/bg-look3-detail.png); background-repeat:no-repeat; background-position:0 0; position:absolute; bottom:91px; left:-51px; }
+
+.design-notes .sample-pot { width:960px; height:198px; background-color:#e9e9e9; background-image:url(../../../images/2015/design-notes-2015/bg-sample-pot.jpg); background-position:20px center; background-repeat:no-repeat; }
+.design-notes .sample-pot .description { padding:33px 0 0 313px; width:300px; float:left; }
+.design-notes .sample-pot .description p { font-size:17px; line-height:21px; }
+.design-notes .sample-pot .description p.terms { font-size:11px; margin:11px 0 0; line-height:15px; }
+
+.design-notes .sample-pot .options { float:right; width:261px; padding:33px 20px 0 0; }
+.design-notes .sample-pot .options a { width:261px; height:37px; display:block; text-indent:-9999em; background-position:0 0; background-repeat:no-repeat; margin:0 0 11px; }
+.design-notes .sample-pot .options a.colour-trends { background-image:url(../../../images/2015/design-notes-2015/btn-latest-colour-trends.gif); }
+.design-notes .sample-pot .options a.consultation { background-image:url(../../../images/2015/design-notes-2015/btn-book-consultant.gif); }
+.design-notes .sample-pot .options a.wash-and-wear { background-image:url(../../../images/2015/design-notes-2015/btn-dulux-wash-wear.gif); }
+
+/* ISSUE 2 OVERRIDES */
+.design-notes.issue2 .look1 .inner h2 { background-image:url("../../../images/2015/design-notes-2015/issue2-hd-look1.gif"); }
+.design-notes.issue2 .look1 .inner { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-look1.jpg"); }
+.design-notes.issue2 .look1 .inner .detail { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-look1-detail.png"); left:-17px; }
+.design-notes.issue2 .look1 .inner .swatch1 { left:292px; top:336px; background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-maidenhair-fern.png"); width:172px; height:172px; }
+.design-notes.issue2 .look1 .inner .swatch3 { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-spring-burst-half.png"); }
+.design-notes.issue2 .look1 .inner .swatch3 p { color:#fff; margin:67px 0 0; }
+
+.design-notes.issue2 .look2 .inner { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-look2.jpg"); }
+.design-notes.issue2 .look2 .inner h2 { background-image:url("../../../images/2015/design-notes-2015/issue2-hd-look2.gif"); }
+.design-notes.issue2 .look2 .inner .swatch1 { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-stella.png"); top:423px; left:423px; }
+.design-notes.issue2 .look2 .inner .swatch1 p { color:#b7b7b7; margin:59px 0 0;  }
+.design-notes.issue2 .look2 .inner .swatch2 { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-hot-lips.png"); top:495px; right:203px; }
+.design-notes.issue2 .look2 .inner .swatch2 p { margin:77px 0 0; }
+.design-notes.issue2 .look2 .inner .swatch3 { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-ito.png"); left:500px; top:360px; }
+.design-notes.issue2 .look2 .inner .swatch3 p { text-align:center; padding:0; margin:38px 0 0; }
+.design-notes.issue2 .look2 .inner .detail { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-look2-detail.png"); right:24px; top:387px; }
+
+.design-notes.issue2 .look3 .inner { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-look3.jpg"); }
+.design-notes.issue2 .look3 .inner h2 { background-image:url("../../../images/2015/design-notes-2015/issue2-hd-look3.gif"); }
+.design-notes.issue2 .look3 .inner .swatch1 { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-oolong.png"); width:122px; height:122px; top:333px; left:368px; }
+.design-notes.issue2 .look3 .inner .swatch1 p { margin:60px 0 0; }
+.design-notes.issue2 .look3 .inner .swatch2 { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-mamala-bay.png"); width:98px; height:98px; top:444px; left:346px; }
+.design-notes.issue2 .look3 .inner .swatch2 p { color:#abacac; padding:0 10px; margin:47px 0 0; }
+.design-notes.issue2 .look3 .inner .swatch3 { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-swatch-gold-rush.png"); width:142px; height:142px; z-index:2; top:431px; left:160px; }
+.design-notes.issue2 .look3 .inner .swatch3 p { padding:0 10px; margin:54px 0 0; }
+.design-notes.issue2 .look3 .inner .detail { background-image:url("../../../images/2015/design-notes-2015/issue2-bg-look3-detail.png"); left:-31px; bottom:15px; }
+
+
+/* ISSUE 3 OVERRIDES */
+.design-notes.issue3 .intro {background: url(../../../images/2015/design-notes-2015/issue3/bg-design-notes-intro.jpg) no-repeat; height:552px; }
+.design-notes.issue3 .intro .description { margin:245px 0 0 22px }
+.design-notes.issue3 .looks-header { background:#e9e9e9 url(../../../images/2015/design-notes-2015/issue3/hd-looks-header.jpg) no-repeat  151px center }
+.design-notes.issue3 div .inner h2 { position:absolute; display:block; width:287px; height:57px; margin:0; background:url(../../../images/2015/design-notes-2015/issue3/get-the-look.jpg) no-repeat; text-indent: -9999em }
+.design-notes.issue3 div .inner p { position:absolute; margin:0; display:block; font:normal 12px/18px Arial, Sans-serif; color:#6e6e6e }
+.design-notes.issue3 .look4 .inner { width:960px }
+
+/* Sprite */
+.swatchs { position:absolute; display:block; background:url(../../../images/2015/design-notes-2015/issue3/swatch.png) no-repeat; text-align:center }
+.swatchs span { display:block; font:normal 15px/18px arial, sans-serif; margin:0 }
+
+/* 143 size */
+.swatchs.s-143 { width:143px; height:143px }
+.swatchs.s-143.c-f5f { background-position:-473px -512px }
+.swatchs.s-143.c-f5f span { padding-top:66px; color:#333 }
+
+/* 159 size */
+.swatchs.s-159 { width:159px; height:159px }
+.swatchs.s-159.c-888 { background-position:-464px -194px }
+.swatchs.s-159.c-888 span { padding-top:74px; color:#fff }
+.swatchs.s-159.c-f8d { background-position:-464px -353px }
+.swatchs.s-159.c-f8d span { padding-top:74px; color:#fff }
+
+/* 183 size */
+.swatchs.s-183 { width:183px; height:184px }
+.swatchs.s-183.c-f8d { background-position:-452px -10px }
+.swatchs.s-183.c-aa9 { background-position:-248px -600px }
+.swatchs.s-183.c-f8d span { padding-top:88px; color:#484848 }
+.swatchs.s-183.c-aa9 span { padding-top:80px; color:#fff }
+
+/* 194 size */
+.swatchs.s-194 { width:194px; height:194px }
+.swatchs.s-194.c-e3d { background-position:-243px -212px }
+.swatchs.s-194.c-ebe { background-position:-243px -212px }
+.swatchs.s-194.c-e3d span { padding-top:94px; color:#2f2f2f }
+.swatchs.s-194.c-ebe span { padding-top:94px; color:#2f2f2f }
+
+/* 202 size */
+.swatchs.s-202 { width:202px; height:202px }
+.swatchs.s-202.c-a3a { background-position:-239px -9px }
+.swatchs.s-202.c-a3a span { padding-top:100px; color:#fff }
+
+/* 220 size */
+.swatchs.s-220 { width:220px; height:220px }
+.swatchs.s-220.c-f37 { background-position:-6px -692px }
+.swatchs.s-220.c-f37 span { padding-top:106px; color:#fff }
+
+/* 231 */
+.swatchs.s-231 { width:231px; height:231px }
+.swatchs.s-231.c-444 { background-position:0 0 }
+.swatchs.s-231.c-007 { background-position:0 -462px }
+.swatchs.s-231.c-0f4 { background-position:0 -231px }
+.swatchs.s-231.c-007 span { padding-top:110px; color:#fff }
+.swatchs.s-231.c-444 span { padding-top:110px; color:#fff }
+.swatchs.s-231.c-0f4 span { padding-top:110px; color:#fff }
+
+/* Look 1 */
+.design-notes.issue3 .look1 { height:618px }
+.design-notes.issue3 .look1 .inner { background:url(../../../images/2015/design-notes-2015/issue3/issue3-bg-look1.jpg) no-repeat left top; height:618px }
+.design-notes.issue3 .look1 .inner h2 { top:70px; right:102px; }
+.design-notes.issue3 .look1 .inner p { top:148px; right:38px; width:350px }
+.design-notes.issue3 .look1 .c-f8d { top:235px; left:373px }
+.design-notes.issue3 .look1 .c-f37 { top:353px; left:466px }
+.design-notes.issue3 .look1 .c-aa9 { top:333px; right:56px }
+
+/* Look 2 */
+.design-notes.issue3 .look2 { height:624px }
+.design-notes.issue3 .look2 .inner { background:url(../../../images/2015/design-notes-2015/issue3/issue3-bg-look2.jpg) no-repeat right top; height:624px }
+.design-notes.issue3 .look2 .inner h2 { top:100px; left:40px; background-position: 0 -58px }
+.design-notes.issue3 .look2 .inner p { top:173px; left:40px; width:340px }
+.design-notes.issue3 .look2 .c-e3d { top:366px; left:282px }
+.design-notes.issue3 .look2 .c-444 { top:72px; left:398px }
+.design-notes.issue3 .look2 .c-888 { top:414px; left:137px }
+
+/* Look 3 */
+.design-notes.issue3 .look3 { height:700px }
+.design-notes.issue3 .look3 .inner { background:url(../../../images/2015/design-notes-2015/issue3/issue3-bg-look3.jpg) no-repeat left top; height:700px }
+.design-notes.issue3 .look3 .inner h2 { top:70px; right:102px; background-position: 0 -116px }
+.design-notes.issue3 .look3 .inner p { top:148px; right:48px; width:340px }
+.design-notes.issue3 .look3 .c-ebe { top:468px; right:0 }
+.design-notes.issue3 .look3 .c-007 { top:364px; left:406px }
+.design-notes.issue3 .look3 .c-f8d { top:341px; left:658px }
+
+/* Look 4 */
+.design-notes.issue3 .look4 { height:695px }
+.design-notes.issue3 .look4 .inner { background:url(../../../images/2015/design-notes-2015/issue3/issue3-bg-look4.jpg) no-repeat right top; height:695px }
+.design-notes.issue3 .look4 .inner h2 { top:100px; left:40px; background-position: 0 -174px }
+.design-notes.issue3 .look4 .inner p { top:173px; left:40px; width:340px }
+.design-notes.issue3 .look4 .c-a3a { top:460px; left:331px }
+.design-notes.issue3 .look4 .c-0f4 { top:373px; left:84px }
+.design-notes.issue3 .look4 .c-f5f { top:347px; left:316px }
+
+
+.swatch-note { position:absolute; bottom:30px; left:40px; font:normal 11px/100%  Arial, Sans-serif; color:#a3a29f }
+
+/* Column */
+.design-notes.issue3 .others { width: 960px; min-height:344px; background:#e9e9e9 }
+.o-col { float:left; margin-top:42px }
+.o-col.s1 { margin-left:46px }
+.o-col.s2 { margin-left:123px }
+.o-col.s3 { margin-left:100px }
+
+/* other image */
+.o-col .img { display:block; width:209px; height:152px }
+.img.s1 { background:url(../../../images/2015/design-notes-2015/issue3/img-01.jpg) no-repeat center }
+.img.s2 { background:url(../../../images/2015/design-notes-2015/issue3/img-02.jpg) no-repeat center top }
+.img.s3 { background:url(../../../images/2015/design-notes-2015/issue3/img-03-DCT2015.jpg) no-repeat center }
+
+.o-col h4 { font:bold 16px/22px Myriad Pro, Arial, Sans-serif; color:#000; margin:0; text-transform:uppercase }
+.o-col p { font:normal 14px/20px Arial, Sans-serif; color:#666; margin:0 }
+
+.btn-blue { display:block; float:left; padding:0 60px 0 15px; margin-top:20px; font:normal 17px/41px Myriad Pro, Arial, Sans-serif; height:40px; color:#fff; text-decoration:none; background:#132150 url(../../../images/2015/design-notes-2015/issue3/icn-arrow.jpg) right center no-repeat;
+    -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px;
+}
+a.btt { display:block; height:15px; margin:20px 10px 0; font:regular 10px/15px Arial, sans-serif; padding-left:15px; text-decoration:none; background:url(../../../images/2015/design-notes-2015/issue3/icn-arrow-top.jpg) left center no-repeat; width:150px }
+a.btt:hover { text-decoration:underline }
+
+
+
+
+/* ISSUE 4 OVERRIDES */
+.design-notes.issue4 .intro {background: url(../../../images/2015/design-notes-2015/issue4/bg-design-notes-intro.jpg) no-repeat; height:552px; }
+.design-notes.issue4 .intro .description { margin:245px 0 0 22px }
+.design-notes.issue4 .looks-header { background:#e9e9e9 url(../../../images/2015/design-notes-2015/issue4/hd-looks-header.jpg) no-repeat  151px center }
+.design-notes.issue4 div .inner h2 { position:absolute; display:block; width:287px; height:57px; margin:0; background:url(../../../images/2015/design-notes-2015/issue3/get-the-look.jpg) no-repeat; text-indent: -9999em }
+.design-notes.issue4 div .inner p { position:absolute; margin:0; display:block; font:normal 12px/18px Arial, Sans-serif; color:#6e6e6e }
+.design-notes.issue4 .look4 .inner { width:960px }
+
+/* Look 1 */
+.design-notes.issue4 .look1 { height:618px }
+.design-notes.issue4 .look1 .inner { background:url(../../../images/2015/design-notes-2015/issue4/issue4-bg-look1.jpg) no-repeat left top; height:618px }
+.design-notes.issue4 .look1 .inner h2 { top:70px; right:102px; background:url(../../../images/2015/design-notes-2015/issue4/hd-look1.jpg) no-repeat }
+.design-notes.issue4 .look1 .inner p { top:148px; right:38px; width:350px }
+.design-notes.issue4 .look1 .c-f8d { top:235px; left:373px }
+.design-notes.issue4 .look1 .c-f37 { top:353px; left:466px }
+.design-notes.issue4 .look1 .c-aa9 { top:333px; right:56px }
+.design-notes.issue4 .look1 .c-f8d.s-183 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-aerobus.png) no-repeat }
+.design-notes.issue4 .look1 .c-f37.s-220 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-mirage-blue.png) no-repeat }
+.design-notes.issue4 .look1 .c-aa9.s-183 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-white-duck.png) no-repeat }
+.design-notes.issue4 .look1 .c-f8d span { color: white; }
+
+/* Look 2 */
+.design-notes.issue4 .look2 { height:624px }
+.design-notes.issue4 .look2 .inner { background:url(../../../images/2015/design-notes-2015/issue4/issue4-bg-look2.jpg) no-repeat right top; height:624px }
+.design-notes.issue4 .look2 .inner h2 { top:100px; left:40px; background:url(../../../images/2015/design-notes-2015/issue4/hd-look2.jpg) no-repeat }
+.design-notes.issue4 .look2 .inner p { top:173px; left:40px; width:340px }
+.design-notes.issue4 .look2 .c-e3d { top:366px; left:282px }
+.design-notes.issue4 .look2 .c-444 { top:72px; left:398px }
+.design-notes.issue4 .look2 .c-888 { top:414px; left:137px }
+.design-notes.issue4 .look2 .c-e3d.s-194 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-skyway.png) no-repeat }
+.design-notes.issue4 .look2 .c-444.s-231 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-canadian-pine.png) no-repeat }
+.design-notes.issue4 .look2 .c-888.s-159 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-white-on-white.png) no-repeat }
+.design-notes.issue4 .look2 .c-888 span { color: #636d77; }
+
+/* Look 3 */
+.design-notes.issue4 .look3 { height:700px }
+.design-notes.issue4 .look3 .inner { background:url(../../../images/2015/design-notes-2015/issue4/issue4-bg-look3.jpg) no-repeat left top; height:700px }
+.design-notes.issue4 .look3 .inner h2 { top:70px; right:102px; background:url(../../../images/2015/design-notes-2015/issue4/hd-look3.jpg) no-repeat }
+.design-notes.issue4 .look3 .inner p { top:148px; right:48px; width:340px }
+.design-notes.issue4 .look3 .c-ebe { top:468px; right:0 }
+.design-notes.issue4 .look3 .c-007 { top:364px; left:406px }
+.design-notes.issue4 .look3 .c-f8d { top:341px; left:658px }
+.design-notes.issue4 .look3 .c-ebe.s-194 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-pre-school-quarter.png) no-repeat }
+.design-notes.issue4 .look3 .c-007.s-231 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-sea-angel.png) no-repeat }
+.design-notes.issue4 .look3 .c-f8d.s-159 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-integrity.png) no-repeat }
+
+/* Look 4 */
+.design-notes.issue4 .look4 { height:695px }
+.design-notes.issue4 .look4 .inner { background:url(../../../images/2015/design-notes-2015/issue4/issue4-bg-look4.jpg) no-repeat right top; height:695px }
+.design-notes.issue4 .look4 .inner h2 { top:100px; left:40px; background:url(../../../images/2015/design-notes-2015/issue4/hd-look4.jpg) no-repeat }
+.design-notes.issue4 .look4 .inner p { top:173px; left:40px; width:340px }
+.design-notes.issue4 .look4 .c-a3a { top:460px; left:331px }
+.design-notes.issue4 .look4 .c-0f4 { top:373px; left:84px }
+.design-notes.issue4 .look4 .c-f5f { top:347px; left:316px }
+.design-notes.issue4 .look4 .c-a3a.s-202 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-limed-white-half.png) no-repeat }
+.design-notes.issue4 .look4 .c-0f4.s-231 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-mandrake.png) no-repeat }
+.design-notes.issue4 .look4 .c-f5f.s-143 { background:url(../../../images/2015/design-notes-2015/issue4/bg-swatch-domino.png) no-repeat }
+.design-notes.issue4 .look4 .c-a3a span { color:#3c3c3c; }
+
+.design-notes.issue4 .others { width: 960px; min-height:344px; background:#e9e9e9 }
+
+
+
+
+
+
+
+
+
+

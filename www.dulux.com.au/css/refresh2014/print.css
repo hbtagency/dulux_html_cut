@@ -1,0 +1,38 @@
+/* Print Style Sheet */
+/*	  Site Wide 	*/
+
+@media print {
+
+	#header {
+		display: none;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#breadcrumbs {
+		display: none;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	#sub-content {
+		display: none;
+	}
+
+	#low-panel {
+		display: none;
+	}
+
+	#footer {
+		display: none;
+	}
+
+	#dock-wrap {
+		display: none;
+	}
+
+}

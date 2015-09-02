@@ -1,0 +1,50 @@
+﻿#content-main { padding-left: 7px;}
+.ausfav { width: 960px;}
+.ausfav .banner { margin: 0 0 30px;}
+.ausfav .leftcol { width: 360px;float: left; }
+.ausfav .rightcol { width: 600px;float: left;}
+
+.ausfav fieldset {border-top: solid 1px #939393;padding: 20px 0 0 0;}
+.ausfav .formrow { margin: 0 0 10px;}
+.ausfav label { width: 89px;float: left;margin: 4px 0 0;}
+.ausfav input { width: 225px;float: left; }
+.ausfav select { width: 229px;float: left;}
+
+.ausfav .conditionslabel { height: 200px;}
+.ausfav .checkbox input { float: left;width: auto;margin: 6px 10px 140px 0;}
+.ausfav .conditions { float: left;width: 200px;}
+
+
+.ausfav .submit { border: none;height: 30px;width: 75px;text-indent: -9999em;line-height: 0;background: url(imgs/btn_submit.png) no-repeat;}
+.ausfav .error-alert { width: 266px;}
+
+.ausfav h2 { margin: 4px 0 0 52px;}
+.ausfav .video { width: 376px;height: 260px;padding: 42px 47px 39px;margin: 0 0 36px 52px;
+    background: url(../imgs/ausfavcolour/video-background.png) no-repeat;}
+
+/* carousel */
+.ausfav #box_carousel { margin-left: 0px;width: 582px;}
+.ausfav #box_carousel_content { width: 478px;height: 514px;}
+.ausfav #box_carousel .slide_img { width: 478px;height: 514px;}
+.ausfav #carousel_controls_left,
+.ausfav #carousel_controls_right { padding-top: 233px;}
+
+#favcolours2012 { background-image: url(../imgs/ausfavcolour/slide-00.jpg);}
+#antique_white2012 { background-image: url(../imgs/ausfavcolour/slide-01.jpg);}
+#natural_white2012 { background-image: url(../imgs/ausfavcolour/slide-02.jpg);}
+#hog_bristle2012 { background-image: url(../imgs/ausfavcolour/slide-03.jpg);}
+
+.ausfav ul ul#tabs { left: 268px;top: 17px;height: 478px;width: 190px;}
+.ausfav ul ul#tabs li { background-position:0 0;height: 478px;width: 52px;background-image: url(../imgs/ausfavcolour/tabs.jpg); }
+.ausfav ul ul#tabs li img { width: 52px;height: 478px; }
+.ausfav ul ul#tabs li#tab_antique { background-position:0 0; margin-left:12px; }
+.ausfav ul ul#tabs li#tab_antique:hover { background-position:0 -478px; }
+.ausfav ul ul#tabs li#tab_natural { background-position:-62px 0; margin-left:10px; }
+.ausfav ul ul#tabs li#tab_natural:hover { background-position:-62px -478px; }
+.ausfav ul ul#tabs li#tab_hogbristle { background-position:-126px 0; margin-left:12px; }
+.ausfav ul ul#tabs li#tab_hogbristle:hover { background-position:-126px -478px; }
+
+
+.ausfav #box_carousel_content ul li { width: 514px; }
+.ausfav .jcarousel-control img {width: 514px; height: 478px;}
+.ausfav .slide_copy {width: 514px;}

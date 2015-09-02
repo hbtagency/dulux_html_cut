@@ -1,0 +1,32 @@
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@import url("http://hello.myfonts.net/count/25edc8");
+
+@font-face {
+    font-family: 'FuturaBT-Light';
+    src: url('fonts/25A751_0_0.eot');
+    src: url('fonts/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/25A751_0_0.woff') format('woff'),
+         url('fonts/25A751_0_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FuturaBT-Book';
+    src: url('fonts/25A751_1_0.eot');
+    src: url('fonts/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/25A751_1_0.woff') format('woff'),
+         url('fonts/25A751_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FuturaBT-Bold';
+    src: url('fonts/25A751_2_0.eot');
+    src: url('fonts/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/25A751_2_0.woff') format('woff'),
+         url('fonts/25A751_2_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FuturaBT-MediumCondensed';
+    src: url('fonts/25EDC8_0_0.eot');
+    src: url('fonts/25EDC8_0_0d41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/25EDC8_0_0.woff') format('woff'),
+         url('fonts/25EDC8_0_0.ttf') format('truetype');
+}

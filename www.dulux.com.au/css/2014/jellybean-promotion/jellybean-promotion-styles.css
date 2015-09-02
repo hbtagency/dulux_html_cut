@@ -1,0 +1,40 @@
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_0_0.eot');src: url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_0_0.woff') format('woff'),url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_1_0.eot');src: url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_1_0.woff') format('woff'),url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_2_0.eot');src: url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_2_0.woff') format('woff'),url('../../../webfonts/2014/jellybean-promotion/mobile/25A751_2_0.ttf') format('truetype');}
+
+/* Global */
+body { background: #fbfbfb url(../../../includes/imgs/pageBackground.html) no-repeat fixed 0 0; height: auto; }
+.body { margin: 0 auto; width: 972px; }
+h1, h2 { font-family: 'FuturaBT-Bold'; color: #0f1d41; }
+p { font-size: 16px; color: #0f1d41; line-height: 22px; }
+.button { position: relative; background: #e30613; font-size: 17px; color: #fff; padding: 10px 40px 10px 10px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; }
+.button:after { content: ""; width: 9px; height: 15px; background: url(../../../images/2014/jellybean-promotion/button-arrow.png) no-repeat center; position: absolute; right: 12px; top: 12px; }
+#content { padding: 6px; width: 960px; margin: 0 auto; background: #fff; }
+
+/* Jelly Bean Product */
+
+/* Hero */
+.hero { background: #fff url(../../../images/2014/jellybean-promotion/hero.jpg) no-repeat center; height: 472px; position: relative; }
+.banner1 { background: #fff url(../../../images/2014/jellybean-promotion/banner1-new.jpg) no-repeat center bottom; height: 800px; position: relative; }
+.banner1 h2 { color: #00275d; width: 870px; font-size: 65px; padding: 60px 0 10px 45px; text-transform: uppercase; }
+.banner1 p { color: #464646; width: 505px; font-size: 15px; line-height: 20px; padding: 0px 0 10px 45px; }
+.banner1 .link { margin-top: 18px; margin-left: 45px; display: block; color: #a4a4a4; font-size: 12px; }
+.banner1 .store { display: inline-block; }
+.banner1 .apple { margin: 450px 0 20px 45px; }
+.banner1 .google { margin: 450px 0 20px 21px; }
+.banner2 { background: #fff; height: 666px; position: relative; }
+.banner2 h2 { margin-top: 15px; color: #032b63; font-size: 54px; text-align: center; line-height: 116px; text-transform: uppercase; }
+.banner2 .video-block { position: absolute; left: 37px; top: 116px; background: #fff url(../../../images/2014/jellybean-promotion/video.jpg) no-repeat center top; width: 886px; height: 500px; cursor: pointer; }
+.banner2 .video-block .play-icon { background: url(../../../images/2014/jellybean-promotion/btn-video.png) no-repeat center; width: 153px; height: 153px; margin: 173px auto 174px; }
+.banner2 .video-block h2 { color: #132150; width: 444px; font-size: 34px; text-transform: uppercase; text-align: center; padding: 20px 0 10px; }
+.banner2 .video-block p { padding: 5px 32px; width: 380px; line-height: 20px; color: #292d36; text-align: center; font-size: 15px; }
+.banner2 .video-block p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner2 .video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: absolute; z-index: 99999; top: 0; left: 0; bottom: 0; right: 0; }
+.banner2 .video-player .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
+.banner2 .video-player .wrap { width: 886px; height: 500px; position: absolute; left: 37px; top: 116px; }
+.banner2 .video-player .close { display: block; position: absolute; top: 12px; right: 10px; width: 18px; height: 18px; background: url(../../../images/2014/jellybean-promotion/close.png) no-repeat center; }
+.banner2 .video-player .close:hover { opacity: .4; filter: alpha(opacity=40); }
+.banner3 { background: #fff url(../../../images/2014/jellybean-promotion/banner3.jpg) no-repeat center bottom; height: 382px; position: relative; }
+

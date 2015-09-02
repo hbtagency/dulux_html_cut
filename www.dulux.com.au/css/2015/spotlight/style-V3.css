@@ -1,0 +1,675 @@
+@charset "UTF-8";
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px
+}
+.col-xs-5ths {
+    width: 20%;
+    float: left
+}
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left
+    }
+}
+@font-face{font-family:'Futura';src:url("../../../webfonts/2015/spotlight/futuraextended-webfont.eot");src:url("../../../webfonts/2015/spotlight/futuraextended-webfontd41d.eot?#iefix") format("embedded-opentype"),
+url("../../../webfonts/2015/spotlight/futuraextended-webfont.ttf") format("truetype"),
+url("../../../webfonts/2015/spotlight/futuraextended-webfont.svg") format("svg");
+font-weight:500;
+font-style:normal
+}
+@font-face{font-family:'Futura';src:url("../../../webfonts/2015/spotlight/futura-boldregular-webfont.eot");src:url("../../../webfonts/2015/spotlight/futura-boldregular-webfontd41d.eot?#iefix") format("embedded-opentype"),
+url("../../../webfonts/2015/spotlight/futura-boldregular-webfont.ttf") format("truetype"),
+url("../../../webfonts/2015/spotlight/futura-boldregular-webfont.svg") format("svg");
+font-weight:700;
+font-style:normal
+}
+.spotlight-container h1,
+.spotlight-container h2,
+.spotlight-container h3,
+.spotlight-container h4,
+.spotlight-container h5,
+.spotlight-container h6 {
+    font-weight:500;
+    margin:0 0 .6em
+}
+.spotlight-container p {
+    margin:0 0 2em
+}
+.spotlight-container h1,
+.spotlight-container h2,
+.spotlight-container h3,
+.spotlight-container h4,
+.spotlight-container h5,
+.spotlight-container h6 {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.spotlight-icon {
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:1em
+}
+.spotlight-icon.spotlight-icon--left {
+    margin-right:0;
+    margin-left:1em
+}
+.icon-cart {
+    width:50px;
+    height:50px;
+    background-image:url(../../../images/2015/spotlight/icon-cart.png)
+}
+.icon-cash {
+    width:61px;
+    height:41px;
+    background-image:url(../../../images/2015/spotlight/icon-cash.png)
+}
+.icon-phone {
+    width:32px;
+    height:50px;
+    background-image:url(../../../images/2015/spotlight/icon-phone.png)
+}
+.icon-roller {
+    width:39px;
+    height:48px;
+    background-image:url(../../../images/2015/spotlight/icon-roller.png)
+}
+.icon-paint {
+    width:36px;
+    height:48px;
+    background-image:url(../../../images/2015/spotlight/icon-paint.png)
+}
+.icon-arrow-left {
+    width:16px;
+    height:18px;
+    background-image:url(../../../images/2015/spotlight/icon-arrow-left.png)
+}
+.icon-arrow-right {
+    width:16px;
+    height:18px;
+    background-image:url(../../../images/2015/spotlight/icon-arrow-right.png)
+}
+.slick-slider {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -ms-touch-action:pan-y;
+    touch-action:pan-y;
+    -webkit-tap-highlight-color:transparent
+}
+.slick-slider,
+.slick-list {
+    position:relative;
+    display:block
+}
+.slick-list {
+    overflow:hidden;
+    margin:0;
+    padding:0
+}
+.slick-list:focus {
+    outline:none
+}
+.slick-list.dragging {
+    cursor:hand
+}
+.slick-slider .slick-track {
+    -webkit-transform:translate3d(0,
+    0,
+    0);
+    -ms-transform:translate3d(0,
+    0,
+    0);
+    transform:translate3d(0,
+    0,
+    0)
+}
+.slick-track {
+    position:relative;
+    left:0;
+    top:0;
+    display:block
+}
+.slick-track:before,
+.slick-track:after {
+    content:"";
+    display:table
+}
+.slick-track:after {
+    clear:both
+}
+.slick-loading .slick-track {
+    visibility:hidden
+}
+.slick-slide {
+    float:left;
+    height:100%;
+    min-height:1px;
+    display:none
+}
+[dir="rtl"] .slick-slide {
+    float:right
+}
+.slick-slide img {
+    display:block
+}
+.slick-slide.slick-loading img {
+    display:none
+}
+.slick-slide.dragging img {
+    pointer-events:none
+}
+.slick-initialized .slick-slide {
+    display:block
+}
+.slick-loading .slick-slide {
+    visibility:hidden
+}
+.slick-vertical .slick-slide {
+    display:block;
+    height:auto;
+    border:1px solid transparent
+}
+@font-face{font-family:"slick";src:url("fonts/slick.html");src:url("fonts/slickd41d.html?#iefix") format("embedded-opentype"),
+url("fonts/slick-2.html") format("woff"),
+url("fonts/slick-3.html") format("truetype"),
+url("fonts/slick-4.html#slick") format("svg");
+font-weight:400;
+font-style:normal
+}
+.slick-prev,
+.slick-next {
+    position:absolute;
+    display:block;
+    height:20px;
+    width:20px;
+    line-height:0;
+    font-size:0;
+    cursor:pointer;
+    background:0 0;
+    color:transparent;
+    top:50%;
+    margin-top:-10px;
+    padding:0;
+    border:none;
+    outline:none
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    outline:none;
+    background:0 0;
+    color:transparent
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity:1
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity:.25
+}
+.slick-prev:before,
+.slick-next:before {
+    font-family:"slick";
+    font-size:20px;
+    line-height:1;
+    color:#fff;
+    opacity:.75;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+[dir="rtl"] .slick-prev {
+    left:auto;
+    right:-25px
+}
+.slick-prev:before {
+    content:"←"
+}
+[dir="rtl"] .slick-prev:before {
+    content:"→"
+}
+[dir="rtl"] .slick-next {
+    left:-25px;
+    right:auto
+}
+.slick-next:before {
+    content:"→"
+}
+[dir="rtl"] .slick-next:before {
+    content:"←"
+}
+.slick-slider {
+    margin-bottom:30px
+}
+.slick-dots {
+    position:absolute;
+    bottom:-45px;
+    list-style:none;
+    display:block;
+    text-align:center;
+    padding:0;
+    width:100%
+}
+.slick-dots li {
+    position:relative;
+    display:inline-block;
+    height:20px;
+    width:20px;
+    margin:0 5px;
+    padding:0;
+    cursor:pointer
+}
+.slick-dots li button {
+    border:0;
+    background:0 0;
+    display:block;
+    height:20px;
+    width:20px;
+    outline:none;
+    line-height:0;
+    font-size:0;
+    color:transparent;
+    padding:5px;
+    cursor:pointer
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline:none
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity:1
+}
+.slick-dots li button:before {
+    position:absolute;
+    top:0;
+    left:0;
+    content:"•";
+    width:20px;
+    height:20px;
+    font-family:"slick";
+    font-size:6px;
+    line-height:20px;
+    text-align:center;
+    color:#000;
+    opacity:.25;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.slick-dots li.slick-active button:before {
+    color:#000;
+    opacity:.75
+}
+.spotlight-container {
+    width:972px;
+    font-family:"Futura",
+    sans-serif;
+    font-size:16px;
+    color:#5f5f5f;
+    padding:20px 0 0;
+    margin:0 auto
+}
+.spotlight-container * {
+    box-sizing:border-box
+}
+.spotlight-container a {
+    color:#898989
+}
+.spotlight-container a:hover,
+.spotlight-container a:focus {
+    color:#00a0e2
+}
+.spotlight-container .main-header {
+    position:relative;
+    height:694px;
+    background:#36b200 url(../../../images/2015/spotlight/bg-carousel.jpg) no-repeat
+}
+.spotlight-container .main-header .logo-dulux {
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0;
+    position:absolute;
+    top:0;
+    left:115px;
+    width:182px;
+    height:69px;
+    background:url(../../../images/2015/spotlight/logo-dulux.png) no-repeat
+}
+.spotlight-container .main-header .duration {
+    position:absolute;
+    top:35px;
+    right:130px;
+    font-family:sans-serif;
+    font-size:20px;
+    color:rgba(255,
+    255,
+    255,
+    .8);
+    text-transform:uppercase
+}
+.spotlight-container .main-header .main-title {
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0;
+    position:absolute;
+    top:75px;
+    left:50%;
+    width:744px;
+    height:132px;
+    background:url(../../../images/2015/spotlight/title-spotlight.png) no-repeat;
+    margin-left:-372px;
+	visibility:visible!important;
+}
+.spotlight-container .main-content {
+    display:none;
+    background:#e3e6e9;
+    padding:20px 0 100px;
+    border-top:6px solid #c2c2c2
+}
+.spotlight-container .main-content>.sidebar {
+    position:relative;
+    float:left;
+    width:360px;
+    padding:100px 40px 20px
+}
+.spotlight-container .main-content>.sidebar .title {
+    position:absolute;
+    top:20px;
+    left:40px;
+    font-size:28px;
+    font-weight:700
+}
+.spotlight-container .main-content>.sidebar .title sup {
+    font-size:.6em;
+    margin-top:-.7em
+}
+.spotlight-container .main-content>.sidebar .nav {
+    padding:0
+}
+.spotlight-container .main-content>.sidebar .nav li {
+    list-style:none;
+    font-weight:700;
+    margin-bottom:.5em
+}
+.spotlight-container .main-content>.sidebar .nav a {
+    font-size:18px;
+    text-decoration:none;
+    padding:0
+}
+.spotlight-container .main-content>.sidebar .nav .active a,
+.spotlight-container .main-content>.sidebar .nav a:hover,
+.spotlight-container .main-content>.sidebar .nav a:focus {
+    background:0 0;
+    color:#898989
+}
+.spotlight-container .main-content>.content {
+    display:none;
+    line-height:1.5;
+    padding:20px 40px;
+    border-left:1px solid #a3a3a3;
+    margin-left:360px
+}
+.spotlight-container .main-content>.content p {
+    margin-bottom:1em
+}
+.spotlight-container .main-content>.content ul {
+    list-style:none;
+    padding:0
+}
+.spotlight-container .main-content>.content ul li {
+    position:relative;
+    padding-left:1em;
+    margin-bottom:.5em
+}
+.spotlight-container .main-content>.content ul li:before {
+    content:'';
+    display:inline-block;
+    position:absolute;
+    top:.5em;
+    left:0;
+    width:7px;
+    height:7px;
+    border-radius:50%
+}
+.spotlight-container .main-content.blue>.sidebar .title {
+    color:#1e305f
+}
+.spotlight-container .main-content.blue>.sidebar .nav .active a,
+.spotlight-container .main-content.blue>.sidebar .nav a:hover {
+    color:#00a0e2
+}
+.spotlight-container .main-content.blue>.content h1,
+.spotlight-container .main-content.blue>.content h2,
+.spotlight-container .main-content.blue>.content h3,
+.spotlight-container .main-content.blue>.content h4,
+.spotlight-container .main-content.blue>.content h5,
+.spotlight-container .main-content.blue>.content h6 {
+    color:#00a0e2
+}
+.spotlight-container .main-content.blue>.content ul li:before {
+    background-color:#00a0e2
+}
+.spotlight-container .main-content.green>.sidebar .title {
+    color:#36b200
+}
+.spotlight-container .main-content.green>.sidebar .nav .active a,
+.spotlight-container .main-content.green>.sidebar .nav a:hover {
+    color:#36b200
+}
+.spotlight-container .main-content.green>.content h1,
+.spotlight-container .main-content.green>.content h2,
+.spotlight-container .main-content.green>.content h3,
+.spotlight-container .main-content.green>.content h4,
+.spotlight-container .main-content.green>.content h5,
+.spotlight-container .main-content.green>.content h6 {
+    color:#36b200
+}
+.spotlight-container .main-content.green>.content ul li:before {
+    background-color:#36b200
+}
+.spotlight-container .main-content.orange>.sidebar .title {
+    color:#f06f22
+}
+.spotlight-container .main-content.orange>.sidebar .nav .active a,
+.spotlight-container .main-content.orange>.sidebar .nav a:hover {
+    color:#f06f22
+}
+.spotlight-container .main-content.orange>.content h1,
+.spotlight-container .main-content.orange>.content h2,
+.spotlight-container .main-content.orange>.content h3,
+.spotlight-container .main-content.orange>.content h4,
+.spotlight-container .main-content.orange>.content h5,
+.spotlight-container .main-content.orange>.content h6 {
+    color:#f06f22
+}
+.spotlight-container .main-content.orange>.content ul li:before {
+    background-color:#f06f22
+}
+.spotlight-container .main-content.business-plus .title {
+    text-transform:uppercase;
+    margin-bottom:1.5em
+}
+.spotlight-container .main-content.business-plus .title .icon-cart {
+    vertical-align:bottom;
+    margin-right:2em
+}
+.spotlight-carousel {
+    padding-top:215px;
+    margin:0;
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:all .7s ease-out;
+    transition:all .7s ease-out
+}
+.spotlight-carousel.slick-initialized {
+    opacity:1;
+    visibility:visible
+}
+.slick-slide {
+    width:600px;
+    text-align:center
+}
+.slick-slide img {
+    display:inline-block;
+    opacity:.5;
+    -webkit-transform:scale(.8);
+    -ms-transform:scale(.8);
+    transform:scale(.8);
+    -webkit-transition:opacity .5s ease-out,
+    -webkit-transform 1s ease-out;
+    transition:opacity .5s ease-out,
+    transform 1s ease-out
+}
+.slick-slide.accessories img {
+    margin-left:10px
+}
+.slick-slide.business-plus {
+    padding-top:20px
+}
+.slick-slide.business-plus img {
+    margin-left:5px
+}
+.slick-slide.slick-active img,
+.slick-slide.slick-cloned img {
+    opacity:1;
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1)
+}
+.slick-prev {
+    left:25px
+}
+.slick-next {
+    right:25px
+}
+.spotlight-carousel-navigation {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:90px;
+    background:#1e305f;
+    text-align:center
+}
+.spotlight-carousel-navigation>.nav {
+    display:inline-block;
+    padding-top:22px
+}
+.spotlight-carousel-navigation .prev,
+.spotlight-carousel-navigation .next {
+    z-index:2;
+    position:absolute;
+    top:50%;
+    margin-top:-9px;
+    opacity:.5;
+    -webkit-transition:opacity .3s;
+    transition:opacity .3s
+}
+.spotlight-carousel-navigation .prev:hover,
+.spotlight-carousel-navigation .next:hover {
+    opacity:1
+}
+.spotlight-carousel-navigation .prev {
+    left:30px
+}
+.spotlight-carousel-navigation .next {
+    right:30px
+}
+.spotlight-carousel-navigation .carousel-slide-link,
+.spotlight-carousel-navigation .carousel-slide-link:focus {
+    display:block;
+    position:relative;
+    float:left;
+    font-size:26px;
+    color:#fff;
+    text-decoration:none;
+    margin:0 3em;
+    opacity:.5;
+    -webkit-transition:opacity .3s;
+    transition:opacity .3s
+}
+.spotlight-carousel-navigation .carousel-slide-link .spotlight-icon,
+.spotlight-carousel-navigation .carousel-slide-link:focus .spotlight-icon {
+    position:absolute;
+    top:0;
+    left:-50px;
+    opacity:0;
+    visibility:hidden
+}
+.spotlight-carousel-navigation .carousel-slide-link.active,
+.spotlight-carousel-navigation .carousel-slide-link:hover,
+.spotlight-carousel-navigation .carousel-slide-link:focus.active,
+.spotlight-carousel-navigation .carousel-slide-link:focus:hover {
+    color:#fff;
+    text-decoration:none;
+    opacity:1
+}
+.spotlight-carousel-navigation .carousel-slide-link.active .spotlight-icon,
+.spotlight-carousel-navigation .carousel-slide-link:focus.active .spotlight-icon {
+    opacity:1;
+    visibility:visible
+}
+.spotlight-carousel-navigation .carousel-slide-link.paint,
+.spotlight-carousel-navigation .carousel-slide-link:focus.paint {
+    margin-top:8px
+}
+.spotlight-carousel-navigation .carousel-slide-link.paint .spotlight-icon,
+.spotlight-carousel-navigation .carousel-slide-link:focus.paint .spotlight-icon {
+    top:-10px
+}
+.spotlight-carousel-navigation .carousel-slide-link.business-plus .logo-business-plus,
+.spotlight-carousel-navigation .carousel-slide-link:focus.business-plus .logo-business-plus {
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0;
+    display:block;
+    width:95px;
+    height:48px;
+    background:url(../../../images/2015/spotlight/logo-business-plus.png) no-repeat
+}
+.spotlight-carousel-navigation .carousel-slide-link.accessories,
+.spotlight-carousel-navigation .carousel-slide-link:focus.accessories {
+    margin-top:8px
+}
+.spotlight-carousel-navigation .carousel-slide-link.accessories .spotlight-icon,
+.spotlight-carousel-navigation .carousel-slide-link:focus.accessories .spotlight-icon {
+    top:-10px
+}

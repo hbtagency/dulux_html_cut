@@ -1,0 +1,240 @@
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../../webfonts/2014/render-refresh/25A751_0_0.eot');src: url('../../../webfonts/2014/render-refresh/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/render-refresh/25A751_0_0.woff') format('woff'),url('../../../webfonts/2014/render-refresh/25A751_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../../webfonts/2014/render-refresh/25A751_1_0.eot');src: url('../../../webfonts/2014/render-refresh/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/render-refresh/25A751_1_0.woff') format('woff'),url('../../../webfonts/2014/render-refresh/25A751_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../../webfonts/2014/render-refresh/25A751_2_0.eot');src: url('../../../webfonts/2014/render-refresh/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2014/render-refresh/25A751_2_0.woff') format('woff'),url('../../../webfonts/2014/render-refresh/25A751_2_0.ttf') format('truetype');}
+
+/* temp */
+.wrapper	 	{ background: #fbfbfb; margin: 0 auto; width: 972px; padding: 0; }
+.wrapper img 	{ display: block; }
+#content		{ padding-top: 0px; }
+body, html		{ background: #fbfbfb url(../../../imgs/2014/render-refresh/temp/pageBackground.jpg) no-repeat fixed 0 0; }
+body			{ height: auto; }
+
+/* Global */
+h1, h2 { font-family: 'FuturaBT-Bold'; color: #0f1d41; }
+p { font-size: 16px; color: #0f1d41; line-height: 22px; }
+.button { position: relative; background: #132150; font-size: 17px; color: #fff; padding: 10px 40px 10px 10px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; }
+.button:after { content: ""; width: 9px; height: 15px; background: url(../../../imgs/2014/render-refresh/button-arrow.png) no-repeat center; position: absolute; right: 12px; top: 12px; }
+
+/* Render Refresh */
+.hero { background: url(../../../imgs/2014/render-refresh/hero.jpg) no-repeat center; height: 840px; position: relative; }
+.hero .first-block { padding: 150px 470px 150px 75px; }
+.hero .first-block h1 { font-size: 37px; visibility: visible; margin: 15px 0; }
+.hero .second-block { padding: 125px 390px 30px 75px; }
+.hero .second-block h2 { font-size: 30px; color: #ece7e2; margin-bottom: 15px; }
+.hero .second-block p { color: #ece7e2; }
+.hero .video-block { background: url(../../../imgs/2014/render-refresh/video-block.jpg) no-repeat center; position: absolute; cursor: pointer; width: 243px; height: 184px; right: 75px; bottom: 75px; }
+.hero .video-player { display: none; opacity: 0; filter: alpha(opacity=0); position: fixed; z-index: 99999; top: 0; left: 0; bottom: 0; right: 0; }
+.hero .video-player .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
+.hero .video-player .wrap { width: 700px; height: 394px; position: absolute; left: 50%; top: 50%; margin: -192px auto auto -350px; }
+.hero .video-player .close { display: block; position: absolute; top: 12px; right: 10px; width: 18px; height: 18px; background: url(../../../imgs/2014/render-refresh/close.png) no-repeat center; }
+.hero .video-player .close:hover { opacity: .4; filter: alpha(opacity=40); }
+.banner1 { background: url(../../../imgs/2014/render-refresh/banner1.jpg) no-repeat center; padding: 50px 80px 50px 360px; }
+.banner1 h2 { font-size: 30px; margin-bottom: 8px; }
+.banner2 { background: url(../../../imgs/2014/render-refresh/banner2.png) no-repeat 50px 25px ; padding: 70px 105px 50px 260px; }
+.banner2 h2 { font-size: 30px; margin-bottom: 8px; color: #1c0b69; }
+.banner2 p { color: #1c0b69; }
+.banner2 p.disclaimer { font-size: 11px; line-height: 13px; margin-top: 10px; padding-right: 25px; }
+
+
+/* Ads */
+
+#content {
+	position:relative;
+}
+
+.left-ad, .right-ad {
+	position:absolute;
+	width:457px;
+	background:red;
+	height:100%;
+	top:-202px;
+
+	max-height:800px;
+}
+
+.left-ad {
+	left:-457px;
+}
+
+.right-ad {
+	right:-457px;
+}
+
+.wall-back {
+	position:relative;
+	background-image:url(../../../imgs/2014/render-refresh/wall-back.jpg);
+	width:100%;
+	height:100%;
+	background:white;
+	overflow:hidden;
+}
+
+.wall-crack {
+	position:absolute;
+	background-image:url(../../../imgs/2014/render-refresh/crack1.png);
+	width:302px;
+	height:386px;
+	top:0px;
+	left:50px;
+	opacity:0;
+}
+
+.wall-front-bottom {
+	background-image:url(../../../imgs/2014/render-refresh/wall-front-bottom.jpg);
+	background-position:left bottom;
+	background-attachment:fixed;	/* remove this after animation done */
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:100%;
+}
+
+.wall-front-top {
+	background-image:url(../../../imgs/2014/render-refresh/wall-front-bottom.jpg);
+	background-position:left bottom;
+	background-attachment:fixed;
+	position:absolute;
+	width:100%;
+	height:20%;
+	top:100%;
+	/*margin-left: -100%;*/
+}
+
+.wall-roller {
+	background-image:url(../../../imgs/2014/render-refresh/roller.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	width: 403px;
+	height: 237px;
+	top:100%;
+	right:0;
+	margin-top:-50px;
+}
+
+
+/* Animations */
+
+@-webkit-keyframes fadein {
+	0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+	0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+	0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadein {
+	0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes slidein {
+	0% { right: 0; }
+  100% { right: 100%; }
+}
+@-moz-keyframes slidein {
+  0%   { right: 0; }
+  100% { right: 100%; }
+}
+@-o-keyframes slidein {
+  0%   { right: 0; }
+  100% { right: 100%; }
+}
+@keyframes slidein {
+  0%   { right: 0; }
+  100% { right: 100%; }
+}
+
+@-webkit-keyframes slidein-offset {
+	0% { right: 0%; }
+  100% { right: 100%; }
+}
+@-moz-keyframes slidein-offset {
+	0% { right: 0%; }
+  100% { right: 100%; }
+}
+@-o-keyframes slidein-offset {
+	0% { right: 0%; }
+  100% { right: 100%; }
+}
+@keyframes slidein-offset {
+	0% { right: 0%; }
+  100% { right: 100%; }
+}
+
+@-webkit-keyframes paint-from-right {
+	0% { margin-left: 100%; }
+  100% { margin-left: 0; }
+}
+@-moz-keyframes paint-from-right {
+  0%   { margin-left: 100%; }
+  100% { margin-left: 0; }
+}
+@-o-keyframes paint-from-right {
+  0%   { margin-left: 100%; }
+  100% { margin-left: 0; }
+}
+@keyframes paint-from-right {
+  0%   { margin-left: 100%; }
+  100% { margin-left: 0; }
+}
+
+@-webkit-keyframes paint-from-left {
+	0% 	{ margin-left: -100%; }
+  100% 	{ margin-left: 0; }
+}
+@-moz-keyframes paint-from-left {
+  0% 	{ margin-left: -100%; }
+  100% 	{ margin-left: 0; }
+}
+@-o-keyframes paint-from-left {
+  0% 	{ margin-left: -100%; }
+  100% 	{ margin-left: 0; }
+}
+@keyframes paint-from-left {
+  0% 	{ margin-left: -100%; }
+  100% 	{ margin-left: 0; }
+}
+
+.crack-animation {
+	-webkit-animation: fadein linear 1s;
+       -moz-animation: fadein linear 1s;
+         -o-animation: fadein linear 1s;
+            animation: fadein linear 1s;
+
+    -webkit-animation-fill-mode:forwards;
+       -moz-animation-fill-mode:forwards;
+       	 -o-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+	-webkit-animation-delay: 2s;
+	   -moz-animation-delay: 2s;
+	     -o-animation-delay: 2s;
+	        animation-delay: 2s;
+}
+
+.roller-animation {
+	-webkit-animation: slidein 1s linear infinite alternate;
+       -moz-animation: slidein 1s linear infinite alternate;
+         -o-animation: slidein 1s linear infinite alternate;
+            animation: slidein 1s linear infinite alternate;
+}
+
+.paint-right-animation {
+	-webkit-animation: paint-from-right 1s linear infinite;
+       -moz-animation: paint-from-right 1s linear infinite;
+         -o-animation: paint-from-right 1s linear infinite;
+            animation: paint-from-right 1s linear infinite;
+}
+
+.paint-left-animation {
+	-webkit-animation: paint-from-left 1s linear infinite;
+       -moz-animation: paint-from-left 1s linear infinite;
+         -o-animation: paint-from-left 1s linear infinite;
+            animation: paint-from-left 1s linear infinite;
+}

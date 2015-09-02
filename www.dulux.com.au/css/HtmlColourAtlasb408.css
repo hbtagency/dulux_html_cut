@@ -1,0 +1,198 @@
+﻿/**************************************************
+/** 28.0 HTML colour atlas
+/**************************************************/
+#colouratlas { width: 100%; margin: 12px 0 0 0; }
+    #colouratlas .invisible { visibility: hidden; }
+	#colouratlas .invisiblePowderBanner{ visibility: hidden; display:none;}
+	#colouratlas .powdercoatbanner{margin-top:20px;}
+    #colouratlas .headerborder { border-bottom: solid 1px #b9b9b2; height: 28px; width: 972px; }
+    #colouratlas .header { width: 100%; height: 25px; }
+    #colouratlas .header div.tablist { width: 100%; height: 16px; margin: 14px 0 0; }
+    #colouratlas .header div.spacer { float: left; width: 6px; height: 23px; /*background: url(/imgs/HtmlColourAtlas/tab-background-spacer.gif) no-repeat right bottom;*/ }
+    #colouratlas .header div.tab { float: left; padding: 4px 9px 3px; font-size: 13px; font-weight: bold; color: #00235e; text-align: center; cursor: pointer;
+                                   background: url(../imgs/HtmlColourAtlas/tab-background.gif) no-repeat right bottom; }
+    #colouratlas .header div.tab.selected { color: #2e2e2e; border: solid 1px #b9b9b2; border-bottom: none;
+                                            background-image: none !important; padding: 3px 11px 3px 12px; cursor: default; margin-left: -1px; }
+    #colouratlas .header div.tab.last { background-image: url(../imgs/HtmlColourAtlas/tab-background-no-border.gif); }
+    #colouratlas .search { height: 23px; float: right; }
+    #colouratlas .search span { font-weight: bold; font-size: 12px; margin-right: 4px; }
+    #colouratlas .search div { font-weight: bold; }
+    #colouratlas .search input.searchbox { width: 248px; height: 21px; border: solid 1px #b5b3b3; }
+    #colouratlas .search input.searchbutton { width: 21px; height: 21px; cursor: pointer;
+                                              border: none; background: url(../imgs/HtmlColourAtlas/search.png) no-repeat; margin-left: 4px; }
+    
+    #colouratlas .hues { height: 69px; padding: 0px 6px 4px; }
+    #colouratlas .hues .neutrals,
+    #colouratlas .hues .dynamic { margin: 12px 0 0 2px; }
+    #colouratlas .hues .allcolours { float: right; margin: 12px 0 0 2px; }
+    #colouratlas .specialtylist { margin: 8px 0 0 2px; }  
+    #colouratlas .hues .huetitle,
+    #colouratlas .specialtylist .specialtytitle { font-size: 15px; font-weight: bold; margin-bottom: 8px; text-transform: capitalize; }
+    #colouratlas .hues .tiles li { width: 16px; height: 24px; float: left; cursor: pointer; text-indent: -999em; line-height: 0; font-size: 0;
+                                    border: solid 1px #b0b0a9; margin: 0 -1px 0 0; padding: 0; list-style-type: none; background: none; }                                    
+    #colouratlas .hues .tiles li.selected { position: relative; top: -5px; left: 0; width: 23px; height: 36px; padding: 6px 0 0 7px;
+                                            background: url(../imgs/HtmlColourAtlas/hue-highlight.png) no-repeat;
+                                            border: none; margin: 0 -7px 0 -6px; }
+    #colouratlas .hues .tiles li.selected div {  }
+    #colouratlas .hues .tiles li div { width: 16px; height: 24px; }
+    #colouratlas .hues .tiles li div:hover { background-image: url(../imgs/HtmlColourAtlas/hue-selector-hover.gif); 
+                                             background-repeat: no-repeat; background-position: center top;  }
+    #colouratlas .hues .tiles li div.pagecode { display: none; }
+    #colouratlas .specialtylist { display: none; height: 69px; padding: 4px 6px; }
+    
+                                   
+    #colouratlas .filters { padding: 4px 6px; }
+    #colouratlas .filters .powdercoat { float: left; }
+    #colouratlas .filters label { margin-left: 6px; }
+    #colouratlas .filters .mycolours { float: right; }
+    #colouratlas .filters .mycolours a:link { color: #00235e; font-size: 15px; font-weight: bold; text-decoration: none; }
+    #colouratlas .filters .mycolours a:visited { color: #00235e; }
+    #colouratlas .filters .mycolours a:hover { text-decoration: underline; }
+    
+    #colouratlas .paging { padding: 8px 6px; }
+    #colouratlas .paging div.pagerprev { float: left; }
+    #colouratlas .paging div.pagernext { float: right; }
+    #colouratlas .paging div.pagenum { margin-left: auto; margin-right: auto; text-align: center; height: 0px;
+                                       font-size: 15px; font-weight: bold; }
+    #colouratlas .paging a.pager:link { color: #00235e; font-size: 12px; font-weight: bold; text-decoration: none; }
+    #colouratlas .paging a.pager:visited { color: #00235e; }
+    #colouratlas .paging a.pager:hover { text-decoration: underline; }
+    #colouratlas .paging a.pager.disabled:visited { color: #b1bbcc; }
+    #colouratlas .paging a.pager.disabled:link { color: #b1bbcc; }
+    #colouratlas .paging a.pager.disabled:hover { color: #b1bbcc; }
+    
+    #colouratlas .colours { width: 972px; height: 594px; padding: 4px 6px; }
+    #colouratlas .colours.loading { background: url(../imgs/HtmlColourAtlas/loading4.gif) no-repeat center center; }
+    #colouratlas .colours .colourrow { height: 53px; border-bottom: solid 1px White; padding: 0; margin: 0; }
+    #colouratlas .colours .colourrow > li { float: left; width: 119px; height: 53px; border-right: solid 1px White; list-style-type: none; cursor: pointer; padding: 0; margin: 0; }
+    #colouratlas .colours .colourrow > li.hoverable:hover { position: relative; top: -5px; left: -5px; width: 129px; height: 63px; margin-right: -9px; margin-bottom: -10px;
+                                                   background: url(../imgs/HtmlColourAtlas/colour-highlight.png) no-repeat; z-index: 4000; border: none; }
+    #colouratlas .colours .colourrow > li.hoverable:hover > div { margin: 5px 0 0 5px; }
+    #colouratlas .colours .colourrow > li.blank { background: url(../imgs/HtmlColourAtlas/blank-background.gif) no-repeat; cursor: default; }
+    #colouratlas .colours .colourrow > li > div { height: 53px; width: 119px; }
+    #colouratlas .colours .colourrow > li div div { margin-left: 6px; line-height: 12px; text-transform: capitalize;  }
+    #colouratlas .colours .colourrow > li div div.code { padding-top: 24px; letter-spacing: 0px; }
+    #colouratlas .colours .colourrow > li div div.lrv,
+    #colouratlas .colours .colourrow > li div div.itemid { display: none; }
+
+    #colouratlas .colours .colourrow > li.lighttext { color: White; }
+    
+    #downloadRevitZipBtn { display: none;}
+    #downloadArchicadZipBtn { display: none;}
+    
+    /* powders hiding */
+    #colouratlas .colours.powdersonly {  }
+    #colouratlas .colours.powdersonly .colourrow > li.notpowder { background: url(../imgs/HtmlColourAtlas/blank-background.gif) no-repeat !important; cursor: default; } /* same as blank */
+    #colouratlas .colours.powdersonly .colourrow > li.notpowder div { display: none; }
+    
+    /* specialty overlays */
+    /* AU */
+    .MetallicsSpecifier { background: url(../imgs/HtmlColourAtlas/specialty-metallic.png) no-repeat; }
+    .SuedeSpecifier { background: url(../imgs/HtmlColourAtlas/specialty-suede.png) no-repeat; }
+    .DesignerSpecifier {  }
+    .PearlSpecifier { background: url(../imgs/HtmlColourAtlas/specialty-pearl.png) no-repeat; }
+    .RiverRockSpecifier { background: url(../imgs/HtmlColourAtlas/specialty-river-rock.png) no-repeat; }
+    .TuscanSpecifier { background: url(../imgs/HtmlColourAtlas/specialty-suede.png) no-repeat; }
+    .ColorbondSpecifier {  }
+    .GardenShadesSpecifier {  }
+    
+    /* NZ */
+    .SpecifierMetallic { background: url(../imgs/HtmlColourAtlas/specialty-metallic.png) no-repeat; }
+    .SpecifierSuede { background: url(../imgs/HtmlColourAtlas/specialty-suede.png) no-repeat; }
+    .SpecifierPearl { background: url(../imgs/HtmlColourAtlas/specialty-pearl.png) no-repeat; }
+    .SpecifierRiverRock { background: url(../imgs/HtmlColourAtlas/specialty-river-rock.png) no-repeat; }
+    .SpecifierTuscan_Suede { background: url(../imgs/HtmlColourAtlas/specialty-suede.png) no-repeat; }
+    .SpecifierRender { background: url(../imgs/HtmlColourAtlas/specialty-render.png) no-repeat; }
+        
+    #colouratlas #huetooltip { position: absolute; display: none; width: 42px; height: 19px; background: url(../imgs/HtmlColourAtlas/hue-label.png) no-repeat; 
+                               padding-top: 3px; font-size: 11px; color: White; z-index: 8000; text-align: center; }
+    
+    /* colour details */
+    #colourdetailoverlay { display: none; position: absolute; width: 972px; background: rgba(180, 180, 180, .5); z-index: 5001; }
+    .detailspanel { display: none; width: 850px; height: 478px; margin: 104px auto 0; background-color: White; z-index: 5002;
+                    }
+    .detailspanel .leftcol,
+    .detailspanel .rightcol { padding: 22px; height: 434px; }
+    .detailspanel .leftcol { width: 341px; float: left; border-right: solid 1px #b0b0a9; }
+    .detailspanel .rightcol { width: 420px; float: right; }
+    .detailspanel .colourchip { display: block; width: 150px; height: 150px; float: left; margin: 0 23px 8px 0; background-color: #ccc; cursor: pointer; }
+    .detailspanel .colourchip div { width: 150px; height: 150px; }
+    .detailspanel .colourchip div:hover { background: url(../imgs/HtmlColourAtlas/download-background.png) no-repeat left bottom; }
+    
+    .detailspanel .orderbutton { width: 160px; height: 35px; background-size: 160px 35px; background-color: #FFF; text-indent: -999em; line-height: 0; font-size: 0;  background-image: url(../imgs/HtmlColourAtlas/OrderThisColour.png); border: none; cursor: pointer; } 
+    .detailspanel .orderbuttonRight { width: 160px; height: 35px; background-size: 160px 35px; background-color: #FFF; text-indent: -999em; line-height: 0; font-size: 0; border: none; cursor: pointer; } 
+
+    .detailspanel .revittbuton { background-image: url(../imgs/HtmlColourAtlas/RevitColour.png); } 
+    .detailspanel .archicadtbutton {background-image: url(../imgs/HtmlColourAtlas/ArchiCADbtn.png); } 
+    .rightColButtonHolder { position: absolute; margin-left: -153px; }
+    .floatRight { float: right;}
+    .closeBtnHolder { width: 150px; }
+    .rightBtnsHolder {  margin-top: 40px; }
+    .detailspanel .addtolist { background-image: url(../imgs/HtmlColourAtlas/AddToColour.png);  }
+
+    .detailspanel .orderlist { background-image: url(../imgs/HtmlColourAtlas/Order-Colour-List-button.png);  }
+    .detailspanel .revittbutonlist { background-image: url(../imgs/HtmlColourAtlas/Revit-Colour-List-button.png); } 
+    .detailspanel .archicadbuttonlist {background-image: url(../imgs/HtmlColourAtlas/ArchiCAD-Colour-List-button.png); } 
+    .detailspanel .colourerror { display: none; color: Red; }
+    
+    .detailspanel .detailsection { width: 100%; }
+    .detailspanel h1 { margin-bottom: 12px; text-transform: capitalize; padding: 0 0 0 0 !important; margin: 0 !important; }
+    .detailspanel .rightcol h1 { float: left; width: 230px !important; }
+    .detailspanel a.clearallcolours:link { visibility: hidden; float: left; margin: 9px 0 0 8px; color: #00235e; font-size: 12px; text-decoration: none; }
+    .detailspanel a.clearallcolours:visited { color: #00235e; }
+    .detailspanel a.clearallcolours:hover { text-decoration: underline; }
+    .detailspanel .leftcol .attriblabel { width: 80px; float: left; clear: both !important; color: #808073; font-size: 15px; }
+    .detailspanel .leftcol .code,
+    .detailspanel .leftcol .red,
+    .detailspanel .leftcol .green,
+    .detailspanel .leftcol .blue,
+    .detailspanel .leftcol .lrv,
+    .detailspanel .leftcol  .name { float: left; font-size: 15px; }
+    .detailspanel .leftcol .itemid { display: none; }
+    .detailspanel .leftcol .downloadtext { margin-top: 45px; }
+    .detailspanel .leftcol .deeplink { float: left; font-size: 15px; margin: 10px 0 0 0; }
+    .detailspanel .leftcol .productname { display: none; }
+    
+    .detailspanel .leftcol .detailsclose { display: none;}
+    .detailspanel .detailsclose { width: 60px; height: 13px; float: right; color: #676767; font-size: 9px; border: none; margin: 0; padding: 0 !important;
+                              background: url(../imgs/HtmlColourAtlas/details-close.gif) no-repeat right 0; cursor: pointer; }
+    .detailspanel .detailsclose:hover { color: Black; background-position: right -13px; }
+    
+    .mycolourlist { width: 234px; margin: 0 !important; padding: 0 !important; }
+    .mycolourlist li { list-style-type: none; height: 40px; margin: -1px 0 0 0; padding: 0 !important; background: none !important; }
+    .mycolourlist li.iefix { margin: -1px 0 0 0 !important; }
+    .mycolourlist .remove { width: 11px; height: 11px; float: right; text-indent: -999em; font-size: 0; line-height: 0; margin: 1px 0 0;
+                            background: url(../imgs/HtmlColourAtlas/mycolour-remove.gif) no-repeat 0 0; border: none; cursor: pointer; }
+    .mycolourlist .remove:hover { background-position: 0 -11px; }
+    .mycolourlist li > div { width: 209px; height: 30px; border: solid 1px #dedbdb; padding: 4px; }
+    /*.mycolourlist li > div.first { border-top: solid 1px #dedbdb; }*/
+    .mycolourlist li .chip { width: 45px; height: 29px; float: left; margin-right: 8px; }
+    .mycolourlist li .name { text-transform: capitalize; display: block; }
+    .mycolourlist li .itemid { display: none; }
+    .mycolourlist li.blank .chip { background: url(../imgs/HtmlColourAtlas/mycolour-blank.gif) no-repeat; }
+    .mycolourlist li.blank .remove { display: none; }
+    .mycolourlist li.blank span.blank { visibility: hidden; }
+    
+    .detailspanel .rightcol .samples { width: 158px; float: right; position: absolute; margin: -148px 0 0 250px; }
+    .detailspanel .rightcol .samples-au { margin-top: -148px; }
+    .detailspanel .rightcol .samples-nz { margin-top: -100px; }
+    
+    #mycolours { display: none; width: 464px; height: 478px; margin: 104px auto 0; background-color: White; z-index: 5003;
+                    -moz-box-shadow: 24px 24px 12px rgba(200,200,200.2); -webkit-box-shadow: 24px 24px 12px rgba(200,200,200.2); box-shadow: 24px 24px 12px rgba(200,200,200.2); }
+                    
+    /* no shop classes */
+    .noshop .mycolours a { display: none; }
+    .noshop .detailspanel { width: 385px; }
+    .noshop .detailspanel .leftcol { border: none; }
+    .noshop .detailspanel .leftcol .detailsclose { display: block; }
+    .noshop .detailspanel .leftcol .orderbutton { display: none; }
+    .noshop .detailspanel .rightcol { display: none; }
+    
+    /* settings for HtmlColourAtlasConstants.HIDESPECIALTYSPECIFIERNUMBER */
+    /* these settings apply to the whole atlas. */
+    .hidespecialtyspecifiernumber .mycolourlist .specialty span.code { visibility: hidden; }
+    
+    /* settings for HtmlColourAtlasConstants.HIDESPECIALTYSPECIFIERNUMBER that are only applied to some pages. */
+    /* these settings are switched on and off as needed */
+    .hidespecialtyspecifiernumberpage .detailspanel .leftcol .codesection { display: none; }
+    .hidespecialtyspecifiernumberpage .colours li div.code { visibility: hidden; }

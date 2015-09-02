@@ -1,0 +1,336 @@
+/* Dulux Colour Trends Forecast 2014
+   Author: Tony Trinh, 23.9.13
+*/
+
+/* temp */
+.wrapper	 	{ /*background: #fbfbfb;*/ background: #fafafa; margin: 0 auto; width: 972px; padding: 0; }
+.wrapper img 	{ display: block; }
+body, html		{ background: #fbfbfb url(../../imgs/colourforecast2014/pageBackground.jpg) no-repeat fixed 0 0; }
+body			{ height: auto; }
+
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@import url("http://hello.myfonts.net/count/25edc8");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../webfonts/ColourTrends2014/25A751_0_0.eot');src: url('../../webfonts/ColourTrends2014/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../webfonts/ColourTrends2014/25A751_0_0.woff') format('woff'),url('../../webfonts/ColourTrends2014/25A751_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../webfonts/ColourTrends2014/25A751_1_0.eot');src: url('../../webfonts/ColourTrends2014/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../webfonts/ColourTrends2014/25A751_1_0.woff') format('woff'),url('../../webfonts/ColourTrends2014/25A751_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../webfonts/ColourTrends2014/25A751_2_0.eot');src: url('../../webfonts/ColourTrends2014/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../webfonts/ColourTrends2014/25A751_2_0.woff') format('woff'),url('../../webfonts/ColourTrends2014/25A751_2_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-MediumCondensed';src: url('../../webfonts/ColourTrends2014/25EDC8_0_0.eot');src: url('../../webfonts/ColourTrends2014/25EDC8_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../webfonts/ColourTrends2014/25EDC8_0_0.woff') format('woff'),url('../../webfonts/ColourTrends2014/25EDC8_0_0.ttf') format('truetype');}
+
+/* global */
+	#ctf { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; overflow: hidden; position: relative; }
+	#ctf .hidden { text-indent: -999em; height: 0; overflow: hidden; }
+	.sIFR-active #ctf h1 { visibility: inherit; }
+	#ctf h2 { font: 25px/1.2 'FuturaBT-Bold'; color: #000; text-transform: uppercase; letter-spacing: 18px; }
+	#ctf ul { list-style: none; }
+	#ctf p,
+	#ctf li { font-size: 12px; color: #666666; line-height: 1.5; }
+	#ctf img { display: block; }
+	#ctf a { cursor: pointer; }
+	.ct-section { width: 960px; margin: 0 6px; float: left; }
+	#ctf .ct-btn { font: 17px/1 'FuturaBT-Book'; color: #fff; width: 162px; height: 40px; background: #00275d url(../../imgs/colourforecast2014/sprites.png) right -88px no-repeat; border-radius: 5px; line-height: 40px; display: inline-block; text-shadow: -1px 1px #000; text-decoration: none; text-indent: 15px; }
+	@keyframes btnAnimate {
+		from { transform: scale(1.0); }
+		to { transform: scale(1.05); }
+	}
+	@-webkit-keyframes btnAnimate {
+		from { transform: scale(1.0); }
+		to { transform: scale(1.05); }
+	}
+	#ctf .ct-btn:hover {
+		animation-name: btnAnimate;
+		animation-duration: 0.33s;
+		animation-timing-function: ease-out;
+		transform: scale(1.05);
+		/* chrome & saf */
+		-webkit-animation-name: btnAnimate;
+		-webkit-animation-duration: 0.33s;
+		-webkit-animation-timing-function: ease-out;
+		-webkit-transform: scale(1.05);
+	}
+	#ctf.oldie .ct-btn:hover { /*opacity: 0.75; filter:alpha(opacity=75);*/ background-color: #e00026; }
+
+/* landing: header */
+	.ct-header.ct-section { background: url(../../imgs/colourforecast2014/bg-header.jpg) no-repeat; height: 580px; margin: 0 0 44px; width: 100%; position: relative; text-align: center; }
+	#ctf.ct-home .ct-header h1 { font: 22px/1 'FuturaBT-Book'; color: #fff; letter-spacing: 18px; text-transform: uppercase; padding: 23px 0 35px 125px; text-align: left; }
+	#ctf.ct-home.ct-spec .ct-header h1 { padding-left: 92px; }
+	#ctf.ct-home .ct-header h2 { text-indent: -999em; display: block; width: 364px; height: 142px; background: url(../../imgs/colourforecast2014/heading-future-tribes.png) no-repeat; margin: 0 auto 35px; }
+	#ctf.ct-home .ct-header p { font-size: 14px; color: #000; width: 515px; margin: 0 auto; line-height: 22px; }
+	.ct-header .ct-ytlink,
+	.ct-header .ct-ytlink span { display: block; background: url(../../imgs/colourforecast2014/bg-home-video.jpg) no-repeat; width: 269px; height: 171px; text-indent: -999em; margin: 0 auto; position: relative; }
+	.ct-header .ct-ytlink span { background: url(../../imgs/colourforecast2014/sprites.png) no-repeat; width: 269px; height: 27px; position: absolute; left: 0; bottom: 0; }
+	.ct-header .ct-ytlink { margin-bottom: 24px; }
+	.ct-header .ct-ytlink:hover span { background-position: left -27px; }
+	#ct-hero-modal { position: absolute; left: 0; bottom: 0; z-index: 950; display: none; }
+	.ct-modal-content { width: 972px; height: 580px; position: relative; background: url(../../imgs/colourforecast2014/bg-header.jpg) no-repeat; }
+	.ct-modal-content .ct-close { position: absolute; right: 12px; top: 12px; display: block; width: 18px; height: 18px; background: url(../../imgs/colourforecast2014/sprites.png) 0 -54px no-repeat; text-indent: -999em; }
+	.ct-modal-content .ct-close:hover { opacity: 0.5; filter:alpha(opacity=50); }
+	#ct-video { background: #000 url(../../imgs/colourforecast2014/bg-YT-video.png) no-repeat; width: 800px; height: 450px; margin: 0 auto; overflow: hidden; position: relative; top: 65px; }
+
+/* landing: colour trends */
+	.ct-home .ct-trends.ct-section { text-align: center; margin-bottom: 27px; }
+	.ct-home.ie7 .ct-trends.ct-section { margin-bottom: 44px; }
+	#ctf.ct-home .ct-trends h2 { padding-bottom: 23px; }
+	#ctf.ct-home .ct-trends ul { overflow: hidden; }
+	#ctf.ct-home .ct-trends li { float: left; margin: 0 20px 17px 0; }
+	#ctf.ct-home .ct-trends .nopad { margin-right: 0; }
+	#ctf.ct-home .ct-trends a { display: block; }
+	#ctf.ct-home.ie7 .ct-trends a { width: 470px; height: 289px; }
+	#ctf.ct-home .ct-trends a:hover { opacity: 0.66; filter:alpha(opacity=66); }
+
+/* landing: designers */
+	.ct-home .ct-designers.ct-section { margin: 0 24px 25px 25px; width: 923px; }
+	#ctf.ct-home .ct-designers h2 { letter-spacing: 1px; padding-bottom: 5px; }
+	#ctf.ct-home .ct-designers .ct-description { font-size: 15px; padding-bottom: 30px;  }
+	#ctf.ct-home .ct-designers h3 { font: 18px/1.2 'FuturaBT-Book'; text-transform: uppercase; padding: 20px 0 12px; min-height: 42px; }
+	#ctf.ct-home .ct-designers .designer-1 { color: #da6435; }
+	#ctf.ct-home .ct-designers .designer-2 { color: #4b4743; }
+	#ctf.ct-home .ct-designers .designer-3 { color: #aea732; }
+	#ctf.ct-home .ct-designers p { padding-bottom: 18px; }
+	#ctf.ct-home .ct-designers ul { overflow: hidden; }
+	#ctf.ct-home .ct-designers li { float: left; width: 293px; margin-right: 22px; }
+	#ctf.ct-home .ct-designers .nopad { margin-right: 0; }
+
+/* landing: suppliers */
+	.ct-home .ct-suppliers.ct-section { margin: 0 25px 40px; width: 922px; }
+	.ct-home.ie7 .ct-suppliers.ct-section { padding-bottom: 40px; }
+	#ctf.ct-home .ct-suppliers h2 { letter-spacing: 1px; padding-bottom: 27px; }
+	#ctf.ct-home .ct-suppliers ul { overflow: hidden; }
+	#ctf.ct-home .ct-suppliers li { float: left; display: block; width: 230px; min-height: 28px; overflow: hidden; padding: 0 0 12px; font-weight: bold; text-transform: uppercase; font-size: 11px; line-height: 13px; }
+	#ctf.ct-home .ct-suppliers li a { text-transform: none; font-weight: normal; text-decoration: none; color: #666666; }
+	#ctf.ct-home .ct-suppliers li a:hover { background: #000; color: #fff; }
+	#ctf.ct-home .ct-suppliers li span { font-weight: normal; }
+
+/* trends: global */
+	#ctf.ct-trends { overflow: visible; }
+	#ctf.ct-trends h2 { letter-spacing: 0; line-height: 1.4; }
+	#ctf.ct-trends p { font-size: 16px; line-height: 1.6; }
+
+/* trends: header */
+	.ct-trends .ct-header { background: #000; width: 100%; height: 580px; position: relative; }
+	.ct-trends .ct-header .ct-ytlink { margin: 0; position: relative; left: 38px; top: 436px; width: 185px; height: 97px; background: #fff; padding: 8px; }
+	.ct-trends .ct-header .ct-ytlink span { width: 42px; height: 28px; background: red; position: relative; left: auto; margin: 0 auto; top: 47px; background: url(../../imgs/colourforecast2014/sprites.png) 0 -75px no-repeat; }
+	.ct-trends .ct-header .ct-ytlink:hover span { background-position: -42px -75px; }
+
+/* trends: nav */
+	.ct-trends .ct-nav { width: 922px; height: 53px; padding: 18px 25px 0; }
+	.ct-trends .ct-nav a { font-weight: bold; font-size: 12px; color: #999999; text-decoration: none; text-transform: uppercase; display: block; }
+	.ct-trends .ct-nav a:hover { color: #000; }
+	.ct-trends .ct-nav .ct-prev { float: left; padding-left: 16px; background: url(../../imgs/colourforecast2014/sprites.png) 0 -117px no-repeat; }
+	.ct-trends .ct-nav .ct-next { float: right; padding-right: 16px; background: url(../../imgs/colourforecast2014/sprites.png) right 3px no-repeat; }
+	.ct-trends .ct-nav a:hover.ct-prev { background-position: 0 -147px; }
+	.ct-trends .ct-nav a:hover.ct-next { background-position: right -27px; }
+	.ct-trends.ie9 .ct-nav .ct-prev { background-position: 0 -118px; }
+	.ct-trends.ie9 .ct-nav .ct-next { background-position: right 2px; }
+	.ct-trends.ie9 .ct-nav a:hover.ct-prev { background-position: 0 -148px; }
+	.ct-trends.ie9 .ct-nav a:hover.ct-next { background-position: right -28px; }
+
+/* trends: info */
+	.ct-trends .ct-info { width: 922px; padding: 0 25px; height: 180px; }
+	.ct-trends .ct-info h2 { padding-bottom: 14px; }
+
+/* trends: colours */
+	.ct-trends .ct-colours { padding: 30px 0 60px; position: relative; }
+	.ct-trends.ct-spec .ct-colours { padding-bottom: 35px; }
+	.ct-trends.ct-spec.ct-nz .ct-colours { padding-bottom: 0; }
+	#ctf.ct-trends .ct-colours h2 { line-height: 1.2; position: absolute; left: 25px; top: 0; }
+
+/* trends: cta */
+	.ct-trends .ct-cta { width: 922px; padding: 0 25px; }
+	.ct-trends .ct-cta h2 { padding-bottom: 25px; }
+	.ct-trends .ct-cta h3 { color: #000; text-transform: uppercase; line-height: 1.4; font-size: 16px; }
+	.ct-trends .ct-cta ul { overflow: hidden; }
+	.ct-trends.ct-spec .ct-cta ul { padding-bottom: 3px; }
+	.ct-trends .ct-cta li { display: block; float: left; padding: 32px 0 0 252px; width: 180px; min-height: 197px; position: relative; }
+	#ctf.ct-trends .ct-cta li p { font-size: 14px; line-height: 1.5; padding-bottom: 12px; }
+	.ct-trends .ct-cta li img { position: absolute; left: 0; top: 0; }
+	.ct-trends .ct-cta .col-1 { margin-right: 50px; }
+	.ct-trends .ct-cta .col-1 img { top: 38px; }
+	.ct-trends.ie7 .ct-cta .ct-btn { margin-left: -15px; }
+	.ct-trends.ct-spec .ct-cta .col-2 img { left: 18px; top: 5px; }
+
+/* trends: discover */
+	.ct-trends .ct-discover { width: 923px; padding: 42px 24px 60px 25px; background: #fff; position: relative; }
+	.ct-trends.ct-con .ct-discover { padding-bottom: 75px; }
+	.ct-trends .ct-discover h2 { padding-bottom: 17px; }
+	.ct-trends .ct-discover ul { overflow: hidden; }
+	.ct-trends .ct-discover li { float: left; margin-right: 10px; }
+	.ct-trends .ct-discover a { display: block; width: 301px; height: 301px; text-indent: -999em; }
+	.ct-trends .ct-discover a:hover { opacity: 0.66; filter: alpha(opacity=66); }
+	.ct-trends .ct-discover .last { margin-right: 0; }
+	.ct-trends .ct-discover .ct-pe { background: url(../../imgs/colourforecast2014/bg-tile-precious-elementals.jpg) no-repeat; }
+	.ct-trends .ct-discover .ct-rv { background: url(../../imgs/colourforecast2014/bg-tile-retro-visionaries.jpg) no-repeat; }
+	.ct-trends .ct-discover .ct-rs { background: url(../../imgs/colourforecast2014/bg-tile-romantic-spirit.jpg) no-repeat; }
+	.ct-trends .ct-discover .ct-dn { background: url(../../imgs/colourforecast2014/bg-tile-digital-nomads.jpg) no-repeat; }
+	#ctf.ct-trends .ct-discover .ct-disclaimer { position: absolute; left: 25px; bottom: 45px; font-size: 12px; font-style: italic; }
+
+/* hotspots: global */
+	.ct-trends .ct-hotspots { position: relative; }
+	.ct-trends.ie7 .ct-hotspots { z-index: 4; }
+	.ct-trends .ct-hotspots h3 a { color: #000; }
+	.ct-trends .ct-hotspots img { position: relative; }
+	.ct-trends .hotspot { background: url(../../imgs/colourforecast2014/sprites.png) 0 -180px no-repeat; position: absolute; z-index: 1; width: 22px; height: 19px; cursor: pointer; }
+	.ct-trends .hotspot-content { position: relative; min-width: 200px; margin-top: -30px; margin-left: 10px; color: #000; background: url(../../imgs/colourforecast2014/bg-hotspot-arrow.png) no-repeat center left transparent; padding-left: 23px; }
+	.ct-trends .hotspot-content .content { background-color: #fff; padding: 10px 15px 20px 25px; }
+	.ct-trends .hotspot-content h3 { font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; color: #000; text-transform: none; margin: 15px 0 5px 0; letter-spacing: 0.15em; }
+	.ct-trends .hotspot-content .close { background: url(../../imgs/colourforecast2014/sprites.png) 0 -210px no-repeat; position: absolute; width: 30px; height: 30px; right: 10px; top: 10px; cursor: pointer; }
+	.ct-trends .hotspot-content a { text-decoration: none; }
+	.ct-trends .hotspot-content a:hover { text-decoration: underline; }
+	#ctf.ct-trends .hotspot-content p { margin: 0 !important; font-size: 12px; line-height: 1.3em; color: #000; }
+
+/* trends: consumer digital nomads */
+	.ct-trends.ct-con.ct-dn.wrapper { background: #fbeede; }
+	.ct-trends.ct-con.ct-dn .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-dn-header.jpg) no-repeat; } 
+	.ct-trends.ct-con.ct-dn .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-dn-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-con.ct-dn .ct-header .ct-ytlink { background: #f8dfba url(../../imgs/colourforecast2014/trends/bg-dn-video.jpg) 8px 8px no-repeat; }
+/* trends: consumer digital nomads hot spots */
+	.ct-trends.ct-con.ct-dn #hs1 { top: 1487px; left: 280px; }
+	.ct-trends.ct-con.ct-dn #hs2 { top: 250px; left: 340px; z-index: 3; }
+	.ct-trends.ct-con.ct-dn #hs3 { top: 470px; left: 739px; }
+	.ct-trends.ct-con.ct-dn #hs4 { top: 71px; left: 803px; }
+	.ct-trends.ct-con.ct-dn #hs5 { top: 217px; left: 747px; }
+	.ct-trends.ct-con.ct-dn #hs6 { top: 161px; left: 747px; z-index: 2; }
+	.ct-trends.ct-con.ct-dn #hs7 { top: 161px; left: 803px; }
+	.ct-trends.ct-con.ct-dn #hs8 { top: 161px; left: 563px; z-index: 2; }
+	.ct-trends.ct-con.ct-dn #hs9 { top: 289px; left: 563px; }
+	.ct-trends.ct-con.ct-dn #hs10 { top: 1230px; left: 100px; }
+	.ct-trends.ct-con.ct-dn #hs11 { top: 1310px; left: 200px; }
+	.ct-trends.ct-con.ct-dn #hs12 { top: 1233px; left: 719px; }
+	.ct-trends.ct-con.ct-dn #hs13 { top: 1316px; left: 719px; }
+
+/* trends: consumer romantic spirit */
+	.ct-trends.ct-con.ct-rs.wrapper { background: #f5ece8; }
+	.ct-trends.ct-con.ct-rs .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-rs-header.jpg) no-repeat; } 
+	.ct-trends.ct-con.ct-rs .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-rs-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-con.ct-rs .ct-header .ct-ytlink { background: #bfd3ca url(../../imgs/colourforecast2014/trends/bg-rs-video.jpg) 8px 8px no-repeat; }
+	.ct-trends.ct-rs .ct-info { height: 240px; }
+/* trends: consumer romantic spirit hot spots */
+	.ct-trends.ct-con.ct-rs #hs1 { top: 142px; left: 108px; }
+	.ct-trends.ct-con.ct-rs #hs2 { top: 150px; left: 472px; }
+	.ct-trends.ct-con.ct-rs #hs3 { top: 470px; left: 404px; z-index: 2; }
+	.ct-trends.ct-con.ct-rs #hs4 { top: 481px; left: 568px; }
+	.ct-trends.ct-con.ct-rs #hs5 { top: 232px; left: 739px; }
+	.ct-trends.ct-con.ct-rs #hs6 { top: 1561px; left: 104px; z-index: 2; }
+	.ct-trends.ct-con.ct-rs #hs7 { top: 1672px; left: 69px; }
+	.ct-trends.ct-con.ct-rs #hs8 { top: 1561px; left: 298px; }
+	.ct-trends.ct-con.ct-rs #hs9 { top: 1561px; left: 591px; }
+	.ct-trends.ct-con.ct-rs #hs10 { top: 1627px; left: 831px; }
+	.ct-trends.ct-con.ct-rs #hs11 { top: 515px; left: 244px; z-index: 3; }
+
+/* trends: consumer retro visionaries */
+	.ct-trends.ct-con.ct-rv.wrapper { background: #f8f8f8; }
+	.ct-trends.ct-con.ct-rv .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-rv-header.jpg) no-repeat; } 
+	.ct-trends.ct-con.ct-rv .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-rv-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-con.ct-rv .ct-header .ct-ytlink { background: #7fcfe2 url(../../imgs/colourforecast2014/trends/bg-rv-video.jpg) 8px 8px no-repeat; }
+	.ct-trends.ct-rv .ct-info { height: 215px; }
+/* trends: consumer retro visionaries hot spots */
+	.ct-trends.ct-con.ct-rv #hs1 { top: 257px; left: 253px; }
+	.ct-trends.ct-con.ct-rv #hs2 { top: 330px; left: 253px; }
+	.ct-trends.ct-con.ct-rv #hs3 { top: 444px; left: 393px; }
+	.ct-trends.ct-con.ct-rv #hs4 { top: 530px; left: 393px; }
+	.ct-trends.ct-con.ct-rv #hs5 { top: 183px; left: 750px; }
+	.ct-trends.ct-con.ct-rv #hs6 { top: 377px; left: 623px; }
+	.ct-trends.ct-con.ct-rv #hs7 { top: 1453px; left: 245px; }
+	.ct-trends.ct-con.ct-rv #hs8 { top: 1280px; left: 528px; }
+	.ct-trends.ct-con.ct-rv #hs9 { top: 1380px; left: 775px; }
+	.ct-trends.ct-con.ct-rv #hs10 { top: 1524px; left: 855px; }
+	.ct-trends.ct-con.ct-rv #hs11 { top: 1575px; left: 755px; }
+	.ct-trends.ct-con.ct-rv #hs12 { top: 485px; left: 11px; }
+
+/* trends: consumer precious elementals */
+	.ct-trends.ct-con.ct-pe.wrapper { background: #eaf3f5; }
+	.ct-trends.ct-con.ct-pe .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-pe-header.jpg) no-repeat; } 
+	.ct-trends.ct-con.ct-pe .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-pe-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-con.ct-pe .ct-header .ct-ytlink { background: #c0d2cf url(../../imgs/colourforecast2014/trends/bg-pe-video.jpg) 8px 8px no-repeat; }
+	.ct-trends.ct-pe .ct-info { height: 215px; }
+/* trends: consumer precious elementals hot spots */
+	.ct-trends.ct-con.ct-pe #hs1 { top: 335px; left: 65px; }
+	.ct-trends.ct-con.ct-pe #hs2 { top: 199px; left: 283px; z-index: 2; }
+	.ct-trends.ct-con.ct-pe #hs3 { top: 199px; left: 372px; }
+	.ct-trends.ct-con.ct-pe #hs4 { top: 250px; left: 330px; }
+	.ct-trends.ct-con.ct-pe #hs5 { top: 60px; left: 604px; z-index: 2; }
+	.ct-trends.ct-con.ct-pe #hs6 { top: 60px; left: 739px; }
+	.ct-trends.ct-con.ct-pe #hs7 { top: 510px; left: 739px; }
+	.ct-trends.ct-con.ct-pe #hs8 { top: 145px; left: 655px; z-index: 2; }
+	.ct-trends.ct-con.ct-pe #hs9 { top: 389px; left: 739px; }
+	.ct-trends.ct-con.ct-pe #hs10 { top: 279px; left: 490px; }
+	.ct-trends.ct-con.ct-pe #hs11 { top: 1528px; left: 177px; }
+	.ct-trends.ct-con.ct-pe #hs12 { top: 1456px; left: 637px; }
+
+/* trends: specifier digital nomads */
+	.ct-trends.ct-spec.ct-dn.wrapper { background: #fbeede; }
+	.ct-trends.ct-spec.ct-dn .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-spec-dn-header.jpg) no-repeat; } 
+	.ct-trends.ct-spec.ct-dn .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-spec-dn-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-spec.ct-dn .ct-header .ct-ytlink { background: #f8dfba url(../../imgs/colourforecast2014/trends/bg-dn-video.jpg) 8px 8px no-repeat; }
+/* trends: specifier digital nomads hot spots */
+	.ct-trends.ct-spec.ct-dn #hs1 { top: 2px; left: 161px; z-index: 4; }
+	.ct-trends.ct-spec.ct-dn #hs2 { top: 26px; left: 327px; z-index: 3; }
+	.ct-trends.ct-spec.ct-dn #hs3 { top: 26px; left: 421px; z-index: 2; }
+	.ct-trends.ct-spec.ct-dn #hs4 { top: 26px; left: 515px; }
+	.ct-trends.ct-spec.ct-dn #hs5 { top: 102px; left: 684px; }
+	.ct-trends.ct-spec.ct-dn #hs6 { top: 373px; left: 364px; }
+	.ct-trends.ct-spec.ct-dn #hs7 { top: 243px; left: 66px; }
+	.ct-trends.ct-spec.ct-dn #hs8 { top: 394px; left: 892px; }
+	.ct-trends.ct-spec.ct-dn #hs9 { top: 1232px; left: 50px; }
+	.ct-trends.ct-spec.ct-dn #hs10 { top: 1232px; left: 412px; z-index: 2; }
+	.ct-trends.ct-spec.ct-dn #hs11 { top: 1447px; left: 361px; }
+	.ct-trends.ct-spec.ct-dn #hs12 { top: 1232px; left: 612px; }
+	.ct-trends.ct-spec.ct-dn #hs13 { top: 1397px; left: 768px; }
+	.ct-trends.ct-spec.ct-dn #hs14 { top: 1476px; left: 739px; }
+
+/* trends: specifier precious elementals */
+	.ct-trends.ct-spec.ct-pe.wrapper { background: #eaf3f5; }
+	.ct-trends.ct-spec.ct-pe .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-spec-pe-header.jpg) no-repeat; } 
+	.ct-trends.ct-spec.ct-pe .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-spec-pe-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-spec.ct-pe .ct-header .ct-ytlink { background: #c0d2cf url(../../imgs/colourforecast2014/trends/bg-pe-video.jpg) 8px 8px no-repeat; }
+/* trends: specifier precious elementals hot spots */
+	.ct-trends.ct-spec.ct-pe #hs1 { top: 72px; left: 844px; }
+	.ct-trends.ct-spec.ct-pe #hs2 { top: 506px; left: 292px; z-index: 2; }
+	.ct-trends.ct-spec.ct-pe #hs3 { top: 464px; left: 413px; }
+	.ct-trends.ct-spec.ct-pe #hs4 { top: 251px; left: 495px; }
+	.ct-trends.ct-spec.ct-pe #hs5 { top: 444px; left: 810px; }
+	.ct-trends.ct-spec.ct-pe #hs6 { top: 226px; left: 898px; }
+	.ct-trends.ct-spec.ct-pe #hs7 { top: 1400px; left: 120px; }
+	.ct-trends.ct-spec.ct-pe #hs8 { top: 1471px; left: 24px; }
+	.ct-trends.ct-spec.ct-pe #hs9 { top: 1452px; left: 768px; }
+	.ct-trends.ct-spec.ct-pe #hs10 { top: 1560px; left: 688px; }
+	.ct-trends.ct-spec.ct-pe #hs11 { top: 1254px; left: 612px; }
+	.ct-trends.ct-spec.ct-pe #hs12 { top: 1386px; left: 420px; }
+	.ct-trends.ct-spec.ct-pe #hs13 { top: 1254px; left: 368px; }
+
+/* trends: specifier retro visionaries */
+	.ct-trends.ct-spec.ct-rv.wrapper { background: #f8f8f8; }
+	.ct-trends.ct-spec.ct-rv .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-spec-rv-header.jpg) no-repeat; } 
+	.ct-trends.ct-spec.ct-rv .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-spec-rv-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-spec.ct-rv .ct-header .ct-ytlink { background: #7fcfe2 url(../../imgs/colourforecast2014/trends/bg-rv-video.jpg) 8px 8px no-repeat; }
+/* trends: specifier retro visionaries hot spots */
+	.ct-trends.ct-spec.ct-rv #hs1 { top: 10px; left: 352px; }
+	.ct-trends.ct-spec.ct-rv #hs2 { top: 318px; left: 8px; }
+	.ct-trends.ct-spec.ct-rv #hs3 { top: 391px; left: 54px; }
+	.ct-trends.ct-spec.ct-rv #hs4 { top: 175px; left: 542px; }
+	.ct-trends.ct-spec.ct-rv #hs5 { top: 275px; left: 542px; }
+	.ct-trends.ct-spec.ct-rv #hs6 { top: 113px; left: 750px; }
+	.ct-trends.ct-spec.ct-rv #hs7 { top: 452px; left: 328px; }
+	.ct-trends.ct-spec.ct-rv #hs8 { top: 394px; left: 565px; z-index: 2; }
+	.ct-trends.ct-spec.ct-rv #hs9 { top: 394px; left: 739px; }
+	.ct-trends.ct-spec.ct-rv #hs10 { top: 1319px; left: 787px; }
+	.ct-trends.ct-spec.ct-rv #hs11 { top: 1556px; left: 721px; }
+	.ct-trends.ct-spec.ct-rv #hs12 { top: 1466px; left: 591px; }
+	.ct-trends.ct-spec.ct-rv #hs13 { top: 1597px; left: 617px; }
+	.ct-trends.ct-spec.ct-rv #hs14 { top: 1529px; left: 591px; }
+	.ct-trends.ct-spec.ct-rv #hs15 { top: 1529px; left: 524px; }
+
+/* trends: specifier romantic spirit */
+	.ct-trends.ct-spec.ct-rs.wrapper { background: #f0ddce; }
+	.ct-trends.ct-spec.ct-rs .ct-header { background: url(../../imgs/colourforecast2014/trends/bg-spec-rs-header.jpg) no-repeat; } 
+	.ct-trends.ct-spec.ct-rs .ct-modal-content { background: url(../../imgs/colourforecast2014/trends/bg-spec-rs-header-blur.jpg) no-repeat; }
+	.ct-trends.ct-spec.ct-rs .ct-header .ct-ytlink { background: #bfd3ca url(../../imgs/colourforecast2014/trends/bg-rs-video.jpg) 8px 8px no-repeat; }
+/* trends: specifier romantic spirit hot spots */
+	.ct-trends.ct-spec.ct-rs #hs1 { top: 114px; left: 226px; z-index: 2; }
+	.ct-trends.ct-spec.ct-rs #hs2 { top: 275px; left: 89px; }
+	.ct-trends.ct-spec.ct-rs #hs3 { top: 259px; left: 394px; }
+	.ct-trends.ct-spec.ct-rs #hs4 { top: 432px; left: 705px; }
+	.ct-trends.ct-spec.ct-rs #hs5 { top: 97px; left: 345px; }
+	.ct-trends.ct-spec.ct-rs #hs6 { top: 492px; left: 705px; }
+	.ct-trends.ct-spec.ct-rs #hs7 { top: 1684px; left: 140px; }
+	.ct-trends.ct-spec.ct-rs #hs8 { top: 1481px; left: 317px; }
+	.ct-trends.ct-spec.ct-rs #hs9 { top: 1630px; left: 546px; }

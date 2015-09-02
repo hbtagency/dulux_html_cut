@@ -1,0 +1,196 @@
+﻿/* Dulux Virgin Australia
+   Author: Jetz Alipalo
+*/
+
+@import url("fonts.css");
+
+/* Common */
+.wrapper	 	{ /*background: #fbfbfb;*/ background: #fff; margin: 0 auto; width: 972px; padding: 0; }
+body, html		{ background: #fbfbfb url(../../imgs/colourApp2014/pageBackground.jpg) no-repeat fixed 0 0; }
+
+#dulux-app h1,
+.sIFR-active h1 { visibility:visible }
+
+p a { text-decoration:none }
+.secs { position:relative; }
+.center { text-align:center }
+.container { margin:0 16px }
+
+.row { display:block }
+.row > .col { float:left }
+
+h1, p { font-family: 'FuturaBT-light'; font-weight:normal }
+h1 { font-size:56px; line-height:68px }
+p { font-size:24px; line-height:28px }
+
+
+
+/* Page Styles */
+/*******************************************************************/
+
+/* Hero */
+#hero {
+    background:#2396af url(../../imgs/colourApp2014/bg-hero.jpg) no-repeat center;
+    height:513px;
+    margin-top:-3px;
+    
+}
+#hero h1 {
+    font-size:52px;
+    color:#fff;
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+#hero h1 strong {
+    font:bold 50px/54px 'FuturaBT-bold';
+    display:block;
+    margin-bottom:-10px;
+    letter-spacing:16px;
+}
+#hero p {
+    font-size:22px;
+    color:#fff;
+    margin-bottom:16px;
+}
+#hero .text {
+    width:462px;
+    margin:60px 0 0 50px;
+}
+.watch-vid {
+    display:block;
+    width:194px;
+    background:#0a3a58 url(../../imgs/colourApp2014/watch-vid.jpg) no-repeat -194px 0;
+    border:4px solid #0a3a58;
+    text-align:center;
+    padding:122px 0 4px 0;
+    font:normal 16px/18px 'FuturaBT-light';
+    color:#fff;
+    text-decoration:none;
+}
+.watch-vid:hover {
+    background-position:0 0;
+}
+
+
+/* Panel basic */
+.panels h1, .panels img, .panels p { position:absolute; z-index:1 }
+.panels.type-1 {
+    background:#edecea;
+    color:#012c5d
+}
+.panels.type-2 {
+    background:#fff;
+    color:#1c0b69
+}
+.panels h1 {
+    padding-right:90px;
+    background:url(../../imgs/colourApp2014/icons.png) no-repeat;
+}
+
+/* Capture */
+#capture { height:350px }
+#capture img { left:166px }
+#capture h1 { left:509px; top:112px; background-position: 100% 0 }
+#capture p { left:509px; top:186px }
+
+/* Browse */
+#browse { height:347px }
+#browse img { right:-10px; top:48px }
+#browse h1 { left:130px; top:112px; background-position: 100% -70px }
+#browse p { left:130px; top:186px }
+
+/* Visualize */
+#visualize { height:372px }
+#visualize img { left:160px; top:-80px }
+#visualize h1 { left:458px; top:112px; background-position: 100% -142px }
+#visualize p { left:458px; top:186px }
+
+/* Inspire */
+#inspire { height:347px }
+#inspire img { right:64px; top:-62px }
+#inspire h1 { left:130px; top:112px; background:none}
+#inspire p { left:130px; top:186px }
+
+/* Donwnload App */
+.dl-app {
+    display:block;
+    position:absolute;
+    background:url(../../imgs/colourApp2014/dl-app.png) no-repeat;
+    text-indent:-9999px;
+}
+
+.dl-app.google {
+    background:url(../../imgs/colourApp2014/dl-play.png) no-repeat;
+}
+
+#hero .dl-app {
+    bottom:40px; left:315px;
+    width:142px; height:41px;
+    background-size:142px 41px;
+}
+#hero .dl-app.google {
+    bottom:100px;
+    background-size:142px 41px;
+}
+.oldie #hero .dl-app {
+    bottom:40px; left:315px;
+    width:142px; height:41px;
+    background:url(../../imgs/colourApp2014/dl-app-ie.png) no-repeat
+}
+.oldie #hero .dl-app.google {
+    bottom:100px;
+    background:url(../../imgs/colourApp2014/dl-play-ie.png) no-repeat
+}
+#dl-now .dl-app {
+    top:135px; left:500px;
+    width:182px; height:52px;
+}
+#dl-now .dl-app.google {
+    left:295px;
+    width:179px; height:53px;
+}
+#dl-now {
+    height:278px;
+    background:#edecea;
+    color:#012c5d
+}
+#dl-now h1 {
+    position:absolute;
+    left:280px; top:55px;
+    font-size:65px;
+}
+#dl-now p {
+    font-size:14px;
+    line-height:18px;
+    margin-top:210px;
+}
+
+.video-player {
+    display:none;
+    opacity:0;
+    filter:alpha(opacity=0);
+
+    position:absolute;
+    top:0; left:0; bottom:18px; right:0;
+    background:#020102;
+}
+.video-player .wrap {
+    margin:50px auto 0;
+    width:700px; height:394px;
+}
+.close {
+    display:block;
+    position:absolute;
+    top:12px; right:10px;
+    width:19px; height:19px;
+    background:url(../../imgs/colourApp2014/icons.png) no-repeat -23px -230px;
+}
+.close:hover {
+    opacity:.4;
+    filter:alpha(opacity=40);
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

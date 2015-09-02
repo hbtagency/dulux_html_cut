@@ -1,0 +1,548 @@
+/* Dulux Virgin Australia
+   Author: Jetz Alipalo
+*/
+
+@import url("fonts.css");
+
+/* temp */
+.wrapper	 	{ /*background: #fbfbfb;*/ background: #fff; margin: 0 auto; width: 972px; padding: 0; }
+body, html		{ background: #fbfbfb url(../../images/ColourGallery2014-images/pageBackground.jpg) no-repeat fixed 0 0; }
+
+#dulux-gallery h1,
+.sIFR-active h1 { visibility:visible }
+
+/* Common */
+h1 {
+    font:normal 45px/50px 'FuturaBT-bold';
+    letter-spacing:12px;
+    color:#012c5d;
+    margin:40px 0 20px;
+}
+p {
+    font:normal 14px/22px 'FuturaBT-Book';
+    color:#888;
+}
+p a { text-decoration:none }
+.secs { position:relative; }
+.center { text-align:center }
+.container { margin:0 16px; padding: 0 0px; }
+
+.row { display:block }
+.row > .col { float:left }
+
+/* Page Styles */
+/*******************************************************************/
+
+/* Head-filter */
+#head-filter {
+    background:#efefed url(../../images/ColourGallery2014-images/bg-head-filter.jpg) no-repeat;
+    height:396px;
+
+    /*Temp*/
+    margin-top:-3px;
+    padding-top:19px;
+}
+#head-filter .text {
+    width:380px;
+    margin:66px 0 0 32px;
+}
+#head-filter h1 {
+    font:62px/62px 'FuturaBT-bold';
+    color:#646361;
+    margin:0 0 20px;
+}
+.text p {
+    font:normal 22px/26px 'FuturaBT-Book';
+    color:#888;
+}
+.filters {
+    padding:66px 15px 0;
+    width:520px;
+    float:right;
+    text-align:center;
+}
+.filter li {
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+.filters h2 {
+    font:normal 24px/28px 'FuturaBT-light';
+    margin:10px 0 3px;
+}
+.filters h2 strong { font: normal 24px/28px 'FuturaBT-bold'; }
+.filters h2 > span { font: normal 24px/28px 'FuturaBT-Book'; color: #b8b8b8; }
+.collapse .filters h2 > span { display: none; }
+
+.filter {
+    display:block;
+    list-style:none;
+    padding:0;
+    margin:0 0 15px;
+    background:#f5efed;
+    text-align:center;
+    height:85px
+}
+.filter li {
+    display:inline-block;
+    position:relative;
+}
+
+/* Search by colour filter */
+#patches li {
+    width:54px; height:40px;
+    margin:11px 0 0 -3px;
+}
+#patches li:hover, #patches li:first-child:hover,
+#patches li.active, #patches li:first-child.active { margin-bottom:-3px }
+#patches li:first-child { margin:11px 0 0 0 }
+
+#patches li a {
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    /*background:url(../images/sprite.png) no-repeat -25px -490px;*/
+    z-index:9;
+    padding-top: 45px;
+    font:normal 10px/10px 'FuturaBT-light';
+    text-decoration: none;
+    color: #000;
+}
+
+/* Search by space filter */
+#space li {
+    margin:6px 0 0 40px;
+    padding-bottom:10px;
+    border-bottom:2px solid #f5efed;
+
+    -webkit-transition: border-bottom .3s ease-in-out;
+       -moz-transition: border-bottom .3s ease-in-out;
+        -ms-transition: border-bottom .3s ease-in-out;
+         -o-transition: border-bottom .3s ease-in-out;
+            transition: border-bottom .3s ease-in-out;
+}
+.collapse #space li { margin-left: 16px; }
+#space li:hover, #space li.active {
+    border-bottom:2px solid #000;
+    margin-bottom:-5px
+}
+#space li:first-child { margin-left:0 }
+
+
+#space a {
+    display:block;
+    font:normal 10px/10px Sans-Serif, Arial;
+    text-decoration:none;
+    text-align:center;
+    color:#000;
+}
+
+#space i {
+    display:block;
+    width:40px; height:40px;
+    margin:0 auto;
+    background:url(../../images/ColourGallery2014-images/sprite.png)
+}
+#space .living      { background-position:-17px -13px  }
+#space .kitchen     { background-position:-17px -72px  }
+#space .bathroom    { background-position:-17px -130px }
+#space .bedroom     { background-position:-17px -188px }
+#space .exterior    { background-position:-17px -248px }
+
+.filters ._view {
+    font:normal 13px/18px 'FuturaBT-bold';
+    color:#2e2d2d;
+    text-decoration:none;
+}
+.filters ._view span {
+    text-decoration:underline;
+}
+.filters ._view i {
+    display:inline-block;
+    width:14px; height:20px;
+    margin-bottom:-5px;
+    background:url(../../images/ColourGallery2014-images/sprite.png) -30px -317px no-repeat;
+}
+.filters p {
+    font:normal 24px/28px 'FuturaBT-Book';
+    color:#b8b8b8;
+}
+
+/* Header Filter Collapse */
+#head-filter.collapse { height:220px }
+#head-filter.collapse.alone,
+#head-filter.collapse.booklinks { height:115px }
+#head-filter.collapse.booklinks h1 { margin-bottom:5px }
+#head-filter.collapse.booklinks  p { display:block }
+#head-filter.alone h1 { margin-bottom:15px }
+
+.collapse .text p, .collapse .filters ._view { display:none }
+
+#head-filter.alone .text a {
+    color:#5f5f5f;
+    font-size:12px;
+}
+#head-filter.collapse .text {
+    width:100%;
+    margin:26px 0 0;
+    text-align:center;
+}
+#head-filter.collapse .filters {
+    padding:0;
+    margin:0 auto;
+    width:924px;
+    float:none;
+}
+#head-filter.collapse .filters h2 { margin-top:0 }
+#head-filter.collapse .filters p { margin:50px 12px 0 }
+#head-filter.collapse .text h1 { font:38px/40px 'FuturaBT-bold' }
+#head-filter.collapse .min { float:left }
+#head-filter.collapse .filter { width:504px }
+#head-filter.collapse .filter#space { width: 332px; }
+
+/* View All */
+#head-filter .viewall { display:none }
+#head-filter.collapse .viewall { display:block }
+
+#head-filter.collapse .viewall a {
+    display:block;
+    height:45px; width:80px;
+    background:#f5efed;
+    font:18px/22px 'FuturaBT-light';
+    padding:16px 0 24px 0;
+    text-decoration:none;
+    margin-top:31px;
+
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+
+}
+
+#head-filter.collapse.fixed { position: fixed; top: 0; height: 132px; width: 972px; z-index: 10; background-position: center -105px; }
+#head-filter.collapse.fixed .text { display: none; }
+#head-filter.collapse.fixed + .secs { margin-top: 223px; }
+
+/* Image gallery List  */
+#img-gallery { margin:16px 0; width:940px }
+
+#img-gallery .item {
+    position:relative;
+    float: left;
+    margin-bottom: 20px;
+    cursor:pointer;
+    overflow: hidden;
+}
+#img-gallery > .item > i {
+    position:absolute;
+    bottom:0; left:50%;
+    margin-left:-18px;
+    width:37px; height:15px;
+
+    background:url(../../images/ColourGallery2014-images/sprite.png) -18px -1007px no-repeat
+}
+#img-gallery > .item img {
+    height:322px;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+}
+.ie8 #img-gallery > .item img {
+    max-width: none;
+    max-height:none;
+}
+#img-gallery .first-item { clear: both }
+#img-gallery .last-row, #img-gallery .last-row ~ .item { margin-bottom: 0 }
+
+
+/* Link Items */
+.link-items {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:table;
+    height: inherit !important
+}
+.link-items li {
+    display:table-row;
+}
+.link-items li a {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    padding:0 80px 0 20px;
+    border-top:1px solid #ccc;
+    background: #7c7c7c;
+    color:#fff;
+    text-decoration:none;
+    font:20px/28px 'FuturaBT-light';
+    width: 121px;
+}
+.link-items li:first-child a {
+    background: #696969;
+}
+.link-items li:last-child a {
+    background: #8f8f8f;
+}
+.ie8 .link-items li a { background:#7c7c7c }
+.ie8 .link-items li a:hover { background:#696969 }
+
+.link-items li a i {
+    position:absolute;
+    right:20px; top:50%;
+    margin-top:-8px;
+    width:10px; height:16px;
+    background:url(../../images/ColourGallery2014-images/sprite.png) -32px -377px no-repeat;
+}
+.link-items li:first-child a { border-top:0 none }
+/*.link-items li a:hover { background:rgba(0, 0, 0, 0.60) }*/
+.link-items li a:hover i { right:10px }
+
+
+
+/* Load More */
+.loadmore {
+    border:1px solid #9b9b9b;
+    height:62px;
+    font:24px/62px 'FuturaBT-book';
+    color:#9b9b9b;
+    text-align:center;
+    cursor:pointer;
+
+    -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+.loadmore:hover {
+    background:#f3f3f3;
+    color:#666
+}
+.loadmore:active {
+    background:#9b9b9b;
+    color:#fff
+}
+
+
+/* Image Panel */
+#image-panel {
+    position:relative;
+    float:left;
+    width:972px;
+    margin:0 0 0 -16px;
+
+    display:none;
+}
+#image-panel._alt { display:block }
+#image-panel h1, .swatches li span, .swatches li a { letter-spacing:normal }
+
+#image-panel h1 {
+    font:34px/38px 'FuturaBT-book';
+    color:#000;
+    margin:20px 36px 20px;
+}
+#image-panel .close-panel {
+    position:absolute;
+    top:28px; right:40px;
+    width:26px; height:26px;
+    background:url(../../images/ColourGallery2014-images/sprite.png) -24px -545px no-repeat;
+
+    opacity:.4;
+    filter:alpha(opacity=40);
+}
+#image-panel .close-panel:hover {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+/* Swatches */
+.swatches {
+    list-style:none;
+    padding:0;
+    margin:0 36px 38px;
+    border:1px solid #ebebeb;
+    display:inline-block;
+}
+.swatches li {
+    display:inline-block;
+    float:left;
+    width:298px;
+    text-align:center;
+    padding:15px 0;
+
+    border-left:0 none;
+}
+.swatches li span {
+    display:block;
+    font:bold 18px/24px 'FuturaBT-book';
+    margin-bottom:3px;
+}
+.swatches li a {
+    font:bold 14px/31px 'FuturaBT-book';
+    text-decoration:none;
+    display:inline-block;
+
+
+    height:30px;
+    color:#132150;
+    background:#f5f5f5 url(../../images/ColourGallery2014-images/sprite.png) -18px -429px no-repeat;
+    padding:0 10px 0 34px;
+
+    -webkit-border-radius:3px;
+       -moz-border-radius:3px;
+            border-radius:3px;
+}
+
+.swatches li a:hover {
+    -webkit-box-shadow:0 0 2px rgba(0, 0, 0, 0.70);
+       -moz-box-shadow:0 0 2px rgba(0, 0, 0, 0.70);
+            box-shadow:0 0 2px rgba(0, 0, 0, 0.70);
+}
+.swatches li a:active {
+    -webkit-box-shadow:inset 1px 1px 5px rgba(0, 0, 0, 0.70);
+       -moz-box-shadow:inset 1px 1px 5px rgba(0, 0, 0, 0.70);
+            box-shadow:inset 1px 1px 5px rgba(0, 0, 0, 0.70);
+}
+
+.swatches li a,
+.share-this li a {
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+}
+
+/* Image figure */
+.img-figure {
+    position:relative;
+    background:#efefef;
+    text-align:center;
+    overflow:hidden;
+}
+.img-figure img {
+    height:517px;
+    display:block;
+    margin:0 auto;
+}
+.img-figure a {
+    position:absolute;
+    width:25px; height:43px;
+    top:50%; margin-top:-22px;
+
+    opacity:.4;
+    filter:alpha(opacity=40);
+
+    background:url(../../images/ColourGallery2014-images/sprite.png) no-repeat;
+}
+.img-figure a:hover {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+.img-figure a.next {
+    background-position:-42px -938px;
+    right:20px
+}
+.img-figure a.prev {
+    background-position:-7px -938px;
+    left:20px
+}
+.share-this {
+    list-style:none;
+    margin:20px 0;
+    padding:0;
+    text-align:center;
+}
+.share-this li {
+    display:inline-block;
+    margin-right:5px;
+}
+.share-this li a {
+    position:relative;
+    display:block;
+    width:50px;height:45px;
+    border:1px solid #dbdbdb;
+
+    font:16px/45px 'FuturaBT-book';
+    letter-spacing:normal;
+    color:#fff;
+    text-decoration:none;
+
+    background:url(../../images/ColourGallery2014-images/sprite.png) no-repeat;
+
+    -webkit-border-radius:5px;
+       -moz-border-radius:5px;
+            border-radius:5px;
+
+}
+.share-this li a:hover {
+    background-color:#000;
+}
+.icon > i {
+    display:block;
+    background:url(../../images/ColourGallery2014-images/sprite.png) no-repeat;
+
+}
+.icon.booklet {
+    width:auto;
+    background-image:none;
+    padding:0 52px 0 13px;
+    background:#bebebe;
+}
+.icon.booklet > i {
+    position:absolute;
+    top:6px; right:14px;
+    width:21px; height:30px;
+    background-position:-27px -621px
+}
+.icon.fb, .icon.twit, .icon.pint, .icon.inst { text-indent:-9999px }
+.icon.fb { background-position:-10px -678px }
+.icon.twit { background-position:-12px -741px }
+.icon.pint { background-position:-12px -806px }
+.icon.inst { background-position:-12px -872px }
+
+
+.overlay,
+.panel-overly {
+    background:#fff url(../../images/ColourGallery2014-images/ajax-loader.gif) center no-repeat;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    z-index:999;
+
+    display:block;
+}
+#image-panel .close-panel,
+.link-items li a,
+.link-items li a i,
+.img-figure a {
+    -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+}
+.booklist {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.booklist li {
+    float:left;
+    margin:16px 0 0 13px;
+}
+.booklist li:first-child {
+    margin-left:0;
+}
+.booklist h3 { color:#132150; margin-top:10px; }
+.booklist h3 a {
+    text-decoration:none;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

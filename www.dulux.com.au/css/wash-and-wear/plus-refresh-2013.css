@@ -1,0 +1,87 @@
+﻿/* Dulux Wash & Wear +Plus (creative refresh)
+   Author: Tony Trinh, 5.8.13
+*/
+
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face { font-family: 'FuturaBT-Light';src: url('../../fonts/25A751_0_0.eot');src: url('../../fonts/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../fonts/25A751_0_0.woff') format('woff'),url('../../fonts/25A751_0_0.ttf') format('truetype');}
+@font-face { font-family: 'FuturaBT-Book';src: url('../../fonts/25A751_1_0.eot');src: url('../../fonts/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../fonts/25A751_1_0.woff') format('woff'),url('../../fonts/25A751_1_0.ttf') format('truetype');}
+@font-face { font-family: 'FuturaBT-Bold';src: url('../../fonts/25A751_2_0.eot');src: url('../../fonts/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../fonts/25A751_2_0.woff') format('woff'),url('../../fonts/25A751_2_0.ttf') format('truetype');}
+
+/* OS global */
+#wplus2 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; overflow: hidden; position: relative; /*padding-bottom: 30px;*/ }
+#wplus2 .hidden { text-indent: -999em; height: 0; overflow: hidden; }
+#wplus2 p { font-size: 16px; color: #00275d; line-height: 1.2; padding-bottom: 11px; }
+#wplus2 img { display: block; }
+#wplus2 .wp2-section { width: 960px; margin: 0 6px; float: left; }
+#wplus2 a { cursor: pointer; }
+#wplus2 .wp2-btn { font: 24px/1 'FuturaBT-Book'; color: #fff; height: 56px; background: #00275d url(../../images/wash-and-wear/plus-refresh-2013/sprite24.png) right -431px no-repeat; border-radius: 8px; line-height: 56px; display: inline-block; text-shadow: -1px 1px #000; text-decoration: none; padding: 0 60px 0 18px; }
+@keyframes btnAnimate {
+	from { transform: scale(1.0); }
+	to { transform: scale(1.05); }
+}
+@-webkit-keyframes btnAnimate {
+	from { transform: scale(1.0); }
+	to { transform: scale(1.05); }
+}
+#wplus2 .wp2-btn:hover {
+	animation-name: btnAnimate;
+	animation-duration: 0.33s;
+	animation-timing-function: ease-out;
+	transform: scale(1.05);
+	/* chrome & saf */
+	-webkit-animation-name: btnAnimate;
+	-webkit-animation-duration: 0.33s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-transform: scale(1.05);
+}
+#wplus2.oldie .wp2-btn:hover { /*opacity: 0.75; filter:alpha(opacity=75);*/ background-color: #e00026; }
+
+/* header */
+#wp2-header { background: #f6f4f0 url(../../images/wash-and-wear/plus-refresh-2013/bg-page.jpg) no-repeat; padding-top: 490px; position: relative; }
+#wp2-header .wp2-content { width: 402px; padding: 0 525px 0 33px; }
+#wp2-header .wp2-heading-replace { text-indent: -999em; background: url(../../images/wash-and-wear/plus-refresh-2013/sprite24.png) 0 0 no-repeat; width: 420px; }
+#wp2-header .wp2-content h2 { height: 82px; padding-bottom: 22px; }
+#wp2-header .wp2-content h3 { height: 25px; padding-bottom: 8px; margin-top: 15px; }
+#wp2-header .wp2-content p { font-size: 15px; }
+#wp2-header .wp2-content sup { font-size: 12px; }
+#wp2-header .wp2-content .wp2-heading-mould { background-position: 0 -150px; margin-top: 28px; padding-bottom: 6px; }
+#wp2-header .wp2-content .wp2-heading-bacterial { background-position: 0 -250px; }
+#wp2-header .wp2-content .wp2-heading-tech { background-position: 0 -350px; height: 30px; }
+#wp2-header .wp2-terms { font-size: 11px; line-height: 1.4; color: #5d7595; width: 375px; position: absolute; right: 50px; top: 727px; text-align: left; }
+#wp2-header .wp2-terms .wp2-hidden-terms { color: #91a0b4; display: none; }
+#wp2-header .wp2-terms .wp2-guarantee { padding-top: 12px; }
+#wp2-header .wp2-terms a { color: #5d7595; }
+#wp2-header .wp2-terms a:hover { text-decoration: none; }
+#wp2-header img { position: absolute; right: 0; top: 826px; }
+#wp2-header .wp2-cta { padding: 51px 0 60px; text-align: center; }
+#wp2-header .wp2-cta .wp2-btn { margin: 0 auto; position: relative; z-index: 5; }
+
+/* video */
+#wp2-video { position: relative; background: #f6f4f0; height: 338px; }
+#wp2-video h3 { position: absolute; top: 96px; left: 598px; color: #00275d; font-family: 'FuturaBT-Book'; font-weight: normal; font-size: 42px; letter-spacing: -1px; line-height: 1.1; }
+#wp2-video .wp2-youtube { width: 586px; height: 315px; position: absolute; top: 0; left: 0; background: url(../../images/wash-and-wear/plus-refresh-2013/feature-drop-shadow.png) no-repeat 0 bottom; }
+#wp2-video .wp2-youtube iframe { margin-left: 30px; border: 3px solid #fff; }
+
+/* trends */
+#wplus2 #wp2-trends { background: url(../../images/wash-and-wear/plus-refresh-2013/bg-repeat-temp.png) repeat-x; position: relative; padding: 16px 30px 0 588px; width: 342px; height: 403px; }
+#wp2-trends img { position: absolute; top: 16px; left: 30px; box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, .25); }
+#wp2-trends h2 { width: 300px; height: 124px; margin-bottom: 39px; background: url(../../images/wash-and-wear/plus-refresh-2013/text-heading-latestcolourtrends.png) no-repeat; text-indent: -999em; }
+#wp2-trends h3,
+#wp2-trends p { line-height: 1.5; color: #595959; }
+#wp2-trends h3 { margin-bottom: 22px; font-size: 16px; }
+#wp2-trends p { font-size: 14px; }
+#wp2-trends .wp2-btn,
+#wp2-footer .wp2-btn { margin-top: 18px; height: 40px; line-height: 40px; font-size: 18px; border-radius: 5px; background-position: right -537px; padding-right: 40px; }
+#wp2-trends .wp2-btn { background-color: #304f6f; }
+
+/* footer */
+#wp2-footer { background: #f6f4f0 url(../../images/wash-and-wear/plus-refresh-2013/bg-footer.jpg) no-repeat; height: 320px; position: relative; border-bottom: 30px solid #fbfbfb; }
+#wp2-footer h3,
+#wp2-footer p,
+#wp2-footer a { position: absolute; left: 500px; }
+#wp2-footer h3 { top: 85px; color: #00275d; font-family: 'FuturaBT-Bold'; font-weight: normal; font-size: 27px; letter-spacing: -1px; }
+#wp2-footer p { top: 135px; color: #444444; width: 400px; }
+#wp2-footer .wp2-btn { top: 223px; display: block; margin: 0; }
+
+.push { height: 0; }

@@ -1,0 +1,1008 @@
+/* Dulux Color Wall
+   Author: Sharath Raj
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("http://hello.myfonts.net/count/26d803");
+  
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../fonts/26D803_0_0.eot');src: url('../../fonts/26D803_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../fonts/26D803_0_0.woff') format('woff'),url('../../fonts/26D803_0_0.ttf') format('truetype');}
+
+
+#placeHolder {
+	width: 960px;
+	height: 240px;
+	margin: 0 auto;
+	border: 1px solid #b3b3b3;
+	background-color: #dee2e4;
+}
+#colorChart {
+	margin: 0 auto;
+	width: 932px;
+	height: 165px;
+	padding-left: 40px;
+	background-color: #FFF;
+}
+#colorChartHeader {
+	padding-top: 40px;
+	font-family: 'FuturaBT-Bold';
+	font-size: 32px;
+	color: #142050;
+}
+#colorChartText {
+	padding-top: 20px;
+	font-family: 'Arial';
+	font-size: 12px;
+	color: #2d2d2d;
+}
+#content {
+	margin: 0 auto;
+	width: 972px;
+	background-color: #FFF;
+}
+.cw-tab {
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.cw-tab ul {
+	list-style: none;
+}
+
+#cw-nav li {
+	cursor: pointer;
+	font-family: 'FuturaBT-Bold';
+	font-size: 16px;
+	display: block;
+	overflow: hidden;
+	top: -50%;
+	float: left;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto;
+	height: 50px;
+	background-color: #DFDFDF;
+	color: #142050;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #D2D2D2;
+}
+
+#cw-nav li#spc {
+	background-image: url('../../images/VJ_2013/bluepot.png');
+	background-repeat: no-repeat;
+	background-position: 10px 17px;
+	padding-left: 30px;
+}
+#cw-nav li:hover#spc {
+	background-image: url('../../images/VJ_2013/pot.png');
+}
+#cw-nav li.selected#spc {
+	background-image: url('../../images/VJ_2013/bluepot.png');
+	background-position: 10px 27px;
+}
+
+#cw-nav li:hover {
+	background-color: #142050;
+	color: white;
+}
+
+#cw-nav li div {
+	position: relative;
+	top: 50%;
+	margin-top: -12px;
+}
+
+#cw-nav-content li {
+	margin-top: 40px;
+	display: none;
+	left: -972px;
+	float: left;
+	width: 972px;
+	height: auto;
+}
+
+#cw-nav li.selected {
+	margin-top: 0px;
+	height: 70px;
+	background-color: white;
+	z-index: 1;
+	border-bottom: 2px solid #FFF;
+}
+
+#cw-nav li.selected:hover {
+	background-color: white;
+	color: #142050;
+}
+
+.ie7 #search {
+	padding-right: 36px;
+}
+
+#search {
+	font-family: 'FuturaBT-Bold';
+	font-size: 16px;
+	padding-left: 16px;
+	padding-right: 50px;
+	float: left;
+	width: auto;
+	height: 50px;
+	margin-top: 20px;
+	color: #142050;
+	border-bottom: 1px solid #D2D2D2;
+	background: url("../../images/VJ_2013/search.png") no-repeat 400px 9px;
+}
+
+#search #search-field {
+	height: 27px;
+	width: 215px;
+}
+
+#search div {
+	position: relative;
+	top: 50%;
+	margin-top: -15px;
+}
+
+#cw-nav-content .selected {
+	display: block;
+	left: 0px;
+}
+
+
+.content-all-palette {
+	display: block;
+	overflow: hidden;
+	top: -50%;
+	float: left;
+	margin-top: 14px;
+	width: 94px;
+	height: 82px;
+	color: white;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-color: white;
+}
+
+.content-all-palette#Whites {
+	width: 189px;
+}
+
+.content-all-palette:hover,
+.content-all-palette.selectedColor {
+	margin-top: 0px;
+	height: 96px;
+}
+
+.content-all-palette div.palette-text {
+	font-family: 'FuturaBT-Bold';
+	font-size: 15px;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	margin-top: -12px;
+}
+
+.content-all-palette div.overlay {
+	position: absolute;
+	top: 126px;
+	height: 72px;
+	width: 94px;
+}
+.content-all-palette:hover div.overlay {
+	position: absolute;
+	top: 112px;
+	height: 86px;
+	width: 94px;
+}
+
+.content-all-palette#Whites div.overlay{
+	width: 189px;
+}
+#content-all-tab.clicked .content-all-palette div.overlay {
+	background-color: #FFF;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	z-index: 2;
+}
+#content-all-tab.clicked .content-all-palette:hover div.overlay {
+  opacity: 0.4;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+#content-all-tab.clicked .content-all-palette.selectedColor div.overlay {
+	top: 112px;
+	height: 86px;
+	background: url('../../images/VJ_2013/selectedcolor.png') no-repeat 40px 78px;
+	opacity: 1;
+	z-index: 0;
+}
+#content-all-tab.clicked .content-all-palette#Whites.selectedColor div.overlay {
+	background: url('../../images/VJ_2013/selectedcolor.png') no-repeat 88px 78px;
+	opacity: 1;
+	z-index: 0;
+}
+
+.canvas-colors {
+	float: left;
+	width: 95px;
+	height: 502px;
+	margin-top: 2px;
+	z-index: 1;
+}
+.canvas-colors#Whites {
+	width: 189px;
+}
+
+.canvas-hover {
+	display: none;
+}
+.canvas-colors:hover .canvas-hover {
+	position: relative;
+	display: block;
+	top: -6px;
+	left: -3px;
+}
+.canvas-colors#Whites:hover .canvas-hover {
+	width: 196px;
+	height: 515px;
+}
+
+#selectColor {
+	pointer-events: none;
+	position: absolute;
+	width: 400px;
+	height: 48px;
+	padding-top: 24px;
+	text-align: center;
+	border: 2px solid #142050;
+	color: #142050;
+	font-family: 'FuturaBT-Bold';
+	font-size: 18px;
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px #C4C4C4;
+	left: 285px;
+	top: 426px;
+	z-index: 0;
+}
+
+#content-all-tab,
+#content-all-hue {
+	height: auto;
+}
+
+#content-all-tab {
+	cursor: pointer;
+	padding-left: 11px;
+}
+
+#content-all-canvas {
+	margin-left: 12px;
+	float: left;
+	height: 504px;
+	width: 950px;
+}
+
+#content-all-hue,
+#content-spl-hue {
+	display: none;
+	float: left;
+	height: auto;
+	margin-left: 12px;
+	width: 950px;
+	overflow-x: auto;
+}
+
+#content-all-hue.select,
+#content-spl-hue.select {
+	display: block;
+	background-color: white;	
+}
+
+#content-all-hue div.colorRow div,
+#content-spc-hue div.colorRow div,
+#content-tra-hue div.colorRow div,
+#content-spl-hue div.colorRow div,
+#content-srh-hue div.colorRow div {
+	float: left;
+	width: 93px;
+	border: 1px solid;
+	border-color: white;
+	height: 50px;
+	background-color: #D2D4D5;
+	font-family: 'Arial';
+	font-size: 11px;
+	position: relative;
+}
+
+.valid {
+	cursor: pointer;
+}
+
+#scrollLeft, #scrollRight {
+	cursor: pointer;
+	height: 63px;
+	width: 63px;
+	position: absolute;
+	z-index: 0;
+	top: 570px;
+}
+#scrollLeft {
+	left: 12px;
+	background: url('../../images/VJ_2013/scrollleft.png') no-repeat -22px;
+}
+#scrollRight {
+	left: 899px;
+	background: url('../../images/VJ_2013/scrollright.png') no-repeat;
+}
+#scrollLeft.scrollInVisible, #scrollRight.scrollInVisible {
+	display: none;
+}
+#scrollLeft.scrollVisible, #scrollRight.scrollVisible {
+	display: block;
+}
+
+#content-tra-hue #scrollLeft,
+#content-tra-hue #scrollRight,
+#content-srh-hue #scrollLeft,
+#content-srh-hue #scrollRight,
+#content-spc-hue #scrollLeft,
+#content-spc-hue #scrollRight {
+	top: 441px;
+}
+
+.ChipNumber {
+	position: absolute;
+	top: 2px;
+	left: 5px;
+}
+.pot-flag {
+	float: right;
+	width: 13px;
+	height: 15px;
+	margin-top: 4px;
+	margin-right: 4px;
+}
+.Name {
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
+	left: 5px;
+}
+
+#canvas {
+	position: absolute;
+	top: 0px;
+	left: 12px;
+}
+
+#colorOrderPage {
+	width: 948px;
+	height: 500px;
+	top: 208px;
+	position: absolute;
+	border: 1px solid #DEDBDB;
+	background-color: #FFF;
+    z-index: 2;
+    box-shadow: 1px 3px #808080;
+}
+
+#colorSelectCanvas {
+	width: 950px;
+	position: absolute;
+	top: 710px;
+	background-color: #FFF;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 2;
+}
+#content-spl-hue #colorSelectCanvas {
+	height: 18px !important;
+}
+
+#colorOrderPage #left {
+	width: 565px;
+	height: 100%;
+	float: left;
+}
+
+#left #title {
+	font-family: 'FuturaBT-Bold';
+	font-size: 20px;
+	color: #142050;
+	padding-left: 30px;
+	padding-top: 20px;
+}
+
+#left #ChipNumber {
+	font-family: 'Arial';
+	font-size: 12px;
+	color: #142050;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+
+#PrevOrdShare, #MasIntExt {
+	height: auto;
+}
+
+#MasIntExt .ChipNumber {
+	width: 100px;
+}
+
+#MasIntExt .Name {
+	margin-top: 20px;
+}
+
+#PrevOrdShare #preview {
+	float: left;
+	width: 268px;
+	height: 150px;
+	border: 1px solid;
+	border-color: #CACBCF;
+	margin-left: 30px;
+	margin-top: 10px;
+	box-shadow: inset 0 0 0px 3px #FFF;
+	-webkit-box-shadow: inset 0 0 0px 3px #FFF;
+	-moz-box-shadow: inset 0 0 0px 3px #FFF;
+}
+
+#PrevOrdShare #preview .expand {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	background: url('../../images/VJ_2013/expand.png') no-repeat;
+}
+
+#PrevOrdShare #preview .previewPot {
+	width: 13px;
+	height: 15px;
+	margin-top: 125px;
+	margin-left: 241px;
+}
+
+#orderSample, #orderSwatch {
+	cursor: pointer;
+	float: left;
+	height: 23px;
+	background-color: #f7f7f7;
+	border: 1px solid #F2F2F2;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding-top: 7px;
+	top: 50%;
+	color: #142050;
+	font-family: 'Arial';
+	font-size: 12px;
+	font-weight: bold;
+	box-shadow: 1px 1px #D9D9D9;
+	-webkit-box-shadow: 1px 1px #D9D9D9;
+	-moz-box-shadow: 1px 1px #D9D9D9;
+}
+#orderSample:active, #orderSwatch:active {
+	box-shadow: inset 1px 1px #D9D9D9;
+	-webkit-box-shadow: inset 1px 1px #D9D9D9;
+	-moz-box-shadow: inset 1px 1px #D9D9D9;
+}
+#orderSample {
+	width: 120px;
+	padding-left: 30px;
+	background: url('../../images/VJ_2013/bluepot.png') no-repeat 10px;
+}
+#orderSwatch {
+	width: 140px;
+	padding-left: 30px;
+	background: url('../../images/VJ_2013/swatch.png') no-repeat 10px;
+}
+#orderSample.potUnAvailable {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+	cursor: default;
+	box-shadow: 1px 1px #D9D9D9;
+	-webkit-box-shadow: 1px 1px #D9D9D9;
+	-moz-box-shadow: 1px 1px #D9D9D9;
+}
+
+#sampleWrapper {
+	background: url('../../images/VJ_2013/order_arrow.png') no-repeat 105px 0px;
+}
+#swatchWrapper {
+	background: url('../../images/VJ_2013/order_arrow.png') no-repeat 122px 0px
+}
+
+#PrevOrdShare #share {
+	position: relative;
+	width: 230px;
+	height: 40px;
+	float: left;
+	margin-top: 38px;
+	margin-left: 20px;
+}
+
+#share a {
+	top: 0px;
+	left: 85px;
+	position: absolute;
+}
+
+#MasterScheme {
+	float: left;
+	width: 270px;
+	margin-left: 30px;
+	margin-top: 35px;
+}
+
+#up, #prev, #next, #down {
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+}
+
+#up {
+	margin-left: 110px;
+	background: url('../../images/VJ_2013/uparrow.png') no-repeat 0px 3px;
+}
+#prev {
+	float: left;
+	margin-top: 21px;
+	background: url('../../images/VJ_2013/leftarrow.png') no-repeat 3px 0px;
+}
+#next {
+	float: right;
+	margin-top: 21px;
+	margin-right: 30px;
+	background: url('../../images/VJ_2013/rightarrow.png') no-repeat 3px 0px;
+}
+#down {
+	margin-left: 110px;
+	margin-top: 2px;
+	background: url('../../images/VJ_2013/downarrow.png') no-repeat 0px 3px;
+}
+
+#MasterScheme .master {
+	font-family: 'Arial';
+	font-size: 11px;
+	width: 200px;
+	height: 60px;
+	margin-top: 2px;
+	margin-left: 20px;
+	position: relative;
+}
+
+#Related {
+	margin-top: 20px;
+	margin-left: 10px;	
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	color: #142050;
+}
+
+#Interior, #Exterior {
+	width: 120px;
+	float: left;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+
+.interior, .exterior {
+	font-family: 'Arial';
+	font-size: 11px;
+	width: 110px;
+	height: 60px;
+	margin-top: 2px;
+	position: relative;
+}
+
+#colorOrderPage #right {
+	float: left;
+	width: 382px;
+	height: 100%;
+}
+
+#right #close {
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+	float: right;
+	background: url('../../images/VJ_2013/close.png') no-repeat;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#right #sample {
+	font-family: 'FuturaBT-Bold';
+	font-size: 16px;
+	color: #142050;
+	padding-left: 20px;
+	padding-top: 75px;
+}
+
+#right #list {
+	width: 348px;
+	height: 304px;
+	margin-left: 20px;
+	margin-top: 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: 1px solid #C2C1C1;
+	background: url(../../images/VJ_2013/listbg.png);
+}
+
+#right #order {
+	cursor: pointer;
+	float: left;
+	width: 160px;
+	height: 26px;
+	background-color: #f7f7f7;
+	border: 1px solid #F2F2F2;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 42px;
+	margin-left: 208px;
+	padding-top: 4px;
+	top: 50%;
+	text-align: center;
+	color: #142050;
+	font-family: 'FuturaBT-Bold';
+	font-size: 16px;
+	box-shadow: 1px 1px #D9D9D9;
+	-webkit-box-shadow: 1px 1px #D9D9D9;
+	-moz-box-shadow: 1px 1px #D9D9D9;
+	background: url('../../images/VJ_2013/order_arrow.png') no-repeat 146px 8px;
+}
+#right #order:active {
+	box-shadow: inset 1px 1px #D9D9D9;
+	-webkit-box-shadow: inset 1px 1px #D9D9D9;
+	-moz-box-shadow: inset 1px 1px #D9D9D9;
+}
+
+#list .list-item {
+	height: 38px;
+	width: 330px;
+	padding-right: 17px;
+	float: left;
+}
+
+.list-item .ordered-color {
+	height: 30px;
+	width: 45px;
+	float: left;
+	margin-top: 4px;
+	border: 1px solid #D2D2D2;
+	margin-left: 5px;
+}
+
+.list-item .ordered-chipNumber,
+.list-item .ordered-name {
+	color: #142050;
+	height: 16px;
+	margin-left: 13px;
+	font-family: 'Arial';
+	font-size: 11px;
+	width: 140px;
+	top: 50%;
+	float: left;
+}
+.list-item .ordered-chipNumber {
+	margin-top: 4px;
+}
+.list-item .ordered-name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.list-item .ordered-type {
+	float: right;
+	width: 90px;
+	color: #142050;
+	height: 20px;
+	font-family: 'Arial';
+	font-size: 11px;
+	margin-top: 11px;
+	padding-left: 20px;
+}
+
+.list-item .ordered-close {
+	cursor: pointer;
+	width: 11px;
+	height: 11px;
+	background: url('../../images/VJ_2013/listclose.png') no-repeat;
+	float: right;
+	margin-top: 13px;
+}
+
+.ie7 #expandedColor {
+	left: 0px;
+	z-index: 20000;
+}
+
+#expandedColor {
+	position: absolute;
+	width: 950px;
+	height: 502px;
+	top: 0px;
+	z-index: 3;
+	opacity: 1;
+	box-shadow: inset 0 0 0px 5px #FFF;
+	-webkit-box-shadow: inset 0 0 0px 5px #FFF;
+	-moz-box-shadow: inset 0 0 0px 5px #FFF;
+}
+#expandedColor #expandTitle {
+	font-family: 'FuturaBT-Bold';
+	font-size: 20px;
+	color: #FFF;
+	padding-left: 30px;
+	padding-top: 20px;
+}
+#expandedColor #expandChipNumber {
+	font-family: 'Arial';
+	font-size: 12px;
+	color: #FFF;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+#expandedColor #expandPot {
+	width: 13px;
+	height: 15px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+#expandedColor #expandClose {
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+	float: right;
+	background: url('../../images/VJ_2013/expandClose.png') no-repeat;
+	margin-right: 13px;
+	margin-top: 10px;
+}
+
+#expandedColor #expandShare {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+#expandedColor #expandShare a{
+	position: absolute;
+	top: 0px;
+	left: 90px;
+}
+
+#colourConsultant {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+}
+#consultantBox {
+	width: 480px;
+	height: 150px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -85px;
+	margin-left: -250px;
+	font-family: 'FuturaBT-Bold';
+	font-size: 16px;
+	color: #142050;
+	padding: 10px
+}
+#consultantBox #checkText {
+	padding-left: 10px;
+	font-family: 'Arial';
+	font-size: 12px;
+	color: #000000;
+	padding-right: 130px;
+}
+
+#consultantBox input,
+#consultantBox div {
+	float: left;
+}
+
+#consultantBox #yes,
+#consultantBox #no {
+	border: 1px solid #F2F2F2;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 15px;
+	font-family: 'Arial';
+	font-weight: bold;
+	box-shadow: 1px 1px #D9D9D9;
+	-webkit-box-shadow: 1px 1px #D9D9D9;
+	-moz-box-shadow: 1px 1px #D9D9D9;
+	padding-top: 5px;
+	margin-top: -7px;
+}
+
+
+#consultantBox #yes:active,
+#consultantBox #no:active {
+	box-shadow: inset 1px 1px #D9D9D9;
+	-webkit-box-shadow: inset 1px 1px #D9D9D9;
+	-moz-box-shadow: inset 1px 1px #D9D9D9;
+}
+
+#content-spc-canvas,
+#content-tra-canvas,
+#content-srh-canvas {
+	width: 950px;
+	height: 96px;
+	float: left;
+	color: #142050;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+#content-spc-hue {
+	margin-left: 12px;
+	float: left;
+	height: auto;
+	overflow: auto;
+	width: 950px;
+}
+
+/* IE 7 or lower specific */
+.ie7 #canvas {
+	top: -210px;
+	left: 0px;
+}
+
+.ie7 #content-tra-hue #canvas,
+.ie7 #content-srh-hue #canvas {
+	top: -207px;
+}
+
+.ie7 #content-spc-hue #canvas,
+.ie7 #content-spl-hue #canvas {
+	top: 2px;
+	left: 12px !important;
+}
+
+.ie7 #content-spc-hue #colorSelectCanvas {
+	height: 18px !important;
+}
+
+.ie7 #content-tra-hue #colorSelectCanvas {
+	height: 20px;
+}
+
+.ie7 #content-all-hue {
+	position: relative;
+	height: 800px;
+}
+
+.ie7 #content-all-hue #scrollRight,
+.ie7 #content-all-hue #scrollLeft {
+	top: 360px;
+}
+
+.ie7 #content-tra-hue,
+.ie7 #content-srh-hue {
+	position: relative;
+	height: 540px;
+}
+
+.ie7 #content-tra-hue #scrollRight,
+.ie7 #content-tra-hue #scrollLeft,
+.ie7 #content-srh-hue #scrollRight,
+.ie7 #content-srh-hue #scrollLeft {
+	top: 230px;
+}
+
+/* END IE7 */
+
+#content-tra-hue,
+#content-srh-hue {
+	margin-left: 12px;
+	float: left;
+	height: auto;
+	overflow: auto;
+	width: 950px;
+}
+
+#content-spl-canvas {
+	float: left;
+	height: 530px;
+	width: 972px;
+}
+
+.content-spl-types {
+	float: left;
+	width: 138px;
+	height: 260px;
+}
+
+.content-spl-types img {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.content-spl-types img:hover {
+	-webkit-filter: grayscale(100%); /*to be changed*/
+}
+
+
+.spl-title {
+	padding-left: 10px;
+	font-family: 'FuturaBT-Bold';
+	font-size: 14px;
+	color: #062460;
+	font-weight: bold;
+}
+
+.spl-text {
+	font-family: 'Arial';
+	font-size: 12px;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-style: 13px;
+}
+
+#splTop {
+	font-family: 'FuturaBT-Bold';
+	font-size: 16px;
+	width: 950px;
+	height: 96px;
+	float: left;
+	color: #142050;
+}
+
+#splBottom {
+	width: 950px;
+	height: auto;
+	float: left;
+	overflow: auto;
+}
+
+#splSelect {
+	font-family: 'Arial';
+	font-size: 12px;
+}
+
+#content-spl-hue #splText,
+#content-spl-hue #splSelect {
+	margin-top: 35px;
+	float: left;
+	margin-left: 30px;
+	width: 150px;
+}
+
+.customSelect {
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+	margin-top: 35px;
+	float: left;
+	margin-left: 30px;
+	width: 240px;
+	background: url('../../images/VJ_2013/select.png') no-repeat 222px;
+	border: 1px solid #BDBDBD;
+}

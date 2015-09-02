@@ -1,0 +1,42 @@
+/* WEB-FONT */
+@import url("http://hello.myfonts.net/count/25a751");
+@font-face {font-family: 'FuturaBT-Light';src: url('../../../webfonts/2015/quality/25A751_0_0.eot');src: url('../../../webfonts/2015/quality/25A751_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2015/quality/25A751_0_0.woff') format('woff'),url('../../../webfonts/2015/quality/25A751_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Book';src: url('../../../webfonts/2015/quality/25A751_1_0.eot');src: url('../../../webfonts/2015/quality/25A751_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2015/quality/25A751_1_0.woff') format('woff'),url('../../../webfonts/2015/quality/25A751_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Bold';src: url('../../../webfonts/2015/quality/25A751_2_0.eot');src: url('../../../webfonts/2015/quality/25A751_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../../../webfonts/2015/quality/25A751_2_0.woff') format('woff'),url('../../../webfonts/2015/quality/25A751_2_0.ttf') format('truetype');}
+
+/* Global */
+body { background: #fbfbfb url(../../../images/2015/quality/temp/pageBackground.jpg) no-repeat fixed 0 0; height: auto; }
+.body { margin: 0 auto; width: 972px; }
+h1, h2, h3 { font-family: 'FuturaBT-Bold'; color: #0f1d41; }
+p { font-size: 16px; color: #0f1d41; line-height: 22px; }
+.button { position: relative; background: #e30613; font-size: 17px; color: #fff; padding: 10px 40px 10px 10px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; }
+.button:after { content: ""; width: 9px; height: 15px; background: url(../../../images/2015/quality/button-arrow.png) no-repeat center; position: absolute; right: 12px; top: 12px; }
+#content { padding: 6px; width: 960px; margin: 0 auto; background: #fff; }
+
+/* Quality */
+
+/* Hero */
+.hero { background: #fff url(../../../images/2015/quality/hero.jpg) no-repeat center; height: 835px; position: relative; }
+.hero h2 { font-size: 54px; color: #132150; padding: 88px 0 0 40px; }
+.hero h2 span { font-size: 44px; font-family: 'FuturaBT-Book'; line-height: 38px; }
+.hero p { font-size: 17px; color: #606870; padding: 430px 460px 0 40px; line-height: 28px; }
+.hero p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner1 { background: #fff url(../../../images/2015/quality/banner1.jpg) no-repeat center bottom; height: 260px; position: relative; }
+.banner1 h2 { color: #fff; width: 590px; font-size: 24px; padding: 30px 0 10px 370px; text-transform: uppercase; }
+.banner1 h2 span { font-family: 'FuturaBT-Book'; }
+.banner1 p { color: #fff; width: 590px; font-size: 14px; line-height: 20px; padding: 0px 0 10px 370px; }
+.banner1 p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner1 .button { margin: 10px 0 0 370px; }
+.banner2 { padding: 15px 0; background: #fff; height: 680px; position: relative; }
+.banner2 h2 { color: #111d48; font-size: 26px; padding: 20px 0 10px 20px; }
+.banner2 p { color: #606870; font-size: 14px; line-height: 20px; padding: 0px 0 10px 20px; }
+.banner2 p .copy { font-size: 75%; vertical-align: text-bottom; }
+.banner2 p.disclaimer { padding: 10px; font-size: 10px; line-height: 12px; }
+.banner2 .button { margin: 10px 0 0 20px; }
+.banner2 .last p { color: #111d48; padding-top: 10px; padding-right: 12px; }
+.banner2 ul { list-style-type: none; margin: 10px 0 0 20px; }
+.banner2 ul li { color: #606870; background: url(../../../images/2015/quality/list.jpg) no-repeat left center; font-size: 12px; line-height: 14px; margin: 0 0 15px 0; padding: 0 15px 0 25px; }
+.banner2 .button { background: #111d48; }
+.banner2 .column { float: left; background: #fafbfb; width: 310px; margin-right: 15px; padding-bottom: 15px; height: 610px; }
+.banner2 .column.last { background: #fff; margin-right: 0; width: 306px; border: 2px solid #111d48; height: 604px; }
+.banner2 .column img { width: 100%; }

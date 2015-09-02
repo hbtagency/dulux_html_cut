@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+  <GA_Code>UA-1647805-11</GA_Code>
+  <services>
+    <GetColourImage>/umbraco/colouratlas/getColourImage.ashx</GetColourImage>
+    <CreateColourBlock>/services/colourchip.ashx</CreateColourBlock>
+    <Search>/umbraco/colouratlas/search.ashx</Search>
+    <SelectPage>/umbraco/colouratlas/selectPage.ashx</SelectPage>
+    <SelectSpecialtyPage>/umbraco/colouratlas/selectSpecialityPage.ashx</SelectSpecialtyPage>
+    <OrderColours>/umbraco/colouratlas/orderColours.ashx</OrderColours>
+    <GetUserColourList>/umbraco/colouratlas/getUserColourList.ashx</GetUserColourList>
+    <GetRevitColourArchive>/umbraco/colouratlas/getRevitColourArchive.ashx</GetRevitColourArchive>
+    <GetArchicadColourArchive>/umbraco/colouratlas/getArchicadColourArchive.ashx</GetArchicadColourArchive>
+  </services>
+  <navigation>
+    <sections>
+      <section>Whites &amp; Neutrals</section>
+	  <section>New Whites</section>	  
+      <section>Greys &amp; Pastels</section>
+      <section>Bolds &amp; Brights</section>
+      <section>Colours of NZ</section>
+      <section>Hue Spectrum</section>
+      <section>Red Heart</section>
+      <section>Specialties</section>
+      <section>Powder Coatings</section>
+    </sections>
+    <whites_and_neutrals tabname="Whites &amp; Neutrals">
+      <color name="PN1" hex="0xefeae1" />
+      <color name="PN2" hex="0xdcd8cb" />
+    </whites_and_neutrals>
+	<new_whites tabname="new whites">
+      <!--<color name="PN2" hex="0xE6E6DF" />-->
+      <color name="A35" hex="0xDFDDD6" />
+    </new_whites>
+    <greys_and_pastels tabname="Greys &amp; Pastels">
+      <color name="PG1" hex="0x363436" />
+      <color name="PG2" hex="0x36343C" />
+      <color name="PW1" hex="0xF5F4ED" />
+      <color name="PW2" hex="0xF6EAE9" />
+    </greys_and_pastels>
+    <bolds_and_brights tabname="Bolds &amp; Brights">
+      <color name="PB1" hex="0xf04c1d" />
+      <color name="PB2" hex="0x78af55" />
+    </bolds_and_brights>
+    <colours_of_nz tabname="Colours of NZ">
+      <color name="NZ1" hex="0xd6cec1" />
+      <color name="NZ2" hex="0xe8944b" />
+    </colours_of_nz>
+    <hue_spectrum tabname="Hue Spectrum">
+      <color name="P01" hex="0xA4334E" />
+      <color name="P02" hex="0x9F3649" />
+      <color name="P03" hex="0xA73944" />
+      <color name="P04" hex="0x94302F" />
+      <color name="P05" hex="0xC92C2B" />
+      <color name="P06" hex="0xAD4430" />
+      <color name="P07" hex="0xF04C1C" />
+      <color name="P08" hex="0xE64D1B" />
+      <color name="P09" hex="0xCE5324" />
+      <color name="P10" hex="0xDA7E33" />
+      <color name="P11" hex="0xE1893F" />
+      <color name="P12" hex="0xFB9E2E" />
+      <color name="P13" hex="0xFCA92F" />
+      <color name="P14" hex="0xFCBA2D" />
+      <color name="P15" hex="0xFCBF2A" />
+      <color name="P16" hex="0xFBD624" />
+      <color name="P17" hex="0xE9DD24" />
+      <color name="P18" hex="0xFBD624" />
+      <color name="P19" hex="0xCFE423" />
+      <color name="P20" hex="0xBCE12A" />
+      <color name="P21" hex="0x9EDA2C" />
+      <color name="P22" hex="0x7BAD3B" />
+      <color name="P23" hex="0x5CA83B" />
+      <color name="P24" hex="0x2AAA41" />
+      <color name="P25" hex="0x088D41" />
+      <color name="P26" hex="0x008447" />
+      <color name="P27" hex="0x026B5A" />
+      <color name="P28" hex="0x007362" />
+      <color name="P29" hex="0x006C63" />
+      <color name="P30" hex="0x006569" />
+      <color name="P31" hex="0x006069" />
+      <color name="P32" hex="0x005C6D" />
+      <color name="P33" hex="0x005576" />
+      <color name="P34" hex="0x02557A" />
+      <color name="P35" hex="0x005183" />
+      <color name="P36" hex="0x065183" />
+      <color name="P37" hex="0x164C75" />
+      <color name="P38" hex="0x05508A" />
+      <color name="P39" hex="0x0F4B8C" />
+      <color name="P40" hex="0x194983" />
+      <color name="P41" hex="0x1F3665" />
+      <color name="P42" hex="0x282B4A" />
+      <color name="P43" hex="0x313148" />
+      <color name="P44" hex="0x42354F" />
+      <color name="P45" hex="0x503550" />
+      <color name="P46" hex="0x7C3653" />
+      <color name="P47" hex="0x70384D" />
+      <color name="P48" hex="0x7E374E" />
+    </hue_spectrum>
+    <red_heart tabname="Red Heart">
+      <color name="RB1" hex="0xc9562d" />
+      <color name="RB2" hex="0x306590" />
+    </red_heart>
+    <powder_coatings displayaslist="true" displayproductname="true" tabname="Powder Coatings">
+      <!--<color name="PCAL" title="Alphatec®" />
+      <color name="PCAS" title="Armourspray®" />
+      <color name="PCDUFG" title="Duralloy® FG" />
+      <color name="PCDUXT" title="Duralloy®" />-->
+      <color name="PCDT" title="Duratec®" />
+      <color name="PCEL" title="Electro®" /><!-- Electro™ -->
+      <color name="PCFL" title="Fluoroset®" />
+      <!--<color name="PCPR" title="Precious®" />
+      <color name="PCSE" title="Surreal Effects®" />-->
+    </powder_coatings>
+  </navigation>
+  <specialties>
+    <specialty src="Suede Specifier" title="Design Suede™" content="">A designer interior effect paint that echoes the look of suede.</specialty>
+    <specialty src="Designer Specifier" title="Design Silk™" content="">A silky, smooth finish that's perfect for feature walls.</specialty>
+    <specialty src="Metallics Specifier" title="Design Metallic™" content="">Metallic™ creates the appearance of polished, precious metals.</specialty>
+    <specialty src="Pearl Specifier" title="Design Pearl™" content="">Pearl™ provides a pearly satin gleam.</specialty>
+    <specialty src="River Rock Specifier" title="Design Stone™" content="">An interior/exterior paint that provides a textured finish to bring extra depth and dimension to walls.</specialty>
+    <specialty src="Tuscan Specifier" title="Tuscan™" content="">Add a brushed textural dimension to your exterior walls, with this soft, washed look.</specialty>
+    <specialty src="Colorbond Specifier" title="Colorbond®" content="">Match your Dulux paint to your existing Colorbond® materials.</specialty>
+    <specialty src="Garden Shades Specifier" title="Weathershield Garden Shades" content="">Specially formulated colour palette for outdoor areas/furniture.</specialty>
+    <specialty src="Limewash Specifier" title="Limewash" content=""></specialty>
+    <specialty src="Rust Specifier" title="Rust" content=""></specialty>
+    <specialty src="Traditional Specifier" title="Traditionals" content="">
+      <color name="P01" hex="0xFBE0AE" />
+      <color name="P02" hex="0x9DA58F"/>
+    </specialty>
+  </specialties>
+  <copy>
+    <downloadInstructions>
+      <![CDATA[<p><strong>Download the colour:</strong></p><p>Click on the colour above to launch a new window, then right-click on the image that appears and select 'Save Picture/Image As...' (wording will vary depending on your Internet Browser). Choose a location and click Save to download the colour as an image.</p>]]>
+    </downloadInstructions>
+    <listDisclaimer>
+      <![CDATA[<p>Please note that Colour Samples ordered through the Colour Atlas are intended for Colour Specification only, not the product finish.<br><br>You must have an approved ABN number to order A4 colour samples.</p>]]>
+    </listDisclaimer>
+    <powderCoatFilter>Show only Powder Coating colours. These are Made-to-Order colours and some limitations do apply such as batch size, lead time and technology.</powderCoatFilter>
+  </copy>
+</data>
