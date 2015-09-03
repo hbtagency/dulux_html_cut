@@ -614,7 +614,7 @@ and open the template in the editor.
     padding-right:300px !important;
 }
 .hbt-content-area-left{
-    width:100%;
+    width:99%;
     display:inline-block;
     min-height:200px;
     vertical-align:top;
