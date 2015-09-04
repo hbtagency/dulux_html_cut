@@ -1,10 +1,9 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Autho Nathan Zhang
+ * nathan.z@hbtagency.com.au 
  */
 $(window).load(function(){
-    //Step 1 put current image always in the middle.
+    //Step 1 Init params and put current image always in the middle.
     var carousel_height = $(".hbt-carousel-item").first().height();
     var carousel_item_width = parseFloat($("#hbt-carousel-inner").children().first().width());
     var carousel_container_width = $("#hbt-carousel-outter").width();
@@ -12,9 +11,7 @@ $(window).load(function(){
     var left_offset = parseFloat(carousel_container_width/2) - parseFloat(carousel_item_width/2);
     var move_left_div = carousel_item_width - left_offset;
     
-    $(".hbt-carousel-mask").width(left_offset);
-    //Don't know why this is a 1px difference.
-    
+    $(".hbt-carousel-mask").width(left_offset);    
     //Make it initially like 4,1,2,3,4,1
     $("#hbt-carousel-inner").children(':last').clone().prependTo($("#hbt-carousel-inner"));
     $("#hbt-carousel-inner").children(':first').next().clone().appendTo($("#hbt-carousel-inner"));
@@ -22,17 +19,15 @@ $(window).load(function(){
     $("#hbt-carousel-inner").first().css("margin-left", "-"+parseFloat(move_left_div)+"px");
     $(".hbt-carousel-item-capcontainer").height(carousel_height -3);
     
-
-    //Step 2
+    //Step 2 click events
     $("#hbt-carousel-rightButton").click(function(){
         initAnimationAndBlockClickEvents($("#hbt-carousel-inner"));
         var distance = $("#hbt-carousel-inner").css("transform");
-        if(distance == "none"){
+        if(distance === "none"){
             distance = -carousel_item_width;
         }else{
             distance = parseFloat(distance.split(",")[4]) - carousel_item_width;
         }
-        //carouse("going_left",$("#hbt-carousel-inner"));
         var inner_container_right_point = parseFloat($("#hbt-carousel-inner").children(':last').offset().left);
         var outter_container_right_point = parseFloat($("#hbt-carousel-outter").offset().left);      
         
@@ -45,11 +40,6 @@ $(window).load(function(){
         }
     });
     
-    $("#hbt-carousel-inner").on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
-        $("#hbt-carousel-inner").removeClass('hbt-carousel-transition');
-        $("body").removeClass('freeze')
-    });
-    
     $("#hbt-carousel-leftButton").click(function(){
         initAnimationAndBlockClickEvents($("#hbt-carousel-inner"));
         //move one cell
@@ -59,7 +49,6 @@ $(window).load(function(){
         }else{
             distance = parseFloat(distance.split(",")[4]) + carousel_item_width;
         }
-        
         var inner_container_left_point = parseFloat($("#hbt-carousel-inner").offset().left);
         var outter_container_left_point = parseFloat($("#hbt-carousel-outter").offset().left);
         if((outter_container_left_point - inner_container_left_point) < carousel_item_width)
@@ -69,9 +58,12 @@ $(window).load(function(){
         }else{
             moveCarousel(distance);
         }
-        
+    });
     
-
+    //This listener is to block click events happens during transition.
+    $("#hbt-carousel-inner").on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
+        $("#hbt-carousel-inner").removeClass('hbt-carousel-transition');
+        $("body").removeClass('freeze')
     });
         
 });
