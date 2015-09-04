@@ -469,11 +469,11 @@ and open the template in the editor.
 
 .hbt-full-screen-area-caption a{
     font-family: "gotham_lightregular","arial";
-    font-size:36px;
+    font-size:40px;
     text-decoration: none;
     margin:0 auto; 
     display:inline-block;
-    margin-top:115px;
+    margin-top:113px;
     
 }
 .hbt-contact-us ::-webkit-input-placeholder {font-family: "FuturaBT-Book","arial","helvetica";font-weight:lighter;color:#c7c7c7;
