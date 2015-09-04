@@ -6,10 +6,10 @@
 $(window).load(function(){
     //Step 1 put current image always in the middle.
     var carousel_height = $(".hbt-carousel-item").first().height();
-    var carousel_item_width = parseInt($("#hbt-carousel-inner").children().first().width());
+    var carousel_item_width = parseFloat($("#hbt-carousel-inner").children().first().width());
     var carousel_container_width = $("#hbt-carousel-outter").width();
     //This value will put current div in center.
-    var left_offset = parseInt(carousel_container_width/2) - parseInt(carousel_item_width/2);
+    var left_offset = parseFloat(carousel_container_width/2) - parseFloat(carousel_item_width/2);
     var move_left_div = carousel_item_width - left_offset;
     
     $(".hbt-carousel-mask").width(left_offset);
@@ -19,7 +19,7 @@ $(window).load(function(){
     $("#hbt-carousel-inner").children(':last').clone().prependTo($("#hbt-carousel-inner"));
     $("#hbt-carousel-inner").children(':first').next().clone().appendTo($("#hbt-carousel-inner"));
 
-    $("#hbt-carousel-inner").first().css("margin-left", "-"+parseInt(move_left_div)+"px");
+    $("#hbt-carousel-inner").first().css("margin-left", "-"+parseFloat(move_left_div)+"px");
     $(".hbt-carousel-item-capcontainer").height(carousel_height -3);
     
 
@@ -30,11 +30,11 @@ $(window).load(function(){
         if(distance == "none"){
             distance = -carousel_item_width;
         }else{
-            distance = parseInt(distance.split(",")[4]) - carousel_item_width;
+            distance = parseFloat(distance.split(",")[4]) - carousel_item_width;
         }
         //carouse("going_left",$("#hbt-carousel-inner"));
-        var inner_container_right_point = parseInt($("#hbt-carousel-inner").children(':last').offset().left);
-        var outter_container_right_point = parseInt($("#hbt-carousel-outter").offset().left);      
+        var inner_container_right_point = parseFloat($("#hbt-carousel-inner").children(':last').offset().left);
+        var outter_container_right_point = parseFloat($("#hbt-carousel-outter").offset().left);      
         
         if((inner_container_right_point - outter_container_right_point) < 2*carousel_item_width)
         {
@@ -43,7 +43,6 @@ $(window).load(function(){
         }else{
             moveCarousel(distance);
         }
-
     });
     
     $("#hbt-carousel-inner").on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
@@ -58,14 +57,14 @@ $(window).load(function(){
         if(distance === "none"){
             distance = carousel_item_width;
         }else{
-            distance = parseInt(distance.split(",")[4]) + carousel_item_width;
+            distance = parseFloat(distance.split(",")[4]) + carousel_item_width;
         }
         
-        var inner_container_left_point = parseInt($("#hbt-carousel-inner").offset().left);
-        var outter_container_left_point = parseInt($("#hbt-carousel-outter").offset().left);
+        var inner_container_left_point = parseFloat($("#hbt-carousel-inner").offset().left);
+        var outter_container_left_point = parseFloat($("#hbt-carousel-outter").offset().left);
         if((outter_container_left_point - inner_container_left_point) < carousel_item_width)
         {
-            distance = -(parseInt($("#hbt-carousel-inner").children().length) - 3)*carousel_item_width;
+            distance = -(parseFloat($("#hbt-carousel-inner").children().length) - 3)*carousel_item_width;
             moveCarousel(distance);
         }else{
             moveCarousel(distance);

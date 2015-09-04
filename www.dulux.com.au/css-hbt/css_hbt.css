@@ -43,7 +43,7 @@ and open the template in the editor.
 }
 .hbt-title-area h2{
     font-family:"gotham_bookregular","arial"; 
-    font-size:27px;
+    font-size:30px;
     color:#132150;
     font-weight:lighter;
 }
@@ -51,7 +51,6 @@ and open the template in the editor.
 .hbt-button{
     display: inline-block;
     padding:12px 30px 12px 30px;
-    font-weight: bold;
     font-family: "FuturaBT-Book","arial","helvetica";
     font-size:18px;
     text-decoration: none;
@@ -160,7 +159,7 @@ and open the template in the editor.
 .hbt-full-screen-area .hbt-full-screen-area-floating-menu{
     height:80px;
     display:block;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.9);
     position:absolute;
     bottom:0;
     width:100%;
@@ -179,7 +178,7 @@ and open the template in the editor.
     height:50px;
     width:20%;
     font-size:16px;
-    font-weight: bold;
+    font-weight: lighter;
     font-family: "FuturaBoldRegular","arial","helvetica";
     position:relative;
 }
@@ -421,7 +420,7 @@ and open the template in the editor.
 .hbt-three-column .hbt-col-3 h2{
     font-family:"gotham_bookregular","arial"; 
     color:#132150;
-    font-size:26px;
+    font-size:25px;
     font-weight:lighter;
 
 }
@@ -458,15 +457,24 @@ and open the template in the editor.
 
 .hbt-full-screen-area-caption{
     float:right;
-    margin-top:250px;
-    margin-right:100px;
+    margin-top:150px;
     padding-bottom:15px;
+    background-color:rgba(255,255,255,0.6);
+    width:40%;
+    height:250px;
+    display:block;
+    position:relative;
+    text-align:center;
 }
 
 .hbt-full-screen-area-caption a{
     font-family: "gotham_lightregular","arial";
     font-size:36px;
     text-decoration: none;
+    margin:0 auto; 
+    display:inline-block;
+    margin-top:115px;
+    
 }
 .hbt-contact-us ::-webkit-input-placeholder {font-family: "FuturaBT-Book","arial","helvetica";font-weight:lighter;color:#c7c7c7;
  }
