@@ -41,6 +41,10 @@ and open the template in the editor.
     padding-bottom: 45px;
     text-align:center;
 }
+.hbt-title-area.hbt-large-p h1{
+    color:#132150;
+}
+
 .hbt-title-area h2{
     font-family:"gotham_bookregular","arial"; 
     font-size:30px;
@@ -412,6 +416,9 @@ and open the template in the editor.
 .hbt-three-column{
     padding-top:25px;
 }
+.hbt-three-column.hbt-invisible{
+    visibility:hidden;
+}
 .hbt-three-column .hbt-col-3{
     width:33%;
     display:inline-block;
@@ -419,6 +426,7 @@ and open the template in the editor.
     padding:0px 0px;
     background-color:#f9f9f9;
     margin-bottom:60px;
+    vertical-align:top;
 }
 
 .hbt-three-column .hbt-col-3 .hbt-three-column-content{

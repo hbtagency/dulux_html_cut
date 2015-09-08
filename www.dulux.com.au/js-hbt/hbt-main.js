@@ -57,14 +57,7 @@ $(window).load(function(){
         $(".hbt-full-screen-area-leftcolumn").css("padding-top","20%");
         $(".hbt-full-screen-area-rightcolumn").css("padding-top","20%");
     }*/
-    //Making equally divided 3 columns
-    var cell_margin = 20;
-    var container_width = parseInt($("#hbt-three-column").width());
-    var cell_width = (container_width - cell_margin*2)/3;
-    $(".hbt-col-3").width(cell_width);
-    $(".hbt-col-3").first().css("margin-right",(cell_margin-2)+"px");
-    $(".hbt-col-3").last().css("float","right");
-    
+  
     //Stick menu only to bottom of either fullscreen container bottom or window bottom
     var distance = full_screen_top + full_screen_height - $('#hbt-full-screen-area-floating-menu').height();
     $window = $(window);

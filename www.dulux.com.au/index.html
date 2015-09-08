@@ -408,7 +408,7 @@
                         <!-- End of full screen area -->
                         <!-- Carousel -->
                         
-                        <section class="container">
+                        <div class="container">
                             <div class="hbt-carousel">
                                 <div class="hbt-title-area">
                                     <h2>Project Types</h2>
@@ -450,12 +450,12 @@
                                 <a id="hbt-carousel-rightButton" class="hbt-carousel-rightButton" href="#right"></a>
                             </div>
                         </div>
-                        </section>
+                        </div>
                         <!-- End of carousel -->
                         
                         <!-- Workmanship -->
                         <div class="container">
-                            <section class='hbt-workmanship clearfix'>
+                            <div class='hbt-workmanship clearfix'>
                                 <div class="hbt-workmanship-thumb hbt-workmanship-cell">
                                     <img class="hbt-responsive-img" src="img-hbt/workmanship_thumb.png" alt=""/>
                                 </div>
@@ -467,9 +467,9 @@
                                 <div class="hbt-workmanship-warranty hbt-workmanship-cell">
                                     <img src="img-hbt/warranty.png" alt=""/>
                                 </div>
-                            </section>
+                            </div>
                             
-                            <section id="hbt-three-column" class='hbt-three-column'>
+                            <div id="hbt-three-column" class='hbt-three-column hbt-invisible'>
                                 <div class="hbt-title-area">
                                     <h2>Community</h2>
                                 </div>
@@ -512,7 +512,7 @@
                                         <a class="hbt-button" href="#">Read More</a>
                                     </div>
                                 </div>
-                            </section>
+                            </div>
                         </div>
                         <!-- End of workmanship -->
                         <!-- Js from HBT -->
@@ -523,6 +523,28 @@
                                 $('#hbt-carousel-rightButton').click();
                                 //Carousel interval
                               }, 5000);
+                            //Making equally divided 3 columns
+                                $(window).load(function(){
+                                    var cell_margin = 20;
+                                    var container_width = parseInt($("#hbt-three-column").width());
+                                    var cell_width = (container_width - cell_margin*2)/3;
+                                    
+                                    //$(".hbt-col-3").last().css("float","right");
+                                    var counter = 0;
+                                    $("#hbt-three-column").children(".hbt-col-3").each(function(){
+                                        counter++;
+                                        $(this).width(cell_width);
+                                        if((counter-1)%3 === 0){
+                                            $(this).css("margin-right",(cell_margin-2)+"px");
+                                        }
+                                        if(counter%3 === 0){
+                                            $(this).css("float","right");
+                                            $("<div style='clear:both;display:block;width:100%;height:1px;'></div>").insertAfter(this);
+                                        }
+                                    });
+                                    $("#hbt-three-column").removeClass("hbt-invisible");
+
+                                });
                         </script>
                         <!-- End of HTML from HBT -->
 
