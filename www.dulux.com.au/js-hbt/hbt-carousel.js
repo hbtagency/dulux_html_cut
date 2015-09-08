@@ -17,7 +17,7 @@ $(window).load(function(){
     $("#hbt-carousel-inner").children(':first').next().clone().appendTo($("#hbt-carousel-inner"));
 
     $("#hbt-carousel-inner").first().css("margin-left", "-"+parseFloat(move_left_div)+"px");
-    $(".hbt-carousel-item-capcontainer").height(carousel_height -2.5);
+    $(".hbt-carousel-item-capcontainer").height(carousel_height - 2.5);
     
     //Step 2 click events
     $("#hbt-carousel-rightButton").click(function(){

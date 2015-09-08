@@ -33,8 +33,12 @@ $(window).load(function(){
 
     if(window_height < (full_screen_top + full_screen_height)){
         if($(window).scrollTop() < ((full_screen_top + full_screen_height)-$('#hbt-full-screen-area-floating-menu').height())){
-            if(!$('#hbt-full-screen-area-floating-menu').hasClass('hbt-stick-to-window-bottom')){
-               $('#hbt-full-screen-area-floating-menu').addClass('hbt-stick-to-window-bottom');
+            if(((full_screen_top + full_screen_height) - $(window).scrollTop()) > $('#hbt-full-screen-area').height()){
+                if(!$('#hbt-full-screen-area-floating-menu').hasClass('hbt-stick-to-window-bottom')){
+                   $('#hbt-full-screen-area-floating-menu').addClass('hbt-stick-to-window-bottom');
+                }
+            }else{
+                $('#hbt-full-screen-area-floating-menu').removeClass('hbt-stick-to-window-bottom'); 
             }
         }
     }else{
