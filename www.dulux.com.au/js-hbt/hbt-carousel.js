@@ -4,7 +4,7 @@
  */
 $(window).load(function(){
     //Step 1 Init params and put current image always in the middle.
-    var carousel_height = $(".hbt-carousel-item").first().height();
+    var carousel_height = parseFloat($(".hbt-carousel-item").first().height());
     var carousel_item_width = parseFloat($("#hbt-carousel-inner").children().first().width());
     var carousel_container_width = $("#hbt-carousel-outter").width();
     //This value will put current div in center.
@@ -17,7 +17,7 @@ $(window).load(function(){
     $("#hbt-carousel-inner").children(':first').next().clone().appendTo($("#hbt-carousel-inner"));
 
     $("#hbt-carousel-inner").first().css("margin-left", "-"+parseFloat(move_left_div)+"px");
-    $(".hbt-carousel-item-capcontainer").height(carousel_height -3);
+    $(".hbt-carousel-item-capcontainer").height(carousel_height -2.5);
     
     //Step 2 click events
     $("#hbt-carousel-rightButton").click(function(){
