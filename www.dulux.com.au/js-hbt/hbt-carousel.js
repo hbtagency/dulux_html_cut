@@ -61,7 +61,7 @@ $(window).load(function(){
     });
     
     window.setInterval(function(){
-        if(!$("body").hasClass('freeze')){
+        if(!$("#hbt-carousel-outter").hasClass('freeze')){
             $('#hbt-carousel-rightButton').click();
         }
     //Carousel interval
@@ -70,14 +70,14 @@ $(window).load(function(){
     //This listener is to block click events happens during transition.
     $("#hbt-carousel-inner").on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
         $("#hbt-carousel-inner").removeClass('hbt-carousel-transition');
-        $("body").removeClass('freeze')
+        $("#hbt-carousel-outter").removeClass('freeze')
     });
         
 });
 
 function initAnimationAndBlockClickEvents(container){
     container.addClass('hbt-carousel-transition');
-    $("body").addClass('freeze');
+    $("#hbt-carousel-outter").addClass('freeze');
 }
 
 function moveCarousel(d){
