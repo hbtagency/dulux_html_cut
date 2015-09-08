@@ -60,6 +60,13 @@ $(window).load(function(){
         }
     });
     
+    window.setInterval(function(){
+        if(!$("body").hasClass('freeze')){
+            $('#hbt-carousel-rightButton').click();
+        }
+    //Carousel interval
+    }, 5000);
+    
     //This listener is to block click events happens during transition.
     $("#hbt-carousel-inner").on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
         $("#hbt-carousel-inner").removeClass('hbt-carousel-transition');
