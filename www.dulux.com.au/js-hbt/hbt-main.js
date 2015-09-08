@@ -7,8 +7,10 @@
  
 
 $(window).load(function(){
-    var window_height = $(window).height();
-    var window_width = $(window).width();
+    
+    
+    var window_height = parseFloat($(window).height());
+    var window_width = parseFloat($(window).width());
     var right_offset = window_width*0.062;
     var min_right_offset = 120;
     if(window_width < 1250){
@@ -23,6 +25,24 @@ $(window).load(function(){
         }
     }
     var top_offset = ($("#header").height() + $("#nav").height()); 
+    
+    
+    //Sit menu at container bottom or window bottom
+    var full_screen_top = parseFloat($('#hbt-full-screen-area').offset().top);
+    var full_screen_height = parseFloat($('#hbt-full-screen-area').height());
+
+    if(window_height < (full_screen_top + full_screen_height)){
+        if($(window).scrollTop() < ((full_screen_top + full_screen_height)-$('#hbt-full-screen-area-floating-menu').height())){
+            if(!$('#hbt-full-screen-area-floating-menu').hasClass('hbt-stick-to-window-bottom')){
+               $('#hbt-full-screen-area-floating-menu').addClass('hbt-stick-to-window-bottom');
+            }
+        }
+    }else{
+        if($('#hbt-full-screen-area-floating-menu').hasClass('hbt-stick-to-window-bottom')){
+           $('#hbt-full-screen-area-floating-menu').removeClass('hbt-stick-to-window-bottom'); 
+        }
+    }
+    
     //$("#hbt-full-screen-area-rightcolumn").height(window_height - top_offset);
 
     /*
@@ -45,8 +65,8 @@ $(window).load(function(){
     $(".hbt-col-3").first().css("margin-right",(cell_margin-2)+"px");
     $(".hbt-col-3").last().css("float","right");
     
-    //Stick menu
-    var distance = $('#hbt-full-screen-area-floating-menu').offset().top,
+    //Stick menu only to bottom of either fullscreen container bottom or window bottom
+    var distance = full_screen_top + full_screen_height - $('#hbt-full-screen-area-floating-menu').height();
     $window = $(window);
 
     $window.scroll(function() {
@@ -55,6 +75,16 @@ $(window).load(function(){
             $('#hbt-full-screen-area-floating-menu').addClass("hbt-sticky-menu");
         }else{
             $('#hbt-full-screen-area-floating-menu').removeClass("hbt-sticky-menu");
+        }
+        
+        if(window_height < (full_screen_top + full_screen_height-$window.scrollTop())){
+            if(!$('#hbt-full-screen-area-floating-menu').hasClass('hbt-stick-to-window-bottom')){
+                $('#hbt-full-screen-area-floating-menu').addClass('hbt-stick-to-window-bottom');
+            }
+        }else{
+            if($('#hbt-full-screen-area-floating-menu').hasClass('hbt-stick-to-window-bottom')){
+               $('#hbt-full-screen-area-floating-menu').removeClass('hbt-stick-to-window-bottom'); 
+            }
         }
     });
     
