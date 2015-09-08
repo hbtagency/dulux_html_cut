@@ -415,7 +415,8 @@ and open the template in the editor.
     color:#5c5c5c;
     width:90%;
     margin-bottom:30px;
-
+    font-family:"futura_lightregular","arial"; 
+    line-height:150%;
 }
 .hbt-workmanship .hbt-workmanship-desc a.hbt-button{
     color:#d0d0d0;
