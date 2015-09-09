@@ -91,7 +91,7 @@ and open the template in the editor.
 /* Full height area */
 .hbt-full-screen-area{
     background-size:cover;
-    background-position: 30% 20%; 
+    background-position: 30% 40%; 
     background-repeat: no-repeat;
     display: block;
     height:850px;
@@ -105,6 +105,7 @@ and open the template in the editor.
 .hbt-subpage-banner-area{
     height:650px;
     background-position:center;
+    background-color:#fff;
 }
 
 .hbt-full-screen-area .hbt-full-screen-area-leftcolumn{
@@ -253,10 +254,10 @@ and open the template in the editor.
 /* Two column area*/
 .hbt-two-column-area{
     display:block;
-    padding-top:80px;
-    padding-bottom: 30px;
+    padding-top:30px;
     border-bottom: 5px solid #f9f9f9;
     margin-bottom: 30px;
+    padding-left:568px;
 }
 .hbt-two-column-area .hbt-half-width{
     width:50%;
@@ -264,21 +265,33 @@ and open the template in the editor.
 }
 .hbt-two-column-area .hbt-two-colum-left{
     float:left;
+    width:568px;
+    margin-left:-568px;
+    text-align:left;
+}
+.hbt-two-column-area .hbt-two-colum-left .hbt-responsive-img{
+    width:85%;
+    margin-left:-15px;
 }
 .hbt-two-column-area .hbt-two-colum-right{
     float:right;
+    width:100%;
+    padding-top:48px;
 }
 .hbt-two-column-area .hbt-two-colum-right h2{
     font-family:"gotham_bookregular","arial"; 
     font-size:32px;
     color:#132150;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-weight:lighter;
 }
 .hbt-two-column-area .hbt-two-colum-right p{
-    width:80%;
+    width:100%;
     font-family: "futura_lightregular","arial","helvetica";
     font-size:17px;
+    line-height:170%;
+    margin-bottom:15px;
+    font-weight:lighter;
 }
 /* End Two column area */
 
@@ -407,7 +420,9 @@ and open the template in the editor.
 }
 .hbt-workmanship .hbt-workmanship-warranty img{
     float:right;
-    margin-right:50px;
+    margin-right:101px;
+    width:176px;
+    margin-top:-5px;
 }
 
 .hbt-workmanship .hbt-workmanship-desc h2{
@@ -420,7 +435,7 @@ and open the template in the editor.
 .hbt-workmanship .hbt-workmanship-desc p{
     font-size:24px;
     color:#5c5c5c;
-    width:90%;
+    width:100%;
     margin-bottom:30px;
     font-family:"futura_lightregular","arial"; 
     line-height:150%;
@@ -681,6 +696,7 @@ font-weight:lighter;
     display:inline-block;
     vertical-align:top;
     margin-right:-290px;
+    padding-top:15px;
 }
 .hbt-community-content-area{
     padding-top:50px;
@@ -724,7 +740,7 @@ font-weight:lighter;
         top:170px
     }
     .hbt-two-column-area .hbt-two-colum-right h2{
-        font-size:23px;
+        font-size:22px;
         margin-bottom:10px;
     }
     .hbt-two-column-area .hbt-two-colum-right p{
@@ -742,8 +758,19 @@ font-weight:lighter;
         width:170px;
         font-size:20px;
     }
+    
+    .hbt-two-column-area .hbt-two-colum-right p{
+        line-height:150%;
+        margin-bottom:10px;
+        font-size:16px;
+    }
 }
 @media (min-width: 1138px) and (max-width: 1489px ) {
+    .hbt-two-column-area .hbt-two-colum-right p{
+        line-height:150%;
+        margin-bottom:10px;
+        font-size:16px;
+    }
     .hbt-full-screen-area-rightcolumn .hbt-full-screen-area-rightcolumn-button{
         width:170px;
         font-size:20px;
