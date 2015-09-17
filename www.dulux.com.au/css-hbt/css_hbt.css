@@ -201,8 +201,8 @@ and open the template in the editor.
     text-align: center;
     display:inline-block;
     height:50px;
-    width:20%;
-    font-size:16px;
+    width:16.6%;
+    font-size:14px;
     font-weight: lighter;
     font-family: "FuturaBoldRegular","arial","helvetica";
     position:relative;
@@ -215,7 +215,7 @@ and open the template in the editor.
     color:#127ba8;
 }
 .hbt-full-screen-area .hbt-full-screen-area-floating-menu .hbt-red-block{
-    float:right;
+    float:left;
     color:#fff;
     background-color:#cb0226;
     z-index:10;
@@ -258,6 +258,7 @@ and open the template in the editor.
     border-bottom: 5px solid #f9f9f9;
     margin-bottom: 30px;
     padding-left:568px;
+    padding-bottom:25px;
 }
 .hbt-two-column-area .hbt-half-width{
     width:50%;
@@ -265,8 +266,8 @@ and open the template in the editor.
 }
 .hbt-two-column-area .hbt-two-colum-left{
     float:left;
-    width:568px;
-    margin-left:-568px;
+    width:482px;
+    margin-left:-482px;
     text-align:left;
 }
 .hbt-two-column-area .hbt-two-colum-left .hbt-responsive-img{
@@ -275,8 +276,9 @@ and open the template in the editor.
 }
 .hbt-two-column-area .hbt-two-colum-right{
     float:right;
-    width:100%;
-    padding-top:48px;
+    width:90%;
+    padding-top:18px;
+    padding-right:50px;
 }
 .hbt-two-column-area .hbt-two-colum-right h2{
     font-family:"gotham_bookregular","arial"; 
@@ -286,7 +288,7 @@ and open the template in the editor.
     font-weight:lighter;
 }
 .hbt-two-column-area .hbt-two-colum-right p{
-    width:100%;
+    width:93%;
     font-family: "futura_lightregular","arial","helvetica";
     font-size:17px;
     line-height:170%;
@@ -379,7 +381,7 @@ and open the template in the editor.
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     bottom:110px;
-    left:-71px;
+    left:-73px;
 }
 /* End of Carousel area */
 
@@ -550,6 +552,11 @@ and open the template in the editor.
     font-family: "FuturaBT-Book","arial","helvetica";
     color:#c7c7c7;
 }
+
+.hbt-contact-us input[type=text].darker,.hbt-contact-us textarea.darker{
+    color:#000000;
+}
+
 .hbt-contact-us textarea{
     height:172px;
 }
@@ -630,15 +637,15 @@ and open the template in the editor.
     margin-bottom:10px;
 }
 
-.hbt-large-p p{
-    margin-top:30px;
-}
 .hbt-content-half-width{
     width:45%;
     display:inline-block;
     vertical-align:top;
     margin-top:40px;
     padding-right:4%;
+}
+.hbt-content-area .hbt-content-half-width.hbt-small-p p{
+    margin-bottom:15px;
 }
 .hbt-content-half-width ul{
     list-style-image: url("../img-hbt/dash_bullet.png");
@@ -647,8 +654,56 @@ and open the template in the editor.
 .hbt-content-half-width ul li{
     margin-top:10px;
 }
+.hbt-content-half-width h2{
+    background:url('../img-hbt/check_bullet_blue.png') no-repeat;
+    background-position:2px 6px;
+    padding-left:50px;
+}
+/* Modified version */
+.hbt-content-full-width.hbt-large-p{
+    margin-bottom:30px;
+}
+.hbt-content-full-width.hbt-large-p ul{
+    list-style-image:url('../img-hbt/check_bullet_blue.png');
+    padding-left:35px;
+}
+.hbt-content-full-width.hbt-large-p ul li,.hbt-content-area-left.hbt-large-p ul li{
+    padding-left:15px;
+}
+.hbt-content-full-width.hbt-large-p ul li,.hbt-content-area-left.hbt-large-p ul li{
+    font-size:18px;
+    line-height:210%;
+}
+.hbt-content-full-width.hbt-large-p ul li ul.hbt-small-p{
+    list-style-image:url('../img-hbt/dash_bullet.png');
+    padding-left:35px;
+}
+.hbt-content-full-width.hbt-large-p ul li ul.hbt-small-p li{
+    font-family: "futura_lightregular","arial","helvetica";
+    font-size:18px;
+    line-height:170%;
+}
+
+.hbt-content-area-left.hbt-large-p{
+    margin-bottom:30px;
+}
+.hbt-content-area-left.hbt-large-p ul{
+    list-style-image:url('../img-hbt/check_bullet_blue.png');
+    padding-left:35px;
+}
+.hbt-content-area-left.hbt-large-p ul li ul.hbt-small-p{
+    list-style-image:url('../img-hbt/dash_bullet.png');
+    padding-left:35px;
+}
+.hbt-content-area-left.hbt-large-p ul li ul.hbt-small-p li{
+    font-family: "futura_lightregular","arial","helvetica";
+    font-size:18px;
+    line-height:170%;
+}
+/* End of Modified version */
 .hbt-large-p h1{
     font-size:36px;
+    margin-bottom:30px;
 }
 .hbt-small-p h2{
     font-size:24px;
@@ -660,6 +715,15 @@ and open the template in the editor.
     color:#454545;
     line-height:160%;
 }
+
+.hbt-content-area .hbt-large-p,.hbt-large-p ul li,.hbt-content-area .hbt-large-p p,.hbt-large-p span{
+    font-size:18px;
+    line-height:180%;
+}
+.hbt-content-area .hbt-large-p p{
+    margin-top:15px;
+    margin-bottom:15px;
+}
 .hbt-large-p h1{
 font-family: "gotham_lightregular","arial";
 font-weight:lighter;
@@ -669,14 +733,10 @@ font-weight:lighter;
     font-size:16px;
     line-height:170%;
 }
-.hbt-content-half-width h2{
-    background:url('../img-hbt/check_bullet_blue.png') no-repeat;
-    background-position:2px 6px;
-    padding-left:50px;
-}
+
 .hbt-content-area.hbt-bordered-bottom{
     border-bottom:5px solid #f9f9f9;
-    padding-bottom:60px;
+    padding-bottom:35px;
 }
 .hbt-content-fluid-left{
     padding-right:300px !important;

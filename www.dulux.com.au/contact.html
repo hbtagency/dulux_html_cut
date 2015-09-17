@@ -364,11 +364,14 @@
                             </div>
                             <div id="hbt-full-screen-area-floating-menu" class="hbt-full-screen-area-floating-menu hbt-uppercase clearfix">
                                 <div class="container">
+                                    <a href="index.html" class="hbt-white-block hbt-full-screen-area-floating-menu-item">
+                                        Home
+                                    </a>
                                     <a href="http://www.dulux.com.au/find-a-painter" class="hbt-white-block hbt-full-screen-area-floating-menu-item">
                                         Find an accredited painter
                                     </a>
                                     <a href="why_accredited.html" class="hbt-white-block hbt-full-screen-area-floating-menu-item">
-                                        why accredited<b style="font-family:arial;">?</b>
+                                        Why Accredited
                                     </a>
                                     <a href="community.html" class="hbt-white-block hbt-full-screen-area-floating-menu-item">
                                         community
@@ -377,7 +380,7 @@
                                         contact
                                     </a>
                                     <a href="http://www.duluxaccredited.com.au/MemberLogin.aspx" class="hbt-red-block hbt-full-screen-area-floating-menu-item">
-                                        <span class="hbt-on-top">login</span>
+                                        <span class="hbt-on-top"> member login</span>
                                         <span class="hbt-red-edge">
                                         </span>
                                     </a>
@@ -389,8 +392,7 @@
                             <div class='hbt-contact-us cleafix'>
                                 <section  class='hbt-contact-us-left cleafix'>
                                     <h1>Contact Us</h1>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit inventoreccusantium
-                                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                                    <p>We value your feedback on the Dulux Accredited Painter Service. Please ask any questions or share your experience with us using the contact methods displayed here.</p>
                                         <ul id="hbt-contact-us-fields" class="clearfix">
                                             <li>
                                                 <input type="text" name='name' placeholder="Name*" class="hbt-contact-field"/>
@@ -438,27 +440,25 @@
                             </div>
                         </div>
                         
-                        
-
-                        
-
                         <!-- Js from HBT -->
                         <script src="js-hbt/hbt-placeholder.min.js"></script>
                         <script type="text/javascript" src="js-hbt/hbt-main.js"></script>
-
-                        <script>
-
-                            
-                            $(document).ready(function(){
-                                
+                        <script>                            
+                            $(document).ready(function(){                                
                                 $("#hbt-contact-us-fields .hbt-contact-field").each(function(){
                                      $(this).val($(this).attr('placeholder'));
                                 });
                                 $("#hbt-contact-us-fields .hbt-contact-field").click(function(){
                                      if($(this).val() === $(this).attr('placeholder')){
                                          $(this).val("");
+                                         $(this).addClass('darker');
                                      }
-                                })
+                                });
+                                $("#hbt-contact-us-fields .hbt-contact-field").blur(function(){
+                                     if($(this).val() === ""){
+                                         $(this).removeClass('darker');
+                                     }
+                                });
                             });
                         </script>
                         <!-- End of HTML from HBT -->
