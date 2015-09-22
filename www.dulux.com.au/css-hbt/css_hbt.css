@@ -70,14 +70,14 @@ and open the template in the editor.
     font-family: "FuturaBT-Book","arial","helvetica";
     font-size:18px;
     text-decoration: none;
-    border:2px solid #d0d0d0;
+    border:2px solid #5C5C5C;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .hbt-button:hover{
-    box-shadow: inset 0 0 0 2px #d0d0d0;
+    box-shadow: inset 0 0 0 2px #5C5C5C;
 }
 .hbt-uppercase{
     text-transform: uppercase;
@@ -307,7 +307,7 @@ and open the template in the editor.
 }
 .hbt-carousel-outter .hbt-carousel-inner{
     display:block;
-    width:5000px;
+    width:8000px;
     height:434px;
     position:relative;
 }
@@ -443,7 +443,7 @@ and open the template in the editor.
     line-height:150%;
 }
 .hbt-workmanship .hbt-workmanship-desc a.hbt-button{
-    color:#d0d0d0;
+    color:#5C5C5C;
     font-weight:lighter;
 }
 
@@ -487,7 +487,7 @@ and open the template in the editor.
 }
 .hbt-three-column .hbt-col-3 a.hbt-button{
     font-family: "FuturaBT-Book","arial","helvetica";
-    color:#d0d0d0;
+    color:#5C5C5C;
     font-size:18px;
     font-weight:lighter;
     margin-top:30px;
@@ -626,6 +626,9 @@ and open the template in the editor.
     margin:0 auto;
     padding:60px 15px 15px 15px;
 }
+.hbt-newly-added-painters-container{
+    padding:25px 15px 0px 15px !important;
+}
 .hbt-space-60{
     height:60px;
     display:block;
@@ -636,12 +639,14 @@ and open the template in the editor.
     color:#132150;
     margin-bottom:10px;
 }
+.hbt-content-area h3,.hbt-content-area h4,.hbt-content-area h5{
+    font-family: "gotham_bookregular","arial";
+}
 
 .hbt-content-half-width{
     width:45%;
     display:inline-block;
     vertical-align:top;
-    margin-top:40px;
     padding-right:4%;
 }
 .hbt-content-area .hbt-content-half-width.hbt-small-p p{
@@ -660,8 +665,29 @@ and open the template in the editor.
     padding-left:50px;
 }
 /* Modified version */
-.hbt-content-full-width.hbt-large-p{
-    margin-bottom:30px;
+.hbt-accredite-painters{
+    padding-right:300px !important;
+    //margin-right: 300px !important;
+
+}
+.hbt-accredite-painters .hbt-accredite-painters-left{
+    padding-right:15px;
+    width:auto;
+    float:left;
+}
+.hbt-accredite-painters .hbt-accredite-painters-right{
+    width:248px;
+    display:block;
+    margin-right:-248px;
+    float:right;
+
+}
+
+.hbt-content-half-width.hbt-large-p h1{
+    font-weight:bold;
+    line-height:150%;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
 }
 .hbt-content-full-width.hbt-large-p ul{
     list-style-image:url('../img-hbt/check_bullet_blue.png');
@@ -673,6 +699,9 @@ and open the template in the editor.
 .hbt-content-full-width.hbt-large-p ul li,.hbt-content-area-left.hbt-large-p ul li{
     font-size:18px;
     line-height:210%;
+}
+.hbt-content-full-width .hbt-whycredited-small{
+    font-size:16px !important;
 }
 .hbt-content-full-width.hbt-large-p ul li ul.hbt-small-p{
     list-style-image:url('../img-hbt/dash_bullet.png');
@@ -859,6 +888,11 @@ font-weight:lighter;
     .hbt-two-column-area .hbt-two-colum-right h2{
         font-size:26px;
         margin-bottom:20px;
+    }
+}
+@media(min-width:1490px){
+    .hbt-accredite-painters .hbt-accredite-painters-left{
+        padding-top:15px;
     }
 }
 
