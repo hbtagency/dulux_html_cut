@@ -112,9 +112,14 @@ and open the template in the editor.
     padding-left:15px;
     padding-top:60px;
     float:left;
-
+    
 }
-
+.hbt-full-screen-area .hbt-full-screen-area-leftcolumn p{
+    margin-top:30px;
+    font-size:17px;
+    font-family: "futura_lightregular","arial","helvetica";
+    color:#132150;
+}
 .hbt-full-screen-area .hbt-full-screen-area-leftcolumn h1.hbt-full-screen-area-leftcolumn-description{
     font-family: "gotham_lightregular","arial";
     font-size:46px;
@@ -674,6 +679,9 @@ and open the template in the editor.
     padding-right:15px;
     width:auto;
     float:left;
+}
+.hbt-accredite-painters .hbt-accredite-painters-left p{
+    color:#132150;
 }
 .hbt-accredite-painters .hbt-accredite-painters-right{
     width:248px;
