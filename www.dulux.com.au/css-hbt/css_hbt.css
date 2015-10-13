@@ -141,12 +141,13 @@ and open the template in the editor.
 }
 
 .hbt-full-screen-area-rightcolumn{
+    max-width:480px;
     padding-top: 140px;
     float:right;
     color:white;
     background-color:#0099d2;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:40px;
+    padding-right:10px;
     height:800px;
 }
 .hbt-full-screen-area-rightcolumn ul.hbt-full-screen-area-rightcolumn-list{
